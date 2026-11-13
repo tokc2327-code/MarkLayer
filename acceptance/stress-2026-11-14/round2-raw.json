@@ -1,0 +1,4502 @@
+{
+  "room": "round2-b661a864-aa66-4a65-8eca-194b176210b7",
+  "roomB": "round2b-3b46ccfa-7419-40b2-bbb5-15ab5a20d0e2",
+  "clients": [
+    {
+      "i": 2,
+      "profile": "C:\\Users\\xxc\\AppData\\Local\\Temp\\ml-round2-2-a7mh8A",
+      "extension": "ckmdpfkpnpnmblmhejjgepigpapkopai",
+      "version": "Chrome/157.0.8103.52"
+    },
+    {
+      "i": 3,
+      "profile": "C:\\Users\\xxc\\AppData\\Local\\Temp\\ml-round2-3-1wknmc",
+      "extension": "ckmdpfkpnpnmblmhejjgepigpapkopai",
+      "version": "Chrome/157.0.8103.52"
+    },
+    {
+      "i": 4,
+      "profile": "C:\\Users\\xxc\\AppData\\Local\\Temp\\ml-round2-4-rNPH2i",
+      "extension": "ckmdpfkpnpnmblmhejjgepigpapkopai",
+      "version": "Chrome/157.0.8103.52"
+    },
+    {
+      "i": 5,
+      "profile": "C:\\Users\\xxc\\AppData\\Local\\Temp\\ml-round2-5-TMTUfl",
+      "extension": "ckmdpfkpnpnmblmhejjgepigpapkopai",
+      "version": "Chrome/157.0.8103.52"
+    },
+    {
+      "i": 0,
+      "profile": "C:\\Users\\xxc\\AppData\\Local\\Temp\\ml-round2-0-19CFRd",
+      "extension": "ckmdpfkpnpnmblmhejjgepigpapkopai",
+      "version": "Chrome/157.0.8103.52"
+    },
+    {
+      "i": 1,
+      "profile": "C:\\Users\\xxc\\AppData\\Local\\Temp\\ml-round2-1-81wRkI",
+      "extension": "ckmdpfkpnpnmblmhejjgepigpapkopai",
+      "version": "Chrome/157.0.8103.52"
+    }
+  ],
+  "events": [
+    {
+      "client": 2,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "55220.38",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=bn60izfynKKVAKv48-WiS&uid=IB1jLfdP8demYKmmFJgfe&name=Bouncy+Manatee&color=%233b82f6",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589325061
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61723.808481,
+        "wallTime": 1794589325.061109,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "8M6fyg15fZL4rmHsaVwxCA==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589325063
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61723.882457,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "EeHOwIYzLM3F6s7YD3cPPDX51uc=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: EeHOwIYzLM3F6s7YD3cPPDX51uc=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "8M6fyg15fZL4rmHsaVwxCA==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=bn60izfynKKVAKv48-WiS&uid=IB1jLfdP8demYKmmFJgfe&name=Bouncy+Manatee&color=%233b82f6 HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: 8M6fyg15fZL4rmHsaVwxCA==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589325135
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61723.89889,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589325175
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "55476.38",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=Es2KTXZDgKjmrJmjeTubM&uid=yBVLMkbVSBYtwZGyAv9qP&name=Jolly+Penguin&color=%2384cc16",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589325468
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61724.217441,
+        "wallTime": 1794589325.470068,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "nihDPej00fdSCplCEb+7Uw==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589325469
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61724.357342,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "sDTC9dkRdRV03Kv5OwE6nqcwmy0=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: sDTC9dkRdRV03Kv5OwE6nqcwmy0=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "nihDPej00fdSCplCEb+7Uw==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=Es2KTXZDgKjmrJmjeTubM&uid=yBVLMkbVSBYtwZGyAv9qP&name=Jolly+Penguin&color=%2384cc16 HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: nihDPej00fdSCplCEb+7Uw==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589325611
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61724.365878,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\",\"joinedAt\":1794589325593},{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589325640
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "35452.38",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=0aDe4E3DOSxSTDLZhBE5A&uid=5bv2wIyKlItxWSCE59U0i&name=Zippy+Octopus&color=%23f43f5e",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "6",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "6",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589325848
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "51352.38",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=s9Y-b7Yt9mxxFSKMIzrX1&uid=VHBm-itAVRI2pTGK4E63G&name=Dizzy+Tapir&color=%238b5cf6",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589325848
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61724.594878,
+        "wallTime": 1794589325.847505,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "mtxDf0n4cT/Y61mOVmQzKA==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589325848
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61724.594858,
+        "wallTime": 1794589325.847486,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "XQXMxkqKPyWkn3n4Db20ow==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589325849
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61724.355009,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\"}}"
+        }
+      },
+      "at": 1794589325850
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61724.598564,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "8kTOo2Nx83yzVMITu5AVhcBinfk=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: 8kTOo2Nx83yzVMITu5AVhcBinfk=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "mtxDf0n4cT/Y61mOVmQzKA==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=s9Y-b7Yt9mxxFSKMIzrX1&uid=VHBm-itAVRI2pTGK4E63G&name=Dizzy+Tapir&color=%238b5cf6 HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: mtxDf0n4cT/Y61mOVmQzKA==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589325852
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61724.600885,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\"}}"
+        }
+      },
+      "at": 1794589325856
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61724.60714,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "JSyTjVmQvG1bn5UaQUhGgYhNx48=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: JSyTjVmQvG1bn5UaQUhGgYhNx48=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "XQXMxkqKPyWkn3n4Db20ow==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=0aDe4E3DOSxSTDLZhBE5A&uid=5bv2wIyKlItxWSCE59U0i&name=Zippy+Octopus&color=%23f43f5e HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: XQXMxkqKPyWkn3n4Db20ow==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589325861
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61724.624582,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\"}}"
+        }
+      },
+      "at": 1794589325879
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.38",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589325879
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61724.627495,
+        "wallTime": 1794589325.880123,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "5f2SfOdnN+kngerySaAL9A==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589325880
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61724.624904,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\",\"joinedAt\":1794589325797},{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\",\"joinedAt\":1794589325593},{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589325903
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61724.625125,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\",\"joinedAt\":1794589325832},{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\",\"joinedAt\":1794589325797},{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\",\"joinedAt\":1794589325593},{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589325903
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61724.722317,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589325978
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61724.725722,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "ttIdYWuSRFoARuUqizKUDT/r6D8=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: ttIdYWuSRFoARuUqizKUDT/r6D8=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "5f2SfOdnN+kngerySaAL9A==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: 5f2SfOdnN+kngerySaAL9A==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589325980
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61724.567572,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\"}}"
+        }
+      },
+      "at": 1794589326018
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61724.768015,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\"}}"
+        }
+      },
+      "at": 1794589326022
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61724.77017,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589326024
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61724.748334,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"joinedAt\":1794589325956},{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\",\"joinedAt\":1794589325832},{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\",\"joinedAt\":1794589325797},{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\",\"joinedAt\":1794589325593},{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589326027
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61724.680854,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\"}}"
+        }
+      },
+      "at": 1794589326125
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61724.87508,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589326131
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61724.721672,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589326154
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "54748.38",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=GF2ZgR0WWc4yNY-_mQukW&uid=yx-mUZsI3o3qUNVtk0WFw&name=Wacky+Chinchilla&color=%236366f1",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589326247
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61724.994439,
+        "wallTime": 1794589326.247066,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "vGeXJHFYXc3Ext8eq1MfqQ==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589326249
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61725.045992,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\"}}"
+        }
+      },
+      "at": 1794589326301
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61725.046063,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\"}}"
+        }
+      },
+      "at": 1794589326303
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61725.045577,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\"}}"
+        }
+      },
+      "at": 1794589326307
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61725.0492,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\"}}"
+        }
+      },
+      "at": 1794589326307
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61725.045442,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\"}}"
+        }
+      },
+      "at": 1794589326470
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61725.215157,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "eOK15JhRxIx2WacFdghvtdgPAzs=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: eOK15JhRxIx2WacFdghvtdgPAzs=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "vGeXJHFYXc3Ext8eq1MfqQ==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=GF2ZgR0WWc4yNY-_mQukW&uid=yx-mUZsI3o3qUNVtk0WFw&name=Wacky+Chinchilla&color=%236366f1 HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: vGeXJHFYXc3Ext8eq1MfqQ==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589326475
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61725.216662,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"joinedAt\":1794589326280},{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"joinedAt\":1794589325956},{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\",\"joinedAt\":1794589325832},{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\",\"joinedAt\":1794589325797},{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\",\"joinedAt\":1794589325593},{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589326510
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61738.883392,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589340136
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61738.884289,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589340136
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61739.360742,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589340613
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61739.361583,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589340614
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61739.601898,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589340854
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61739.602912,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589340855
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61739.608053,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589340861
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61739.60903,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589340861
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61739.729221,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589340982
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61739.730057,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589340982
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61740.217875,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589341470
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61740.218645,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589341471
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61741.574671,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"cursor\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342828
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61741.574671,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"cursor\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342828
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61741.586772,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342848
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61741.587364,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342848
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61741.586427,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342848
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61741.586018,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342848
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61741.586464,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342851
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61741.605819,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"GF2ZgR0WWc4yNY-_mQukW\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342870
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61741.621634,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"GF2ZgR0WWc4yNY-_mQukW\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342886
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61741.621752,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"GF2ZgR0WWc4yNY-_mQukW\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342886
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61741.624934,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"GF2ZgR0WWc4yNY-_mQukW\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342886
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61741.624107,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"cursor\",\"peerId\":\"GF2ZgR0WWc4yNY-_mQukW\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"x\":265.9630606860158,\"y\":284.96042216358836,\"tool\":\"navigate\"}"
+        }
+      },
+      "at": 1794589342886
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61742.361124,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false},\"clientOpId\":\"vdpiwhDMszWUdnqYkLOqY\",\"seq\":1}"
+        }
+      },
+      "at": 1794589343624
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61742.361795,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false},\"clientOpId\":\"hz2-Y5KCUMOQ2tKKDNHbw\",\"seq\":1}"
+        }
+      },
+      "at": 1794589343628
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61742.382948,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343658
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61742.382891,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343659
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61742.384918,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343659
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61742.383022,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343659
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61742.384121,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343659
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61742.384768,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343662
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61742.418613,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"ack\",\"opId\":\"vdpiwhDMszWUdnqYkLOqY\",\"status\":\"applied\",\"seq\":1,\"rev\":2}"
+        }
+      },
+      "at": 1794589343681
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61742.419258,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61742.418898,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61742.41873,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61742.419324,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61742.418689,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61742.419366,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"status\":\"in_progress\",\"resolved\":false}}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61742.42778,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"ack\",\"opId\":\"hz2-Y5KCUMOQ2tKKDNHbw\",\"status\":\"applied\",\"seq\":1,\"rev\":3}"
+        }
+      },
+      "at": 1794589343682
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61745.400409,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"update_op\",\"opId\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"patch\":{\"layerId\":\"does-not-exist\"},\"clientOpId\":\"-bBrwIfv6HyImOl-6vanK\",\"seq\":2}"
+        }
+      },
+      "at": 1794589346659
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61745.409414,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"nack\",\"opId\":\"-bBrwIfv6HyImOl-6vanK\",\"status\":\"refused\",\"seq\":2,\"code\":\"layer_unavailable\",\"reason\":\"目标图层不存在或不可用\"}"
+        }
+      },
+      "at": 1794589346686
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61745.433539,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"error\",\"code\":\"collaboration_change_refused\"}"
+        }
+      },
+      "at": 1794589346686
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61747.937856,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\"}"
+        }
+      },
+      "at": 1794589349204
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61747.938006,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\"}"
+        }
+      },
+      "at": 1794589349204
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61747.938214,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\"}"
+        }
+      },
+      "at": 1794589349205
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61747.93853,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\"}"
+        }
+      },
+      "at": 1794589349205
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketClosed",
+      "params": {
+        "requestId": "45716.38",
+        "timestamp": 61747.949763
+      },
+      "at": 1794589349206
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61747.937651,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"y-FkH1zo2aCxjRemu8kmJ\"}"
+        }
+      },
+      "at": 1794589349403
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.42",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589350209
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameError",
+      "params": {
+        "requestId": "45716.42",
+        "timestamp": 61748.956435,
+        "errorMessage": "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED"
+      },
+      "at": 1794589350209
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketClosed",
+      "params": {
+        "requestId": "45716.42",
+        "timestamp": 61748.95655
+      },
+      "at": 1794589350209
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.43",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589352213
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameError",
+      "params": {
+        "requestId": "45716.43",
+        "timestamp": 61750.961027,
+        "errorMessage": "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED"
+      },
+      "at": 1794589352213
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketClosed",
+      "params": {
+        "requestId": "45716.43",
+        "timestamp": 61750.961087
+      },
+      "at": 1794589352213
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61753.885409,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589355139
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61753.887661,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589355140
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61754.360002,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589355613
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61754.361407,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589355614
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61754.602573,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589355855
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61754.603574,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589355856
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61754.6084,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589355861
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61754.609457,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589355862
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.44",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589356219
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameError",
+      "params": {
+        "requestId": "45716.44",
+        "timestamp": 61754.967238,
+        "errorMessage": "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED"
+      },
+      "at": 1794589356219
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketClosed",
+      "params": {
+        "requestId": "45716.44",
+        "timestamp": 61754.967295
+      },
+      "at": 1794589356219
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61755.220974,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589356474
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61755.221641,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589356474
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.45",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589364225
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameError",
+      "params": {
+        "requestId": "45716.45",
+        "timestamp": 61762.973559,
+        "errorMessage": "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED"
+      },
+      "at": 1794589364226
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketClosed",
+      "params": {
+        "requestId": "45716.45",
+        "timestamp": 61762.973641
+      },
+      "at": 1794589364226
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61768.883317,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589370136
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61768.884142,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589370136
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61769.360146,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589370613
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61769.361211,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589370614
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61769.602388,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589370855
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61769.603743,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589370856
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61769.608365,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589370861
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61769.609254,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589370861
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61769.942569,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"op\",\"op\":{\"layerId\":\"default\",\"id\":\"offline-e433947f-a658-45a5-8d34-e55e2252ec6d\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"written while client 0 offline\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}},\"clientOpId\":\"EW690gOmgXw0T3w7rs7Wo\",\"seq\":1}"
+        }
+      },
+      "at": 1794589371231
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61770.000858,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"ack\",\"opId\":\"EW690gOmgXw0T3w7rs7Wo\",\"status\":\"applied\",\"seq\":1,\"rev\":4}"
+        }
+      },
+      "at": 1794589371257
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61770.000148,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"op\",\"op\":{\"layerId\":\"default\",\"id\":\"offline-e433947f-a658-45a5-8d34-e55e2252ec6d\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"written while client 0 offline\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}}"
+        }
+      },
+      "at": 1794589371282
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61770.00023,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"op\",\"op\":{\"layerId\":\"default\",\"id\":\"offline-e433947f-a658-45a5-8d34-e55e2252ec6d\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"written while client 0 offline\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}}"
+        }
+      },
+      "at": 1794589371283
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61770.00054,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"op\",\"op\":{\"layerId\":\"default\",\"id\":\"offline-e433947f-a658-45a5-8d34-e55e2252ec6d\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"written while client 0 offline\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}}"
+        }
+      },
+      "at": 1794589371286
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61770.000277,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"op\",\"op\":{\"layerId\":\"default\",\"id\":\"offline-e433947f-a658-45a5-8d34-e55e2252ec6d\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"written while client 0 offline\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}}"
+        }
+      },
+      "at": 1794589371286
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61770.216158,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589371469
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61770.21719,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589371469
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.46",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589374228
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameError",
+      "params": {
+        "requestId": "45716.46",
+        "timestamp": 61772.976072,
+        "errorMessage": "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED"
+      },
+      "at": 1794589374228
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketClosed",
+      "params": {
+        "requestId": "45716.46",
+        "timestamp": 61772.976122
+      },
+      "at": 1794589374228
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "45716.47",
+        "url": "ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589384231
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "45716.47",
+        "timestamp": 61782.981504,
+        "wallTime": 1794589384.234132,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "y4PvkjK9Z+vTaYZlkk1lBw==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589384234
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61783.023571,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589384297
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61783.023744,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589384297
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61783.023877,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589384297
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61783.023925,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589384297
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61783.023681,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\"}}"
+        }
+      },
+      "at": 1794589384297
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "45716.47",
+        "timestamp": 61783.046982,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "ucCGHUigycQvosKveb4iC1Vo0vE=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: ucCGHUigycQvosKveb4iC1Vo0vE=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "y4PvkjK9Z+vTaYZlkk1lBw==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2-b661a864-aa66-4a65-8eca-194b176210b7?peerId=y-FkH1zo2aCxjRemu8kmJ&uid=pbOwOnBHP9aB9mdbuwyOI&name=Quirky+Hedgehog&color=%23f59e0b HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: y4PvkjK9Z+vTaYZlkk1lBw==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589384304
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.47",
+        "timestamp": 61783.048258,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"in_progress\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"resolved\":false,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}},{\"layerId\":\"default\",\"id\":\"offline-e433947f-a658-45a5-8d34-e55e2252ec6d\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"written while client 0 offline\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"y-FkH1zo2aCxjRemu8kmJ\",\"uid\":\"pbOwOnBHP9aB9mdbuwyOI\",\"name\":\"Quirky Hedgehog\",\"color\":\"#f59e0b\",\"joinedAt\":1794589384263},{\"id\":\"GF2ZgR0WWc4yNY-_mQukW\",\"uid\":\"yx-mUZsI3o3qUNVtk0WFw\",\"name\":\"Wacky Chinchilla\",\"color\":\"#6366f1\",\"joinedAt\":1794589326280},{\"id\":\"0aDe4E3DOSxSTDLZhBE5A\",\"uid\":\"5bv2wIyKlItxWSCE59U0i\",\"name\":\"Zippy Octopus\",\"color\":\"#f43f5e\",\"joinedAt\":1794589325832},{\"id\":\"s9Y-b7Yt9mxxFSKMIzrX1\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\",\"joinedAt\":1794589325797},{\"id\":\"Es2KTXZDgKjmrJmjeTubM\",\"uid\":\"yBVLMkbVSBYtwZGyAv9qP\",\"name\":\"Jolly Penguin\",\"color\":\"#84cc16\",\"joinedAt\":1794589325593},{\"id\":\"bn60izfynKKVAKv48-WiS\",\"uid\":\"IB1jLfdP8demYKmmFJgfe\",\"name\":\"Bouncy Manatee\",\"color\":\"#3b82f6\",\"joinedAt\":1794589325116}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589384325
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61783.887651,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589385140
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61783.888476,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589385141
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61784.360636,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589385613
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61784.361878,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589385614
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61784.602327,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589385856
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.38",
+        "timestamp": 61784.604376,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589385856
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61784.608585,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589385862
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61784.610394,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589385863
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61785.220353,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589386473
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61785.221651,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589386474
+    },
+    {
+      "client": 1,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "54748.38",
+        "timestamp": 61790.124619,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"s9Y-b7Yt9mxxFSKMIzrX1\"}"
+        }
+      },
+      "at": 1794589391397
+    },
+    {
+      "client": 4,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "35452.38",
+        "timestamp": 61790.124856,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"s9Y-b7Yt9mxxFSKMIzrX1\"}"
+        }
+      },
+      "at": 1794589391399
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.47",
+        "timestamp": 61790.124313,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"s9Y-b7Yt9mxxFSKMIzrX1\"}"
+        }
+      },
+      "at": 1794589391400
+    },
+    {
+      "client": 2,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55220.38",
+        "timestamp": 61790.125549,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"s9Y-b7Yt9mxxFSKMIzrX1\"}"
+        }
+      },
+      "at": 1794589391400
+    },
+    {
+      "client": 3,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "55476.38",
+        "timestamp": 61790.125492,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"peer_leave\",\"peerId\":\"s9Y-b7Yt9mxxFSKMIzrX1\"}"
+        }
+      },
+      "at": 1794589391400
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketCreated",
+      "params": {
+        "requestId": "51352.79",
+        "url": "ws://127.0.0.1:5199/ws/round2b-3b46ccfa-7419-40b2-bbb5-15ab5a20d0e2?peerId=7NbJBAWVe8Y8PPh6C06V_&uid=VHBm-itAVRI2pTGK4E63G&name=Dizzy+Tapir&color=%238b5cf6",
+        "initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "construct",
+                "scriptId": "3",
+                "url": "",
+                "lineNumber": 0,
+                "columnNumber": 111
+              },
+              {
+                "functionName": "T",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 66433
+              },
+              {
+                "functionName": "rf",
+                "scriptId": "4",
+                "url": "http://127.0.0.1:5199/assets/main-CU8SPndG.js",
+                "lineNumber": 8,
+                "columnNumber": 67037
+              },
+              {
+                "functionName": "",
+                "scriptId": "14",
+                "url": "http://127.0.0.1:5199/assets/Viewer-DSn27I-D.js",
+                "lineNumber": 1,
+                "columnNumber": 24115
+              },
+              {
+                "functionName": "K",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14419
+              },
+              {
+                "functionName": "Ae",
+                "scriptId": "5",
+                "url": "http://127.0.0.1:5199/assets/hooks.module-HRHWRKG5.js",
+                "lineNumber": 0,
+                "columnNumber": 14119
+              }
+            ]
+          }
+        }
+      },
+      "at": 1794589391703
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketWillSendHandshakeRequest",
+      "params": {
+        "requestId": "51352.79",
+        "timestamp": 61790.452545,
+        "wallTime": 1794589391.705173,
+        "request": {
+          "headers": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "gUh1CEOlEZFO4h4XcWA5UA==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          }
+        }
+      },
+      "at": 1794589391706
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketHandshakeResponseReceived",
+      "params": {
+        "requestId": "51352.79",
+        "timestamp": 61790.531211,
+        "response": {
+          "status": 101,
+          "statusText": "Switching Protocols",
+          "headers": {
+            "Upgrade": "websocket",
+            "Content-Encoding": "gzip",
+            "Sec-WebSocket-Accept": "/430RcJg8IXdp84s7nuRXkCMsJU=",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits=15"
+          },
+          "headersText": "HTTP/1.1 101 Switching Protocols\r\nConnection: Upgrade\r\nUpgrade: websocket\r\nSec-WebSocket-Accept: /430RcJg8IXdp84s7nuRXkCMsJU=\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits=15\r\nContent-Encoding: gzip\r\n\r\n",
+          "requestHeaders": {
+            "Upgrade": "websocket",
+            "Origin": "http://127.0.0.1:5199",
+            "Cache-Control": "no-cache",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Pragma": "no-cache",
+            "Connection": "Upgrade",
+            "Sec-WebSocket-Key": "gUh1CEOlEZFO4h4XcWA5UA==",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+            "Sec-WebSocket-Version": "13",
+            "Host": "127.0.0.1:5199",
+            "Sec-WebSocket-Extensions": "permessage-deflate; client_max_window_bits"
+          },
+          "requestHeadersText": "GET ws://127.0.0.1:5199/ws/round2b-3b46ccfa-7419-40b2-bbb5-15ab5a20d0e2?peerId=7NbJBAWVe8Y8PPh6C06V_&uid=VHBm-itAVRI2pTGK4E63G&name=Dizzy+Tapir&color=%238b5cf6 HTTP/1.1\r\nHost: 127.0.0.1:5199\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: http://127.0.0.1:5199\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: zh-CN,zh;q=0.9\r\nSec-WebSocket-Key: gUh1CEOlEZFO4h4XcWA5UA==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n"
+        }
+      },
+      "at": 1794589391784
+    },
+    {
+      "client": 5,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "51352.79",
+        "timestamp": 61790.5319,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"init\",\"ops\":[{\"layerId\":\"default\",\"id\":\"other-90a5a619-f11b-4983-a821-fc9daad8d034\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"open\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"room-B-only\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"peers\":[{\"id\":\"7NbJBAWVe8Y8PPh6C06V_\",\"uid\":\"VHBm-itAVRI2pTGK4E63G\",\"name\":\"Dizzy Tapir\",\"color\":\"#8b5cf6\",\"joinedAt\":1794589391761}],\"createdAt\":1794589322,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1440,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794589322}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+        }
+      },
+      "at": 1794589391800
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameSent",
+      "params": {
+        "requestId": "45716.47",
+        "timestamp": 61798.050612,
+        "response": {
+          "opcode": 1,
+          "mask": true,
+          "payloadData": "{\"type\":\"ping\"}"
+        }
+      },
+      "at": 1794589399303
+    },
+    {
+      "client": 0,
+      "method": "Network.webSocketFrameReceived",
+      "params": {
+        "requestId": "45716.47",
+        "timestamp": 61798.051366,
+        "response": {
+          "opcode": 1,
+          "mask": false,
+          "payloadData": "{\"type\":\"pong\"}"
+        }
+      },
+      "at": 1794589399303
+    }
+  ],
+  "checks": [
+    {
+      "stage": "initial",
+      "client": 0,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "initial",
+      "client": 1,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "initial",
+      "client": 2,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "initial",
+      "client": 3,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "initial",
+      "client": 4,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "initial",
+      "client": 5,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "buttons",
+      "value": "[{\"text\":\"诊断\",\"title\":\"\",\"aria\":null},{\"text\":\"\",\"title\":\"\",\"aria\":\"Add reaction\"},{\"text\":\"Open\",\"title\":\"\",\"aria\":null},{\"text\":\"Assign\",\"title\":\"\",\"aria\":null},{\"text\":\"Reply\",\"title\":\"\",\"aria\":null},{\"text\":\"\",\"title\":\"Close panel\",\"aria\":\"Close panel\"},{\"text\":\"round2-b661a864-aa66-4a65-8eca-194b176210b7\",\"title\":\"Click to copy\",\"aria\":\"Copy annotation ID\"},{\"text\":\"Connect an AI agent\",\"title\":\"\",\"aria\":null},{\"text\":\"Integrations\",\"title\":\"\",\"aria\":null},{\"text\":\"Support MarkLayer\",\"title\":\"\",\"aria\":null},{\"text\":\"\",\"title\":\"\",\"aria\":\"Move\"},{\"text\":\"\",\"title\":\"\",\"aria\":\"Comment\"},{\"text\":\"Threads\\n1\",\"title\":\"\",\"aria\":null},{\"text\":\"\",\"title\":\"\",\"aria\":\"Share\"}]"
+    },
+    {
+      "stage": "after-threads",
+      "value": "[{\"text\":\"诊断\",\"title\":\"\",\"aria\":null,\"rect\":[432.3626708984375,285.862060546875,21.0555419921875,13.686126708984375]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Add reaction\",\"rect\":[432.3626708984375,303.75927734375,12.633331298828125,12.633331298828125]},{\"text\":\"Open\",\"title\":\"\",\"aria\":null,\"rect\":[537.5993041992188,327.44677734375,41.0994873046875,14.7388916015625]},{\"text\":\"Assign\",\"title\":\"\",\"aria\":null,\"rect\":[530.79736328125,344.2912292480469,47.90142822265625,14.7388916015625]},{\"text\":\"Reply\",\"title\":\"\",\"aria\":null,\"rect\":[432.3626708984375,369.031494140625,30.38250732421875,16.844451904296875]},{\"text\":\"\",\"title\":\"Close panel\",\"aria\":\"Close panel\",\"rect\":[235,12,32,32]},{\"text\":\"round2-b661a864-aa66-4a65-8eca-194b176210b7\",\"title\":\"Click to copy\",\"aria\":\"Copy annotation ID\",\"rect\":[84,268,168,18]},{\"text\":\"Connect an AI agent\",\"title\":\"\",\"aria\":null,\"rect\":[-16,312.5,284,36]},{\"text\":\"Integrations\",\"title\":\"\",\"aria\":null,\"rect\":[-16,348.5,284,36]},{\"text\":\"Support MarkLayer\",\"title\":\"\",\"aria\":null,\"rect\":[-16,473.5,252,36]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Move\",\"rect\":[275.2109375,434,32,32]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Comment\",\"rect\":[311.2109375,434,32,32]},{\"text\":\"Threads\\n1\",\"title\":\"\",\"aria\":null,\"rect\":[360.2109375,434,86.578125,32]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Share\",\"rect\":[450.7890625,434,32,32]},{\"text\":\"\",\"title\":\"More actions\",\"aria\":\"More actions\",\"rect\":[676,249.89999389648438,32,32]},{\"text\":\"\",\"title\":\"Close panel\",\"aria\":\"Close panel\",\"rect\":[710,249.89999389648438,32,32]},{\"text\":\"Ask a question\",\"title\":\"\",\"aria\":null,\"rect\":[10,306.8999938964844,95.09375,24]},{\"text\":\"1\\nSpeedy Capybara\\n19m ago\\n\\nround2 shared card\",\"title\":\"\",\"aria\":null,\"rect\":[0,343.8999938964844,758,69.125]},{\"text\":\"Mark in progress\",\"title\":\"\",\"aria\":null,\"rect\":[641.46875,353.8999938964844,106.53125,24]}]"
+    },
+    {
+      "stage": "menu",
+      "value": "[{\"text\":\"诊断\",\"title\":\"\",\"aria\":null,\"rect\":[432.3626708984375,285.862060546875,21.0555419921875,13.686126708984375]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Add reaction\",\"rect\":[432.3626708984375,303.75927734375,12.633331298828125,12.633331298828125]},{\"text\":\"Open\",\"title\":\"\",\"aria\":null,\"rect\":[537.5993041992188,327.44677734375,41.0994873046875,14.7388916015625]},{\"text\":\"Assign\",\"title\":\"\",\"aria\":null,\"rect\":[530.79736328125,344.2912292480469,47.90142822265625,14.7388916015625]},{\"text\":\"Reply\",\"title\":\"\",\"aria\":null,\"rect\":[432.3626708984375,369.031494140625,30.38250732421875,16.844451904296875]},{\"text\":\"\",\"title\":\"Close panel\",\"aria\":\"Close panel\",\"rect\":[235,12,32,32]},{\"text\":\"round2-b661a864-aa66-4a65-8eca-194b176210b7\",\"title\":\"Click to copy\",\"aria\":\"Copy annotation ID\",\"rect\":[84,268,168,18]},{\"text\":\"Connect an AI agent\",\"title\":\"\",\"aria\":null,\"rect\":[-16,312.5,284,36]},{\"text\":\"Integrations\",\"title\":\"\",\"aria\":null,\"rect\":[-16,348.5,284,36]},{\"text\":\"Support MarkLayer\",\"title\":\"\",\"aria\":null,\"rect\":[-16,473.5,252,36]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Move\",\"rect\":[275.2109375,434,32,32]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Comment\",\"rect\":[311.2109375,434,32,32]},{\"text\":\"Threads\\n1\",\"title\":\"\",\"aria\":null,\"rect\":[360.2109375,434,86.578125,32]},{\"text\":\"\",\"title\":\"\",\"aria\":\"Share\",\"rect\":[450.7890625,434,32,32]},{\"text\":\"\",\"title\":\"More actions\",\"aria\":\"More actions\",\"rect\":[676,249.89999389648438,32,32]},{\"text\":\"\",\"title\":\"Close panel\",\"aria\":\"Close panel\",\"rect\":[710,249.89999389648438,32,32]},{\"text\":\"Ask a question\",\"title\":\"\",\"aria\":null,\"rect\":[10,306.8999938964844,95.09375,24]},{\"text\":\"1\\nSpeedy Capybara\\n19m ago\\n\\nround2 shared card\",\"title\":\"\",\"aria\":null,\"rect\":[0,343.8999938964844,758,69.125]},{\"text\":\"Mark in progress\",\"title\":\"\",\"aria\":null,\"rect\":[641.46875,353.8999938964844,106.53125,24]},{\"text\":\"Copy open annotations for AI\",\"title\":\"\",\"aria\":null,\"rect\":[488,292,216,32]},{\"text\":\"Copy as Markdown\",\"title\":\"\",\"aria\":null,\"rect\":[488,325,216,32]},{\"text\":\"Download Markdown\",\"title\":\"\",\"aria\":null,\"rect\":[488,358,216,32]},{\"text\":\"Pin an intro video\",\"title\":\"\",\"aria\":null,\"rect\":[488,401,216,32]},{\"text\":\"Open board\\n⌘B\",\"title\":\"\",\"aria\":null,\"rect\":[488,434,216,32]}]"
+    },
+    {
+      "stage": "board",
+      "value": "[{\"tag\":\"SECTION\",\"text\":\"Open\\n1\\nSC\\nSpeedy Capybara\\n19m ago\\n\\nround2 shared card\\n\\nComment 1\",\"card\":null,\"rect\":[20,72,256,379]},{\"tag\":\"ARTICLE\",\"text\":\"SC\\nSpeedy Capybara\\n19m ago\\n\\nround2 shared card\\n\\nComment 1\",\"card\":null,\"rect\":[28,110,240,98.140625]},{\"tag\":\"BUTTON\",\"text\":\"\",\"card\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"rect\":[28,110,240,98.140625]},{\"tag\":\"SECTION\",\"text\":\"In progress\\n0\",\"card\":null,\"rect\":[288,72,256,379]},{\"tag\":\"SECTION\",\"text\":\"Resolved\\n0\",\"card\":null,\"rect\":[556,72,256,379]},{\"tag\":\"SECTION\",\"text\":\"Approved\\n0\",\"card\":null,\"rect\":[824,72,256,379]},{\"tag\":\"SECTION\",\"text\":\"Dismissed\\n0\",\"card\":null,\"rect\":[1092,72,256,379]}]"
+    },
+    {
+      "stage": "after-drag",
+      "client": 0,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-drag",
+      "client": 1,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-drag",
+      "client": 2,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-drag",
+      "client": 3,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-drag",
+      "client": 4,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-drag",
+      "client": 5,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "invalid-optimistic",
+      "client": 0,
+      "value": "{\"applied\":true,\"before\":[{\"layerId\":\"default\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"in_progress\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"resolved\":false,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}],\"optimistic\":[{\"layerId\":\"does-not-exist\",\"id\":\"seed-b33436ae-ae60-4f00-abc1-be97de33fcb1\",\"color\":\"#f43f5e\",\"lineWidth\":2,\"author\":\"Speedy Capybara\",\"authorId\":\"ftwrsaP8L5VYp2Tur303H\",\"device\":\"desktop\",\"captureViewport\":{\"width\":1440,\"height\":916},\"status\":\"in_progress\",\"attachments\":[],\"tool\":\"comment\",\"num\":1,\"text\":\"round2 shared card\",\"x\":788.3905013192611,\"y\":474.93403693931396,\"ts\":1794588205985,\"resolved\":false,\"meta\":{\"url\":\"https://example.com\",\"viewport\":{\"width\":758,\"height\":482},\"browser\":\"Chrome\",\"os\":\"Windows\"},\"visualContext\":{\"region\":{\"x\":388.39050131926115,\"y\":224.93403693931396,\"width\":800,\"height\":500},\"layerId\":\"default\",\"annotations\":[],\"truncated\":false}}]}"
+    },
+    {
+      "stage": "invalid-after",
+      "client": 0,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ],
+      "text": "1\n1\nSpeedy Capybara\n19m ago\n\nround2 shared card\n\n诊断\nStatus\nIn progress\nAssignee\nAssign\nReply\nWacky Chinchilla\nDetails\nPage\nexample.com\nCreated\n4秒钟前\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n6 here now\nContains\n1 comment\nID\nround2-b661a864-aa66-4a65-8eca-194b176210b7\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nThreads\n1\nBoard\nexample.com\nFilter\nNewest\nOpen\n0\nIn progress\n1\nSC\nSpeedy Capybara\n19m ago\n\nround2 shared card\n\nComment 1\nResolved\n0\nApproved\n0\nDismissed\n0\n改动未同步：目标图层不存在或不可用\n操作未完成"
+    },
+    {
+      "stage": "offline-start",
+      "at": 1794589349185
+    },
+    {
+      "stage": "offline-close",
+      "value": 1
+    },
+    {
+      "stage": "offline-peer-write-attempt",
+      "at": 1794589371191,
+      "applied": true,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "offline-client-before-recovery",
+      "at": 1794589371237,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "offline-end",
+      "at": 1794589379264
+    },
+    {
+      "stage": "final-room-a",
+      "client": 0,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final-room-a",
+      "client": 1,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final-room-a",
+      "client": 2,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final-room-a",
+      "client": 3,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final-room-a",
+      "client": 4,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final-room-a",
+      "client": 5,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "server-a",
+      "body": {
+        "ops": [
+          {
+            "layerId": "default",
+            "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+            "color": "#f43f5e",
+            "lineWidth": 2,
+            "author": "Speedy Capybara",
+            "authorId": "ftwrsaP8L5VYp2Tur303H",
+            "device": "desktop",
+            "captureViewport": {
+              "width": 1440,
+              "height": 916
+            },
+            "status": "in_progress",
+            "attachments": [],
+            "tool": "comment",
+            "num": 1,
+            "text": "round2 shared card",
+            "x": 788.3905013192611,
+            "y": 474.93403693931396,
+            "ts": 1794588205985,
+            "resolved": false,
+            "meta": {
+              "url": "https://example.com",
+              "viewport": {
+                "width": 758,
+                "height": 482
+              },
+              "browser": "Chrome",
+              "os": "Windows"
+            },
+            "visualContext": {
+              "region": {
+                "x": 388.39050131926115,
+                "y": 224.93403693931396,
+                "width": 800,
+                "height": 500
+              },
+              "layerId": "default",
+              "annotations": [],
+              "truncated": false
+            }
+          },
+          {
+            "layerId": "default",
+            "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+            "color": "#f43f5e",
+            "lineWidth": 2,
+            "author": "Speedy Capybara",
+            "authorId": "ftwrsaP8L5VYp2Tur303H",
+            "device": "desktop",
+            "captureViewport": {
+              "width": 1440,
+              "height": 916
+            },
+            "status": "open",
+            "attachments": [],
+            "tool": "comment",
+            "num": 1,
+            "text": "written while client 0 offline",
+            "x": 788.3905013192611,
+            "y": 474.93403693931396,
+            "ts": 1794588205985,
+            "meta": {
+              "url": "https://example.com",
+              "viewport": {
+                "width": 758,
+                "height": 482
+              },
+              "browser": "Chrome",
+              "os": "Windows"
+            },
+            "visualContext": {
+              "region": {
+                "x": 388.39050131926115,
+                "y": 224.93403693931396,
+                "width": 800,
+                "height": 500
+              },
+              "layerId": "default",
+              "annotations": [],
+              "truncated": false
+            }
+          }
+        ],
+        "url": "https://example.com",
+        "width": 1440,
+        "exec_mode": "pair"
+      }
+    },
+    {
+      "stage": "client-room-b",
+      "client": 5,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "other-90a5a619-f11b-4983-a821-fc9daad8d034",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "room-B-only",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    },
+    {
+      "stage": "server-b",
+      "body": {
+        "ops": [
+          {
+            "layerId": "default",
+            "id": "other-90a5a619-f11b-4983-a821-fc9daad8d034",
+            "color": "#f43f5e",
+            "lineWidth": 2,
+            "author": "Speedy Capybara",
+            "authorId": "ftwrsaP8L5VYp2Tur303H",
+            "device": "desktop",
+            "captureViewport": {
+              "width": 1440,
+              "height": 916
+            },
+            "status": "open",
+            "attachments": [],
+            "tool": "comment",
+            "num": 1,
+            "text": "room-B-only",
+            "x": 788.3905013192611,
+            "y": 474.93403693931396,
+            "ts": 1794588205985,
+            "meta": {
+              "url": "https://example.com",
+              "viewport": {
+                "width": 758,
+                "height": 482
+              },
+              "browser": "Chrome",
+              "os": "Windows"
+            },
+            "visualContext": {
+              "region": {
+                "x": 388.39050131926115,
+                "y": 224.93403693931396,
+                "width": 800,
+                "height": 500
+              },
+              "layerId": "default",
+              "annotations": [],
+              "truncated": false
+            }
+          }
+        ],
+        "url": "https://example.com",
+        "width": 1440,
+        "exec_mode": "pair"
+      }
+    },
+    {
+      "stage": "client-room-a-again",
+      "client": 1,
+      "ops": [
+        {
+          "layerId": "default",
+          "id": "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "in_progress",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "round2 shared card",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "resolved": false,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        },
+        {
+          "layerId": "default",
+          "id": "offline-e433947f-a658-45a5-8d34-e55e2252ec6d",
+          "color": "#f43f5e",
+          "lineWidth": 2,
+          "author": "Speedy Capybara",
+          "authorId": "ftwrsaP8L5VYp2Tur303H",
+          "device": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 916
+          },
+          "status": "open",
+          "attachments": [],
+          "tool": "comment",
+          "num": 1,
+          "text": "written while client 0 offline",
+          "x": 788.3905013192611,
+          "y": 474.93403693931396,
+          "ts": 1794588205985,
+          "meta": {
+            "url": "https://example.com",
+            "viewport": {
+              "width": 758,
+              "height": 482
+            },
+            "browser": "Chrome",
+            "os": "Windows"
+          },
+          "visualContext": {
+            "region": {
+              "x": 388.39050131926115,
+              "y": 224.93403693931396,
+              "width": 800,
+              "height": 500
+            },
+            "layerId": "default",
+            "annotations": [],
+            "truncated": false
+          }
+        }
+      ]
+    }
+  ]
+}

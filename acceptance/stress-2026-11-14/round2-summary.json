@@ -1,0 +1,98 @@
+{
+  "error": null,
+  "comparisons": [
+    {
+      "client": 0,
+      "count": 2,
+      "missing": [],
+      "extra": [],
+      "identical": true
+    },
+    {
+      "client": 1,
+      "count": 2,
+      "missing": [],
+      "extra": [],
+      "identical": true
+    },
+    {
+      "client": 2,
+      "count": 2,
+      "missing": [],
+      "extra": [],
+      "identical": true
+    },
+    {
+      "client": 3,
+      "count": 2,
+      "missing": [],
+      "extra": [],
+      "identical": true
+    },
+    {
+      "client": 4,
+      "count": 2,
+      "missing": [],
+      "extra": [],
+      "identical": true
+    },
+    {
+      "client": 5,
+      "count": 2,
+      "missing": [],
+      "extra": [],
+      "identical": true
+    }
+  ],
+  "roomBMatchesServer": true,
+  "roomAIds": ["seed-b33436ae-ae60-4f00-abc1-be97de33fcb1", "offline-e433947f-a658-45a5-8d34-e55e2252ec6d"],
+  "roomBIds": ["other-90a5a619-f11b-4983-a821-fc9daad8d034"],
+  "offlineMs": 30079,
+  "offlineClientCount": 1,
+  "reconnectErrors": [
+    "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED",
+    "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED",
+    "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED",
+    "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED",
+    "Error in connection establishment: net::ERR_INTERNET_DISCONNECTED"
+  ],
+  "receipts": [
+    {
+      "client": 1,
+      "type": "ack",
+      "opId": "vdpiwhDMszWUdnqYkLOqY",
+      "status": "applied",
+      "seq": 1,
+      "rev": 2,
+      "latencyMs": 57
+    },
+    {
+      "client": 0,
+      "type": "ack",
+      "opId": "hz2-Y5KCUMOQ2tKKDNHbw",
+      "status": "applied",
+      "seq": 1,
+      "rev": 3,
+      "latencyMs": 54
+    },
+    {
+      "client": 0,
+      "type": "nack",
+      "opId": "-bBrwIfv6HyImOl-6vanK",
+      "status": "refused",
+      "seq": 2,
+      "code": "layer_unavailable",
+      "reason": "目标图层不存在或不可用",
+      "latencyMs": 27
+    },
+    {
+      "client": 2,
+      "type": "ack",
+      "opId": "EW690gOmgXw0T3w7rs7Wo",
+      "status": "applied",
+      "seq": 1,
+      "rev": 4,
+      "latencyMs": 26
+    }
+  ]
+}

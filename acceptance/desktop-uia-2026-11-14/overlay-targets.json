@@ -1,0 +1,44 @@
+﻿[
+  {
+    "screen": {
+      "scale": 1.5,
+      "width": 1706.6666666666667,
+      "height": 1066.6666666666667
+    },
+    "name": "打开设置",
+    "windowTitle": "无标题 - 画图",
+    "kind": "windows-uia",
+    "ancestry": [
+      {
+        "automationId": "",
+        "name": "无标题 - 画图",
+        "controlType": "ControlType.Window"
+      },
+      {
+        "automationId": "",
+        "name": "",
+        "controlType": "ControlType.Pane"
+      },
+      {
+        "automationId": "",
+        "name": "",
+        "controlType": "ControlType.Pane"
+      },
+      {
+        "automationId": "",
+        "name": "",
+        "controlType": "ControlType.Custom"
+      }
+    ],
+    "captured": {
+      "left": 1091,
+      "width": 48,
+      "dpr": 1.5,
+      "top": 151,
+      "height": 48
+    },
+    "controlType": "ControlType.Button",
+    "app": "mspaint",
+    "automationId": "SettingsButton"
+  }
+]

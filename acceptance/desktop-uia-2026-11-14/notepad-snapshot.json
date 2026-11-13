@@ -1,0 +1,1822 @@
+﻿{
+  "value": [
+    {
+      "name": "uia-notepad-5ac2eef7.txt - Notepad",
+      "enabled": true,
+      "ancestry": {},
+      "rect": {
+        "left": 300,
+        "width": 1000,
+        "top": 200,
+        "height": 700
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Window",
+      "runtimeId": "42.2823134",
+      "automationId": "",
+      "parentRuntimeId": "42.65548"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 200,
+        "height": 691
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.660400",
+      "automationId": "",
+      "parentRuntimeId": "42.2823134"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 200,
+        "height": 691
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.917798",
+      "automationId": "",
+      "parentRuntimeId": "42.660400"
+    },
+    {
+      "name": "弹出窗口",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 200,
+        "height": 691
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Window",
+      "runtimeId": "42.917798.4.1",
+      "automationId": "",
+      "parentRuntimeId": "42.917798"
+    },
+    {
+      "name": "记事本",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 200,
+        "height": 691
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Window",
+      "runtimeId": "42.917798.4.7",
+      "automationId": "",
+      "parentRuntimeId": "42.917798"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "记事本",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 410,
+        "width": 780,
+        "top": 391,
+        "height": 188
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.917798.4.4",
+      "automationId": "ContentScrollViewer",
+      "parentRuntimeId": "42.917798.4.7"
+    },
+    {
+      "name": "记事本",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "记事本",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "ContentScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 446,
+        "width": 91,
+        "top": 427,
+        "height": 40
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.917798.4.2",
+      "automationId": "",
+      "parentRuntimeId": "42.917798.4.4"
+    },
+    {
+      "name": "找不到 C:\\Users\\xxc\\AppData\\Local\\Temp\\desktop-uia-7180b815-aff0-49c5-a4f0-e5d82f0864b8.txt 文件。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "记事本",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "ContentScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 446,
+        "width": 708,
+        "top": 485,
+        "height": 56
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.917798.4.3",
+      "automationId": "",
+      "parentRuntimeId": "42.917798.4.4"
+    },
+    {
+      "name": "确定",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "记事本",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 806,
+        "width": 348,
+        "top": 615,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.917798.4.6",
+      "automationId": "CloseButton",
+      "parentRuntimeId": "42.917798.4.7"
+    },
+    {
+      "name": "确定",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "记事本",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "CloseButton",
+          "name": "确定",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 958,
+        "width": 42,
+        "top": 624,
+        "height": 28
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.917798.4.5",
+      "automationId": "ContentBlock",
+      "parentRuntimeId": "42.917798.4.6"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 312,
+        "height": 531
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.4526984",
+      "automationId": "",
+      "parentRuntimeId": "42.2823134"
+    },
+    {
+      "name": "文本编辑器",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 312,
+        "height": 531
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Document",
+      "runtimeId": "42.5050608",
+      "automationId": "",
+      "parentRuntimeId": "42.4526984"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 369,
+        "width": 657,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.2887750",
+      "automationId": "",
+      "parentRuntimeId": "42.2823134"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 369,
+        "width": 657,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.3349552",
+      "automationId": "",
+      "parentRuntimeId": "42.2887750"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 369,
+        "width": 657,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Tab",
+      "runtimeId": "42.3349552.4.23",
+      "automationId": "Tabs",
+      "parentRuntimeId": "42.3349552"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        }
+      ],
+      "rect": {
+        "left": 372,
+        "width": 595,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.List",
+      "runtimeId": "42.3349552.4.20",
+      "automationId": "TabListView",
+      "parentRuntimeId": "42.3349552.4.23"
+    },
+    {
+      "name": "无标题. 未修改。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": true,
+      "controlType": "ControlType.TabItem",
+      "runtimeId": "42.3349552.4.9",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.20"
+    },
+    {
+      "name": "无标题",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        },
+        {
+          "automationId": "",
+          "name": "无标题. 未修改。",
+          "controlType": "ControlType.TabItem"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.3349552.4.8",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.9"
+    },
+    {
+      "name": "desktop-uia-23dec96a-67fe-4e2c-8121-66502b6d3e33.txt. 未修改。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        }
+      ],
+      "rect": {
+        "left": 436,
+        "width": 103,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.TabItem",
+      "runtimeId": "42.3349552.4.11",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.20"
+    },
+    {
+      "name": "desktop-uia-23dec96a-67fe-4e2c-8121-66502b6d3e33.txt",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        },
+        {
+          "automationId": "",
+          "name": "desktop-uia-23dec96a-67fe-4e2c-8121-66502b6d3e33.txt. 未修改。",
+          "controlType": "ControlType.TabItem"
+        }
+      ],
+      "rect": {
+        "left": 436,
+        "width": 96,
+        "top": 226,
+        "height": 23
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.3349552.4.10",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.11"
+    },
+    {
+      "name": "desktop-uia-check-5fb79a0f-276a-4515-bc57-54fdec86feed.txt. 未修改。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        }
+      ],
+      "rect": {
+        "left": 540,
+        "width": 120,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.TabItem",
+      "runtimeId": "42.3349552.4.13",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.20"
+    },
+    {
+      "name": "desktop-uia-check-5fb79a0f-276a-4515-bc57-54fdec86feed.txt",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        },
+        {
+          "automationId": "",
+          "name": "desktop-uia-check-5fb79a0f-276a-4515-bc57-54fdec86feed.txt. 未修改。",
+          "controlType": "ControlType.TabItem"
+        }
+      ],
+      "rect": {
+        "left": 553,
+        "width": 99,
+        "top": 226,
+        "height": 23
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.3349552.4.12",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.13"
+    },
+    {
+      "name": "desktop-uia-7180b815-aff0-49c5-a4f0-e5d82f0864b8.txt. 未修改。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        }
+      ],
+      "rect": {
+        "left": 660,
+        "width": 120,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.TabItem",
+      "runtimeId": "42.3349552.4.15",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.20"
+    },
+    {
+      "name": "desktop-uia-7180b815-aff0-49c5-a4f0-e5d82f0864b8.txt",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        },
+        {
+          "automationId": "",
+          "name": "desktop-uia-7180b815-aff0-49c5-a4f0-e5d82f0864b8.txt. 未修改。",
+          "controlType": "ControlType.TabItem"
+        }
+      ],
+      "rect": {
+        "left": 673,
+        "width": 99,
+        "top": 226,
+        "height": 23
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.3349552.4.14",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.15"
+    },
+    {
+      "name": "uia-notepad-5ac2eef7.txt. 未修改。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        }
+      ],
+      "rect": {
+        "left": 774,
+        "width": 129,
+        "top": 214,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.TabItem",
+      "runtimeId": "42.3349552.4.19",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.20"
+    },
+    {
+      "name": "uia-notepad-5ac2eef7.txt",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        },
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt. 未修改。",
+          "controlType": "ControlType.TabItem"
+        }
+      ],
+      "rect": {
+        "left": 793,
+        "width": 45,
+        "top": 226,
+        "height": 23
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.3349552.4.16",
+      "automationId": "",
+      "parentRuntimeId": "42.3349552.4.19"
+    },
+    {
+      "name": "关闭标签页",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        },
+        {
+          "automationId": "TabListView",
+          "name": "",
+          "controlType": "ControlType.List"
+        },
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt. 未修改。",
+          "controlType": "ControlType.TabItem"
+        }
+      ],
+      "rect": {
+        "left": 844,
+        "width": 48,
+        "top": 220,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.3349552.4.18",
+      "automationId": "CloseButton",
+      "parentRuntimeId": "42.3349552.4.19"
+    },
+    {
+      "name": "添加新标签页",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "Tabs",
+          "name": "",
+          "controlType": "ControlType.Tab"
+        }
+      ],
+      "rect": {
+        "left": 972,
+        "width": 48,
+        "top": 223,
+        "height": 36
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.3349552.4.22",
+      "automationId": "AddButton",
+      "parentRuntimeId": "42.3349552.4.23"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 262,
+        "height": 50
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.529808",
+      "automationId": "",
+      "parentRuntimeId": "42.2823134"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 262,
+        "height": 50
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.22744882",
+      "automationId": "",
+      "parentRuntimeId": "42.529808"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 252,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.MenuBar",
+      "runtimeId": "42.22744882.4.33",
+      "automationId": "MenuBar",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "文件",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "MenuBar",
+          "name": "",
+          "controlType": "ControlType.MenuBar"
+        }
+      ],
+      "rect": {
+        "left": 315,
+        "width": 72,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.MenuItem",
+      "runtimeId": "42.22744882.4.26",
+      "automationId": "File",
+      "parentRuntimeId": "42.22744882.4.33"
+    },
+    {
+      "name": "编辑",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "MenuBar",
+          "name": "",
+          "controlType": "ControlType.MenuBar"
+        }
+      ],
+      "rect": {
+        "left": 399,
+        "width": 72,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.MenuItem",
+      "runtimeId": "42.22744882.4.29",
+      "automationId": "Edit",
+      "parentRuntimeId": "42.22744882.4.33"
+    },
+    {
+      "name": "查看",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "MenuBar",
+          "name": "",
+          "controlType": "ControlType.MenuBar"
+        }
+      ],
+      "rect": {
+        "left": 483,
+        "width": 72,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.MenuItem",
+      "runtimeId": "42.22744882.4.32",
+      "automationId": "View",
+      "parentRuntimeId": "42.22744882.4.33"
+    },
+    {
+      "name": "标题",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 665,
+        "width": 84,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.35",
+      "automationId": "",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "列表",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 749,
+        "width": 84,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.37",
+      "automationId": "",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "加粗(Ctrl+B)",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 833,
+        "width": 48,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.39",
+      "automationId": "",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "斜体(Ctrl+I)",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 881,
+        "width": 48,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.41",
+      "automationId": "",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "删除线(Ctrl+Shift+X)",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 929,
+        "width": 48,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.43",
+      "automationId": "",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "链接(Ctrl+K)",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 977,
+        "width": 48,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.45",
+      "automationId": "",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "更多选项",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 1025,
+        "width": 48,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.47",
+      "automationId": "OverflowButton",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "最近更新",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 1183,
+        "width": 45,
+        "top": 264,
+        "height": 45
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.49",
+      "automationId": "FREButton",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "设置",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 1234,
+        "width": 45,
+        "top": 262,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.22744882.4.50",
+      "automationId": "SettingsButton",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Window",
+      "runtimeId": "42.22744882.4.51",
+      "automationId": "PrivacyTeachingTip",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.22744882.4.52",
+      "automationId": "PsDownloadDetailTeachingTip",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "本地 AI 模型必须完成下载才可在注销后使用此功能。",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.22744882.4.53",
+      "automationId": "PsDownloadLightTeachingTip",
+      "parentRuntimeId": "42.22744882"
+    },
+    {
+      "name": "",
+      "enabled": false,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 843,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.2754776",
+      "automationId": "",
+      "parentRuntimeId": "42.2823134"
+    },
+    {
+      "name": "",
+      "enabled": false,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 309,
+        "width": 982,
+        "top": 843,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.8855190",
+      "automationId": "",
+      "parentRuntimeId": "42.2754776"
+    },
+    {
+      "name": "行 1，\n列 1",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 333,
+        "width": 94,
+        "top": 855,
+        "height": 24
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.8855190.4.54",
+      "automationId": "ContentTextBlock",
+      "parentRuntimeId": "42.8855190"
+    },
+    {
+      "name": "39 个字符",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 467,
+        "width": 79,
+        "top": 855,
+        "height": 24
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.8855190.4.55",
+      "automationId": "ContentTextBlock",
+      "parentRuntimeId": "42.8855190"
+    },
+    {
+      "name": "纯文本",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 639,
+        "width": 72,
+        "top": 843,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.8855190.4.56",
+      "automationId": "ContentTextBlock",
+      "parentRuntimeId": "42.8855190"
+    },
+    {
+      "name": "缩放",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 830,
+        "width": 49,
+        "top": 855,
+        "height": 24
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.8855190.4.57",
+      "automationId": "ContentTextBlock",
+      "parentRuntimeId": "42.8855190"
+    },
+    {
+      "name": " Windows (CRLF)",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 932,
+        "width": 134,
+        "top": 855,
+        "height": 24
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.8855190.4.58",
+      "automationId": "ContentTextBlock",
+      "parentRuntimeId": "42.8855190"
+    },
+    {
+      "name": " UTF-8",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "uia-notepad-5ac2eef7.txt - Notepad",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 1113,
+        "width": 53,
+        "top": 855,
+        "height": 24
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.8855190.4.59",
+      "automationId": "ContentTextBlock",
+      "parentRuntimeId": "42.8855190"
+    }
+  ],
+  "Count": 54
+}

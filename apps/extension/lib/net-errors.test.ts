@@ -91,7 +91,10 @@ describe('network failure relay', () => {
         ],
       });
       expect(JSON.stringify(posted[0])).not.toContain('secret');
-      expect(JSON.stringify(posted[0])).not.toContain('42');
+      // 只对 URL 断言:整个 payload 里还有毫秒时间戳 t,它的数字随机,会偶发包含 '42'。
+      const urls = (posted[0] as { errors: { url: string }[] }).errors.map((entry) => entry.url).join(' ');
+      expect(urls).not.toContain('42');
+      expect(JSON.stringify(posted[0])).not.toContain('user_id');
     } finally {
       Object.defineProperty(window, 'fetch', { configurable: true, value: oldFetch });
       Object.defineProperty(window, 'postMessage', { configurable: true, value: oldPost });

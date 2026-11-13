@@ -1,0 +1,40 @@
+﻿{
+  "moved": {
+    "ok": true,
+    "hwnd": 7082896,
+    "rect": {
+      "left": 1291,
+      "width": 48,
+      "top": 251,
+      "height": 48
+    }
+  },
+  "snapshotRect": {
+    "left": 1091,
+    "width": 48,
+    "top": 151,
+    "height": 48
+  },
+  "pid": 63584,
+  "resized": {
+    "ok": true,
+    "hwnd": 7082896,
+    "rect": {
+      "left": 1435,
+      "width": 48,
+      "top": 251,
+      "height": 48
+    }
+  },
+  "initial": {
+    "ok": true,
+    "hwnd": 7082896,
+    "rect": {
+      "left": 1091,
+      "width": 48,
+      "top": 151,
+      "height": 48
+    }
+  },
+  "hwnd": 7082896
+}

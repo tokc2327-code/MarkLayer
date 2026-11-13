@@ -1,0 +1,2671 @@
+﻿{
+  "value": [
+    {
+      "name": "无标题 - 画图",
+      "enabled": true,
+      "ancestry": {},
+      "rect": {
+        "left": 100,
+        "width": 1056,
+        "top": 100,
+        "height": 750
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Window",
+      "runtimeId": "42.7082896",
+      "automationId": "",
+      "parentRuntimeId": "42.65548"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 1034,
+        "top": 145,
+        "height": 694
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.852262",
+      "automationId": "",
+      "parentRuntimeId": "42.7082896"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 1034,
+        "top": 145,
+        "height": 694
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.594864",
+      "automationId": "",
+      "parentRuntimeId": "42.852262"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 1034,
+        "top": 145,
+        "height": 694
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Custom",
+      "runtimeId": "42.594864.4.106",
+      "automationId": "",
+      "parentRuntimeId": "42.594864"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 252,
+        "top": 145,
+        "height": 60
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.MenuBar",
+      "runtimeId": "42.594864.4.10",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "文件",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.MenuBar"
+        }
+      ],
+      "rect": {
+        "left": 117,
+        "width": 72,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.MenuItem",
+      "runtimeId": "42.594864.4.3",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.10"
+    },
+    {
+      "name": "编辑",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.MenuBar"
+        }
+      ],
+      "rect": {
+        "left": 201,
+        "width": 72,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.MenuItem",
+      "runtimeId": "42.594864.4.6",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.10"
+    },
+    {
+      "name": "查看",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.MenuBar"
+        }
+      ],
+      "rect": {
+        "left": 285,
+        "width": 72,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.MenuItem",
+      "runtimeId": "42.594864.4.9",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.10"
+    },
+    {
+      "name": "保存",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 377,
+        "width": 48,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.12",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "共享",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 445,
+        "width": 48,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.14",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "撤消",
+      "enabled": false,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 513,
+        "width": 48,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.16",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "重做",
+      "enabled": false,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 573,
+        "width": 48,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.18",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "最近更新",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 1037,
+        "width": 48,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.20",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "打开设置",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 1091,
+        "width": 48,
+        "top": 151,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.22",
+      "automationId": "SettingsButton",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 1034,
+        "top": 207,
+        "height": 164
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.67",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 994,
+        "top": 207,
+        "height": 162
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.594864.4.64",
+      "automationId": "ScrollViewer",
+      "parentRuntimeId": "42.594864.4.67"
+    },
+    {
+      "name": "选择",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 98,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.28",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "选择",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "选择",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 129,
+        "width": 60,
+        "top": 232,
+        "height": 83
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.RadioButton",
+      "runtimeId": "42.594864.4.26",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.28"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "选择",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "",
+          "name": "选择",
+          "controlType": "ControlType.RadioButton"
+        },
+        {
+          "automationId": "PrimaryButton",
+          "name": "",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 141,
+        "width": 36,
+        "top": 242,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.23",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.24"
+    },
+    {
+      "name": "图像",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 209,
+        "width": 90,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.33",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "图像",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "图像",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 227,
+        "width": 52,
+        "top": 238,
+        "height": 70
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.31",
+      "automationId": "CollapsedButton",
+      "parentRuntimeId": "42.594864.4.33"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "图像",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "CollapsedButton",
+          "name": "图像",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 235,
+        "width": 35,
+        "top": 245,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.29",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.31"
+    },
+    {
+      "name": "工具",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 299,
+        "width": 90,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.38",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "工具",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "工具",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 317,
+        "width": 51,
+        "top": 238,
+        "height": 70
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.36",
+      "automationId": "CollapsedButton",
+      "parentRuntimeId": "42.594864.4.38"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "工具",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "CollapsedButton",
+          "name": "工具",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 325,
+        "width": 36,
+        "top": 245,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.34",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.36"
+    },
+    {
+      "name": "画笔",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 389,
+        "width": 98,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.44",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "画笔",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "画笔",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 407,
+        "width": 60,
+        "top": 232,
+        "height": 83
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.RadioButton",
+      "runtimeId": "42.594864.4.42",
+      "automationId": "BrushesSplitButton",
+      "parentRuntimeId": "42.594864.4.44"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "画笔",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "BrushesSplitButton",
+          "name": "画笔",
+          "controlType": "ControlType.RadioButton"
+        },
+        {
+          "automationId": "PrimaryButton",
+          "name": "",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 419,
+        "width": 36,
+        "top": 242,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.39",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.40"
+    },
+    {
+      "name": "形状",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 487,
+        "width": 90,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.49",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "形状",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "形状",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 505,
+        "width": 51,
+        "top": 238,
+        "height": 70
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.47",
+      "automationId": "CollapsedButton",
+      "parentRuntimeId": "42.594864.4.49"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "形状",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "CollapsedButton",
+          "name": "形状",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 513,
+        "width": 36,
+        "top": 245,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.45",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.47"
+    },
+    {
+      "name": "颜色",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 595,
+        "width": 52,
+        "top": 238,
+        "height": 119
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.54",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "颜色",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "颜色",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 595,
+        "width": 52,
+        "top": 238,
+        "height": 70
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.52",
+      "automationId": "CollapsedButton",
+      "parentRuntimeId": "42.594864.4.54"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "颜色",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "CollapsedButton",
+          "name": "颜色",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 603,
+        "width": 36,
+        "top": 245,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.50",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.52"
+    },
+    {
+      "name": "Copilot",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 665,
+        "width": 96,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.59",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "Copilot",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "Copilot",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 688,
+        "width": 52,
+        "top": 238,
+        "height": 70
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.57",
+      "automationId": "CopilotDropDownButton",
+      "parentRuntimeId": "42.594864.4.59"
+    },
+    {
+      "name": "层",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 761,
+        "width": 98,
+        "top": 213,
+        "height": 150
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.63",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.64"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "层",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 781,
+        "width": 60,
+        "top": 242,
+        "height": 60
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.61",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.63"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "ScrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "层",
+          "controlType": "ControlType.Group"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Button"
+        }
+      ],
+      "rect": {
+        "left": 793,
+        "width": 36,
+        "top": 254,
+        "height": 36
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Image",
+      "runtimeId": "42.594864.4.60",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.61"
+    },
+    {
+      "name": "工具栏选项",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Group"
+        }
+      ],
+      "rect": {
+        "left": 1105,
+        "width": 34,
+        "top": 329,
+        "height": 34
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.66",
+      "automationId": "OptionsButton",
+      "parentRuntimeId": "42.594864.4.67"
+    },
+    {
+      "name": "",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 1034,
+        "top": 371,
+        "height": 410
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Pane",
+      "runtimeId": "42.594864.4.85",
+      "automationId": "scrollViewer",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "在画布上使用 画笔 工具",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 143,
+        "width": 1001,
+        "top": 403,
+        "height": 377
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Group",
+      "runtimeId": "42.594864.4.68",
+      "automationId": "image",
+      "parentRuntimeId": "42.594864.4.85"
+    },
+    {
+      "name": "垂直",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 1127,
+        "width": 18,
+        "top": 371,
+        "height": 392
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.ScrollBar",
+      "runtimeId": "42.594864.4.76",
+      "automationId": "VerticalScrollBar",
+      "parentRuntimeId": "42.594864.4.85"
+    },
+    {
+      "name": "垂直小幅下降",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "VerticalScrollBar",
+          "name": "垂直",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": {
+        "left": 1127,
+        "width": 18,
+        "top": 371,
+        "height": 18
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.70",
+      "automationId": "VerticalSmallDecrease",
+      "parentRuntimeId": "42.594864.4.76"
+    },
+    {
+      "name": "垂直大幅下降",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "VerticalScrollBar",
+          "name": "垂直",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.71",
+      "automationId": "VerticalLargeDecrease",
+      "parentRuntimeId": "42.594864.4.76"
+    },
+    {
+      "name": "垂直大幅增长",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "VerticalScrollBar",
+          "name": "垂直",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": {
+        "left": 1127,
+        "width": 18,
+        "top": 531,
+        "height": 214
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.73",
+      "automationId": "VerticalLargeIncrease",
+      "parentRuntimeId": "42.594864.4.76"
+    },
+    {
+      "name": "垂直小幅增长",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "VerticalScrollBar",
+          "name": "垂直",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": {
+        "left": 1127,
+        "width": 18,
+        "top": 745,
+        "height": 18
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.75",
+      "automationId": "VerticalSmallIncrease",
+      "parentRuntimeId": "42.594864.4.76"
+    },
+    {
+      "name": "水平",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 1016,
+        "top": 763,
+        "height": 18
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.ScrollBar",
+      "runtimeId": "42.594864.4.84",
+      "automationId": "HorizontalScrollBar",
+      "parentRuntimeId": "42.594864.4.85"
+    },
+    {
+      "name": "水平小幅下降",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "HorizontalScrollBar",
+          "name": "水平",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": {
+        "left": 111,
+        "width": 18,
+        "top": 763,
+        "height": 18
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.78",
+      "automationId": "HorizontalSmallDecrease",
+      "parentRuntimeId": "42.594864.4.84"
+    },
+    {
+      "name": "水平大幅下降",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "HorizontalScrollBar",
+          "name": "水平",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.79",
+      "automationId": "HorizontalLargeDecrease",
+      "parentRuntimeId": "42.594864.4.84"
+    },
+    {
+      "name": "水平大幅增长",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "HorizontalScrollBar",
+          "name": "水平",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": {
+        "left": 762,
+        "width": 347,
+        "top": 763,
+        "height": 18
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.81",
+      "automationId": "HorizontalLargeIncrease",
+      "parentRuntimeId": "42.594864.4.84"
+    },
+    {
+      "name": "水平小幅增长",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "scrollViewer",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "HorizontalScrollBar",
+          "name": "水平",
+          "controlType": "ControlType.ScrollBar"
+        }
+      ],
+      "rect": {
+        "left": 1109,
+        "width": 18,
+        "top": 763,
+        "height": 18
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.83",
+      "automationId": "HorizontalSmallIncrease",
+      "parentRuntimeId": "42.594864.4.84"
+    },
+    {
+      "name": "大小",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 135,
+        "width": 48,
+        "top": 464,
+        "height": 266
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Slider",
+      "runtimeId": "42.594864.4.88",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "不透明度",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 207,
+        "width": 48,
+        "top": 461,
+        "height": 269
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Slider",
+      "runtimeId": "42.594864.4.91",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "1536 × 960像素",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 459,
+        "width": 138,
+        "top": 799,
+        "height": 24
+      },
+      "keyboardFocusable": false,
+      "controlType": "ControlType.Text",
+      "runtimeId": "42.594864.4.93",
+      "automationId": "CanvasSizeTextBlock",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "适应窗口大小",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 617,
+        "width": 58,
+        "top": 791,
+        "height": 40
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.95",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "缩放",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 681,
+        "width": 150,
+        "top": 783,
+        "height": 56
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.ComboBox",
+      "runtimeId": "42.594864.4.99",
+      "automationId": "ZoomValuesComboBox",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "缩放",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        },
+        {
+          "automationId": "ZoomValuesComboBox",
+          "name": "缩放",
+          "controlType": "ControlType.ComboBox"
+        }
+      ],
+      "rect": null,
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Edit",
+      "runtimeId": "42.594864.4.98",
+      "automationId": "EditableText",
+      "parentRuntimeId": "42.594864.4.99"
+    },
+    {
+      "name": "缩小",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 837,
+        "width": 49,
+        "top": 795,
+        "height": 31
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.101",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "缩放",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 892,
+        "width": 194,
+        "top": 787,
+        "height": 48
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Slider",
+      "runtimeId": "42.594864.4.103",
+      "automationId": "ZoomSliderControl",
+      "parentRuntimeId": "42.594864.4.106"
+    },
+    {
+      "name": "放大",
+      "enabled": true,
+      "ancestry": [
+        {
+          "automationId": "",
+          "name": "无标题 - 画图",
+          "controlType": "ControlType.Window"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Pane"
+        },
+        {
+          "automationId": "",
+          "name": "",
+          "controlType": "ControlType.Custom"
+        }
+      ],
+      "rect": {
+        "left": 1093,
+        "width": 49,
+        "top": 795,
+        "height": 31
+      },
+      "keyboardFocusable": true,
+      "controlType": "ControlType.Button",
+      "runtimeId": "42.594864.4.105",
+      "automationId": "",
+      "parentRuntimeId": "42.594864.4.106"
+    }
+  ],
+  "Count": 61
+}

@@ -45,6 +45,26 @@ const comment: CommentOp = {
   author: 'Ada',
 };
 
+test('desktop targets preserve old comments and require kind and ancestry', () => {
+  const desktopTarget = {
+    kind: 'windows-uia',
+    app: 'mspaint',
+    windowTitle: 'Paint',
+    automationId: '',
+    controlType: 'ControlType.Button',
+    name: '',
+    ancestry: [{ controlType: 'ControlType.Window', name: 'Paint', automationId: '' }],
+    captured: { left: 10, top: 20, width: 30, height: 40, dpr: 1 },
+    screen: { width: 1920, height: 1080, scale: 1 },
+  };
+  expect(commentOpSchema.safeParse(comment).success).toBe(true);
+  expect(commentOpSchema.safeParse({ ...comment, desktopTarget }).success).toBe(true);
+  const { kind: _kind, ...noKind } = desktopTarget;
+  const { ancestry: _ancestry, ...noAncestry } = desktopTarget;
+  expect(commentOpSchema.safeParse({ ...comment, desktopTarget: noKind }).success).toBe(false);
+  expect(commentOpSchema.safeParse({ ...comment, desktopTarget: noAncestry }).success).toBe(false);
+});
+
 describe('applyOpPatch', () => {
   test('merges a valid patch and returns the parsed op', () => {
     const merged = applyOpPatch({ op: comment, patch: { status: 'resolved' } });

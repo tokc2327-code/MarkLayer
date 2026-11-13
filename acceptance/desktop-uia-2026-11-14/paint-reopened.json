@@ -1,0 +1,14 @@
+﻿{
+  "result": {
+    "ok": true,
+    "hwnd": 10885268,
+    "rect": {
+      "left": 1435,
+      "width": 48,
+      "top": 251,
+      "height": 48
+    }
+  },
+  "oldHwnd": 7082896,
+  "newHwnd": 10885268
+}

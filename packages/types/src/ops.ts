@@ -108,6 +108,24 @@ export const targetElementSchema = z.object({
 });
 export type TargetElement = z.infer<typeof targetElementSchema>;
 
+export const desktopAncestryItemSchema = z.object({
+  controlType: z.string(),
+  name: z.string(),
+  automationId: z.string(),
+});
+export type DesktopAncestryItem = z.infer<typeof desktopAncestryItemSchema>;
+
+export const desktopTargetSchema = z.object({
+  kind: z.literal('windows-uia'),
+  app: z.string(),
+  windowTitle: z.string(),
+  ...desktopAncestryItemSchema.shape,
+  ancestry: z.array(desktopAncestryItemSchema),
+  captured: z.object({ left: z.number(), top: z.number(), width: z.number(), height: z.number(), dpr: z.number() }),
+  screen: z.object({ width: z.number(), height: z.number(), scale: z.number() }),
+});
+export type DesktopTarget = z.infer<typeof desktopTargetSchema>;
+
 /** One uncaught error, rejection or `console.error` the page had logged when the comment was left. */
 export const pageErrorSchema = z.object({
   message: z.string().check(z.maxLength(MAX_PAGE_ERROR_TEXT)),
@@ -448,6 +466,7 @@ const triageable = {
 export const commentOpSchema = z.object({
   ...baseOp,
   ...anchorable,
+  desktopTarget: z.optional(desktopTargetSchema),
   ...triageable,
   ...mentioned,
   ...reactable,

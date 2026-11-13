@@ -1,0 +1,42 @@
+﻿{
+  "screen": {
+    "scale": 1.5,
+    "width": 1706.6666666666667,
+    "height": 1066.6666666666667
+  },
+  "name": "确定",
+  "windowTitle": "uia-notepad-5ac2eef7.txt - Notepad",
+  "kind": "windows-uia",
+  "ancestry": [
+    {
+      "automationId": "",
+      "name": "uia-notepad-5ac2eef7.txt - Notepad",
+      "controlType": "ControlType.Window"
+    },
+    {
+      "automationId": "",
+      "name": "",
+      "controlType": "ControlType.Pane"
+    },
+    {
+      "automationId": "",
+      "name": "",
+      "controlType": "ControlType.Pane"
+    },
+    {
+      "automationId": "",
+      "name": "记事本",
+      "controlType": "ControlType.Window"
+    }
+  ],
+  "captured": {
+    "left": 806,
+    "width": 348,
+    "dpr": 1.5,
+    "top": 615,
+    "height": 48
+  },
+  "controlType": "ControlType.Button",
+  "app": "Notepad",
+  "automationId": "CloseButton"
+}

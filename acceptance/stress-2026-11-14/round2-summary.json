@@ -45,13 +45,8 @@
     }
   ],
   "roomBMatchesServer": true,
-  "roomAIds": [
-    "seed-b33436ae-ae60-4f00-abc1-be97de33fcb1",
-    "offline-e433947f-a658-45a5-8d34-e55e2252ec6d"
-  ],
-  "roomBIds": [
-    "other-90a5a619-f11b-4983-a821-fc9daad8d034"
-  ],
+  "roomAIds": ["seed-b33436ae-ae60-4f00-abc1-be97de33fcb1", "offline-e433947f-a658-45a5-8d34-e55e2252ec6d"],
+  "roomBIds": ["other-90a5a619-f11b-4983-a821-fc9daad8d034"],
   "offlineMs": 30079,
   "offlineClientCount": 1,
   "reconnectErrors": [

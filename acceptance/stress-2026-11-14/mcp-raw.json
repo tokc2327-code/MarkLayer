@@ -1,11 +1,6 @@
 {
   "room": "stress-9004bf10-f798-4ff0-ab3a-d3e6c84e8c2f",
-  "ids": [
-    "YuctyH4vhjaXXvgwk3WEK",
-    "D1IcGg9cFlBAtu4yDQPmp",
-    "pc6HMlwUM2CxwO9QuSev3",
-    "wf1NPquqWxC7qIj4Uws8N"
-  ],
+  "ids": ["YuctyH4vhjaXXvgwk3WEK", "D1IcGg9cFlBAtu4yDQPmp", "pc6HMlwUM2CxwO9QuSev3", "wf1NPquqWxC7qIj4Uws8N"],
   "records": [
     {
       "client": 0,

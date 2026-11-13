@@ -1,0 +1,142 @@
+{
+  "error": null,
+  "clients": [
+    {
+      "client": 0,
+      "identical": true,
+      "ids": [
+        "seed-42380309-65f7-47c9-8c80-4fb00ae22556",
+        "r3-0-4b7be3d4-a817-491e-87e3-da103330a748",
+        "r3-1-4fada070-ee9a-4f83-8d22-0bf46c9e74e2"
+      ]
+    },
+    {
+      "client": 1,
+      "identical": true,
+      "ids": [
+        "seed-42380309-65f7-47c9-8c80-4fb00ae22556",
+        "r3-1-4fada070-ee9a-4f83-8d22-0bf46c9e74e2",
+        "r3-0-4b7be3d4-a817-491e-87e3-da103330a748"
+      ]
+    },
+    {
+      "client": 2,
+      "identical": true,
+      "ids": [
+        "other-87fbcca8-ee4a-448a-b9e3-915dea090160",
+        "r3-2-86526d96-b5bf-4257-8c50-d78e09b84f28",
+        "r3-3-50989810-95a8-4be6-94a1-6941b811ec02"
+      ]
+    },
+    {
+      "client": 3,
+      "identical": true,
+      "ids": [
+        "other-87fbcca8-ee4a-448a-b9e3-915dea090160",
+        "r3-3-50989810-95a8-4be6-94a1-6941b811ec02",
+        "r3-2-86526d96-b5bf-4257-8c50-d78e09b84f28"
+      ]
+    }
+  ],
+  "roomAIds": [
+    "seed-42380309-65f7-47c9-8c80-4fb00ae22556",
+    "r3-1-4fada070-ee9a-4f83-8d22-0bf46c9e74e2",
+    "r3-0-4b7be3d4-a817-491e-87e3-da103330a748"
+  ],
+  "roomBIds": [
+    "other-87fbcca8-ee4a-448a-b9e3-915dea090160",
+    "r3-3-50989810-95a8-4be6-94a1-6941b811ec02",
+    "r3-2-86526d96-b5bf-4257-8c50-d78e09b84f28"
+  ],
+  "overlap": [],
+  "receipts": [
+    {
+      "client": 0,
+      "id": "PdA-XTz0HgOnbMrGWy5HJ",
+      "type": "op",
+      "sentTimestamp": 63201.788894,
+      "receivedTimestamp": 63201.879936,
+      "latencyMs": 91.04,
+      "receipt": "{\"type\":\"ack\",\"opId\":\"PdA-XTz0HgOnbMrGWy5HJ\",\"status\":\"applied\",\"seq\":1,\"rev\":3}"
+    },
+    {
+      "client": 2,
+      "id": "t7h2tLm8kg7ZX-AVCznlb",
+      "type": "op",
+      "sentTimestamp": 63201.789062,
+      "receivedTimestamp": 63201.880213,
+      "latencyMs": 91.15,
+      "receipt": "{\"type\":\"ack\",\"opId\":\"t7h2tLm8kg7ZX-AVCznlb\",\"status\":\"applied\",\"seq\":1,\"rev\":3}"
+    },
+    {
+      "client": 3,
+      "id": "0Nw4eqneQYUmnZygNU1SY",
+      "type": "op",
+      "sentTimestamp": 63201.78891,
+      "receivedTimestamp": 63201.862206,
+      "latencyMs": 73.3,
+      "receipt": "{\"type\":\"ack\",\"opId\":\"0Nw4eqneQYUmnZygNU1SY\",\"status\":\"applied\",\"seq\":1,\"rev\":2}"
+    },
+    {
+      "client": 1,
+      "id": "ITWbJMqEBQt9x955YeJDR",
+      "type": "op",
+      "sentTimestamp": 63201.788843,
+      "receivedTimestamp": 63201.841578,
+      "latencyMs": 52.73,
+      "receipt": "{\"type\":\"ack\",\"opId\":\"ITWbJMqEBQt9x955YeJDR\",\"status\":\"applied\",\"seq\":1,\"rev\":2}"
+    },
+    {
+      "client": 1,
+      "id": "xWgATZEIB4zjjEJQ9_qqY",
+      "type": "update_op",
+      "sentTimestamp": 63204.818332,
+      "receivedTimestamp": 63204.83915,
+      "latencyMs": 20.82,
+      "receipt": "{\"type\":\"ack\",\"opId\":\"xWgATZEIB4zjjEJQ9_qqY\",\"status\":\"applied\",\"seq\":2,\"rev\":5}"
+    },
+    {
+      "client": 0,
+      "id": "qoGzhA7f0atjMEkQVM6pb",
+      "type": "update_op",
+      "sentTimestamp": 63204.818219,
+      "receivedTimestamp": 63204.831973,
+      "latencyMs": 13.75,
+      "receipt": "{\"type\":\"ack\",\"opId\":\"qoGzhA7f0atjMEkQVM6pb\",\"status\":\"applied\",\"seq\":2,\"rev\":4}"
+    }
+  ],
+  "latency": {
+    "n": 6,
+    "p50": 52.73,
+    "p95": 91.15,
+    "max": 91.15
+  },
+  "reconnect": {
+    "samples": [
+      {
+        "ms": 1175,
+        "ready": true
+      },
+      {
+        "ms": 1071,
+        "ready": true
+      },
+      {
+        "ms": 1178,
+        "ready": true
+      },
+      {
+        "ms": 1179,
+        "ready": true
+      },
+      {
+        "ms": 1071,
+        "ready": true
+      }
+    ],
+    "n": 5,
+    "p50": 1175,
+    "p95": 1179,
+    "max": 1179
+  }
+}

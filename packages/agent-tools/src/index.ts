@@ -2,7 +2,7 @@ import { mcpEndpoint, parseRoomRef as roomIdIn, uploadPath } from '@marklayer/br
 import type { AnnotationOp, CommentStatus, DrawOp, QuestionOp, StepOp } from '@marklayer/types/ops';
 import { isRootAnnotation, orderedSteps, resolveOpStatus, tallyQuestion } from '@marklayer/types/ops';
 import { agentTaskCommandSchema } from '@marklayer/types/wire';
-import { buildStoredDiagnosis } from './diagnosis';
+import { buildStoredDiagnosis, normalizeDiagnosis } from './diagnosis';
 import { formatStyleEdit } from './prompt';
 import type { PreviewCreated, RoomOps } from './room-core';
 import {
@@ -18,6 +18,7 @@ import {
   type PreviewRequest,
   QuerySemanticInput,
   QuestionInput,
+  ReadDiagnosisInput,
   RegisterSemanticInput,
   ReplyInput,
   ResolveInput,
@@ -322,19 +323,27 @@ async function workRoom({
       // A live package contains DOM hit-testing the MCP worker cannot reproduce. Keep that
       // evidence; otherwise write a clearly partial package from the stored annotation only.
       const preserveLiveCapture = found.op.diagnosis?.source === 'live-page';
-      const diagnosis = preserveLiveCapture ? found.op.diagnosis! : buildStoredDiagnosis(found.op);
+      const diagnosis = preserveLiveCapture
+        ? normalizeDiagnosis(found.op, found.op.diagnosis!)
+        : buildStoredDiagnosis(found.op);
       if (!preserveLiveCapture && !(await room.setDiagnosis(parsed.data.id, diagnosis)))
         return mutationErr({ room, id: parsed.data.id });
       return ok({ id: parsed.data.id, diagnosis, saved: !preserveLiveCapture });
     }
 
     case 'marklayer_read_diagnosis': {
-      const parsed = IdInput.safeParse(args);
+      const parsed = ReadDiagnosisInput.safeParse(args);
       if (!parsed.success) return fail(parsed.error);
       const found = room.getAnnotation(parsed.data.id);
       if (!found) return err(`annotation not found: ${parsed.data.id}`);
       if (!found.op.diagnosis) return err('no diagnosis saved — call marklayer_diagnose first');
-      return ok({ id: parsed.data.id, diagnosis: found.op.diagnosis });
+      const diagnosis = normalizeDiagnosis(found.op, found.op.diagnosis);
+      return {
+        content: [
+          { type: 'text' as const, text: diagnosis.summary! },
+          { type: 'text' as const, text: JSON.stringify({ id: parsed.data.id, diagnosis }, null, 2) },
+        ],
+      };
     }
 
     case 'marklayer_read_attachment': {

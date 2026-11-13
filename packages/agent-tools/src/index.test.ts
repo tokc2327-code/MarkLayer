@@ -116,7 +116,11 @@ describe('callTool', () => {
       partial: false,
     };
     const room = fakeRoom({ getAnnotation: () => ({ op: comment({ diagnosis }), replies: [] }) });
-    expect(body(await run('marklayer_read_diagnosis', { id: 'op-1' }, room)).diagnosis).toEqual(diagnosis);
+    const result = await run('marklayer_read_diagnosis', { id: 'op-1' }, room);
+    const first = result?.content[0];
+    const second = result?.content[1];
+    expect(first?.type === 'text' && first.text).toContain('症状');
+    expect(second?.type === 'text' && JSON.parse(second.text).diagnosis.source).toBe('live-page');
   });
 
   test('refuses an image not attached to the requested annotation', async () => {

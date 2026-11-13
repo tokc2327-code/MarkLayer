@@ -44,6 +44,7 @@ export const ConnectInput = z.object({
 });
 export const ListInput = z.object({ status: z.optional(StatusFilter) });
 export const IdInput = z.object({ ...idPart });
+export const ReadDiagnosisInput = IdInput;
 export const AttachmentInput = z.object({
   id: z.string().check(z.minLength(1)),
   attachmentId: z.string().check(z.minLength(1)),

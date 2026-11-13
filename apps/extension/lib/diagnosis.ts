@@ -1,4 +1,4 @@
-import { buildStoredDiagnosis, sanitizeDiagnosis } from '@marklayer/agent-tools/diagnosis';
+import { buildStoredDiagnosis, normalizeDiagnosis } from '@marklayer/agent-tools/diagnosis';
 import { type Diagnosis, opAnchor } from '@marklayer/types/ops';
 import { MAX_DIAGNOSIS_RECENT } from '@marklayer/types/relay';
 import { networkErrorsForPage } from './net-errors';
@@ -84,9 +84,23 @@ export function captureDiagnosis(op: AnnotationOp, capturedAt = Date.now()): Dia
   const pointHit = hitRoot.elementFromPoint(x, y);
   const hit = pointHit && !isExtensionElement(pointHit) ? pointHit : (pageHits[0] ?? null);
   const covered = Boolean(element && hit && hit !== element && !element.contains(hit));
-  return sanitizeDiagnosis({
+  return normalizeDiagnosis(op, {
     ...base,
     source: 'live-page',
+    targetPointerEvents: element ? win.getComputedStyle(element).pointerEvents : null,
+    pageUrl: annotatedUrl.value ?? location.href,
+    hitChain: pageHits.slice(0, 8).map((hit) => {
+      const style = win.getComputedStyle(hit);
+      return {
+        selector: getSelector(hit),
+        zIndex: style.zIndex,
+        position: style.position,
+        pointerEvents: style.pointerEvents,
+        ariaHidden: hit.getAttribute('aria-hidden') === 'true',
+        inert: hit.hasAttribute('inert'),
+        isTarget: hit === element,
+      };
+    }),
     ...(liveTarget ? { target: liveTarget } : {}),
     ...(element ? { hierarchy: depths(element) } : {}),
     hitTest: {
@@ -99,6 +113,9 @@ export function captureDiagnosis(op: AnnotationOp, capturedAt = Date.now()): Dia
     networkFailureCount: networkErrorsForPage().length,
     networkFailures: networkErrorsForPage().slice(-MAX_DIAGNOSIS_RECENT),
     viewport: {
+      width: win.innerWidth,
+      height: win.innerHeight,
+      dpr: win.devicePixelRatio || 1,
       devicePixelRatio: win.devicePixelRatio || 1,
       scale: win.visualViewport?.scale ?? 1,
       scrollX: win.scrollX,

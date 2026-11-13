@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, test } from 'bun:test';
+import { buildStoredDiagnosis } from '@marklayer/agent-tools/diagnosis';
 import { type CommentOp, diagnosisSchema } from '@marklayer/types/ops';
 import { captureDiagnosis } from './diagnosis';
 
@@ -39,7 +40,21 @@ describe('captureDiagnosis', () => {
     Object.defineProperty(document, 'elementsFromPoint', { configurable: true, value: () => [overlay, cover, target] });
     Object.defineProperty(document, 'elementFromPoint', { configurable: true, value: () => overlay });
 
+    (target as HTMLElement).style.pointerEvents = 'none';
     const diagnosis = captureDiagnosis(comment, 100);
+    const partial = buildStoredDiagnosis(comment, 100);
+    expect(Object.keys(diagnosis).sort()).toEqual(Object.keys(partial).sort());
+    expect(diagnosis.summary).toContain('targetPointerEvents: none');
+    expect(diagnosis.summary!.length).toBeLessThanOrEqual(400);
+    expect(partial.missing!.length).toBeGreaterThan(0);
+    expect(partial.summary).toContain('证据不足');
+    expect(partial.summary!.length).toBeLessThanOrEqual(400);
+    expect(diagnosis.hitChain![0]).toMatchObject({
+      selector: '#cover',
+      isTarget: false,
+      ariaHidden: false,
+      inert: false,
+    });
     expect(diagnosisSchema.safeParse(diagnosis).success).toBe(true);
     expect(diagnosis.source).toBe('live-page');
     expect(diagnosis.hitTest?.covered).toBe(true);

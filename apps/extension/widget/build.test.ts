@@ -4,7 +4,9 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 // 小组件共用附件放大、图层空间上下文及图形位置；为新增能力预留共 1280 字节，+1472 给 ACK/NACK 的 pending 回滚。
-const GZ_BUDGET = 107_008;
+// 2026-11-14：main 实测 gz 106954，诊断包统一形状只多 4 字节，离旧上限只剩 54 字节，
+// CI 的压缩比本机略胖就会红。这里留 512 字节余量；以后每加一个功能都要重新量，别靠余量过日子。
+const GZ_BUDGET = 107_520;
 
 const FORBIDDEN = [
   // Identity in a customer's localStorage: a visitor's is one page load long.

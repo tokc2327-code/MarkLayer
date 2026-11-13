@@ -150,26 +150,46 @@ export type NetworkError = z.infer<typeof networkErrorSchema>;
 export const diagnosisSchema = z.object({
   capturedAt: z.number(),
   source: z.enum(['live-page', 'stored-annotation']),
-  target: z.optional(targetElementSchema),
-  hierarchy: z.optional(z.object({ iframeDepth: z.number(), shadowDepth: z.number() })),
+  completeness: z.optional(z.enum(['live', 'partial'])),
+  missing: z.optional(z.array(z.string())),
+  summary: z.optional(z.string().check(z.maxLength(400))),
+  pageUrl: z.optional(z.nullable(z.string())),
+  hitChain: z.optional(
+    z.array(
+      z.object({
+        selector: z.string(),
+        zIndex: z.string(),
+        position: z.string(),
+        pointerEvents: z.string(),
+        ariaHidden: z.boolean(),
+        inert: z.boolean(),
+        isTarget: z.boolean(),
+      }),
+    ),
+  ),
+  target: z.optional(z.nullable(targetElementSchema)),
+  hierarchy: z.optional(z.nullable(z.object({ iframeDepth: z.number(), shadowDepth: z.number() }))),
+  targetPointerEvents: z.optional(z.nullable(z.string())),
   hitTest: z.optional(
-    z.object({
-      covered: z.boolean(),
-      hit: z.optional(z.object({ selector: z.string(), tag: z.string() })),
-      chain: z
-        .array(
-          z.object({
-            selector: z.string(),
-            tag: z.string(),
-            pointerEvents: z.string(),
-            position: z.string(),
-            zIndex: z.string(),
-            opacity: z.string(),
-            visibility: z.string(),
-          }),
-        )
-        .check(z.maxLength(8)),
-    }),
+    z.nullable(
+      z.object({
+        covered: z.boolean(),
+        hit: z.optional(z.object({ selector: z.string(), tag: z.string() })),
+        chain: z
+          .array(
+            z.object({
+              selector: z.string(),
+              tag: z.string(),
+              pointerEvents: z.string(),
+              position: z.string(),
+              zIndex: z.string(),
+              opacity: z.string(),
+              visibility: z.string(),
+            }),
+          )
+          .check(z.maxLength(8)),
+      }),
+    ),
   ),
   pageErrorCount: z.int(),
   pageErrors: z.array(pageErrorSchema).check(z.maxLength(MAX_DIAGNOSIS_RECENT)),
@@ -177,10 +197,13 @@ export const diagnosisSchema = z.object({
   networkFailures: z.array(networkErrorSchema).check(z.maxLength(MAX_DIAGNOSIS_RECENT)),
   viewport: z.optional(
     z.object({
-      devicePixelRatio: z.optional(z.number()),
-      scale: z.optional(z.number()),
-      scrollX: z.optional(z.number()),
-      scrollY: z.optional(z.number()),
+      width: z.optional(z.nullable(z.number())),
+      height: z.optional(z.nullable(z.number())),
+      dpr: z.optional(z.nullable(z.number())),
+      devicePixelRatio: z.optional(z.nullable(z.number())),
+      scale: z.optional(z.nullable(z.number())),
+      scrollX: z.optional(z.nullable(z.number())),
+      scrollY: z.optional(z.nullable(z.number())),
     }),
   ),
   reproductionSteps: z.array(z.string().check(z.maxLength(200))).check(z.maxLength(6)),

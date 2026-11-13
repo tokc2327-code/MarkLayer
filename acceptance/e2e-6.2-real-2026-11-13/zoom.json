@@ -1,0 +1,84 @@
+{
+  "browser": "Edge CDP 9334",
+  "method": "Input.dispatchKeyEvent Ctrl+0, Ctrl+=, Ctrl+0",
+  "results": [
+    {
+      "label": "baseline",
+      "dpr": 1,
+      "innerWidth": 750,
+      "marker": {
+        "x": 175.78125,
+        "y": 128.90625,
+        "width": 16.40625,
+        "height": 16.40625
+      },
+      "child": {
+        "x": 167.578125,
+        "y": 120.703125,
+        "width": 16.40625,
+        "height": 16.40625
+      },
+      "text": "1\n1\nAnonymous\n29s ago\n\nReal acceptance comment\n\n诊断\nStatus\nOpen\nAssignee\nAssign\nReply",
+      "iframes": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 750,
+          "height": 484.991455078125
+        }
+      ]
+    },
+    {
+      "label": "plus",
+      "dpr": 1,
+      "innerWidth": 750,
+      "marker": {
+        "x": 225,
+        "y": 165,
+        "width": 21,
+        "height": 21
+      },
+      "child": {
+        "x": 214.5,
+        "y": 154.5,
+        "width": 21,
+        "height": 21
+      },
+      "text": "1\n1\nAnonymous\n34s ago\n\nReal acceptance comment\n\n诊断\nStatus\nOpen\nAssignee\nAssign\nReply",
+      "iframes": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 469.9921875
+        }
+      ]
+    },
+    {
+      "label": "reset",
+      "dpr": 1,
+      "innerWidth": 750,
+      "marker": {
+        "x": 175.78125,
+        "y": 128.90625,
+        "width": 16.40625,
+        "height": 16.40625
+      },
+      "child": {
+        "x": 167.578125,
+        "y": 120.703125,
+        "width": 16.40625,
+        "height": 16.40625
+      },
+      "text": "1\n1\nAnonymous\n36s ago\n\nReal acceptance comment\n\n诊断\nStatus\nOpen\nAssignee\nAssign\nReply",
+      "iframes": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 750,
+          "height": 484.991455078125
+        }
+      ]
+    }
+  ]
+}

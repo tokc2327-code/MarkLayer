@@ -1,0 +1,969 @@
+﻿{
+  "app": "mspaint",
+  "title": "无标题 - 画图",
+  "capturedAt": "2026-11-14T02:17:12.8025727+08:00",
+  "note": "interactive is an enabled-and-focusable heuristic, not a guarantee",
+  "elements": [
+    {
+      "runtimeId": "42.2888004",
+      "parentRuntimeId": null,
+      "name": "无标题 - 画图",
+      "type": "ControlType.Window",
+      "automationId": "",
+      "rect": {
+        "y": 200,
+        "width": 1056,
+        "height": 750,
+        "x": 300
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2167898",
+      "parentRuntimeId": "42.2888004",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": 245,
+        "width": 1034,
+        "height": 694,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966",
+      "parentRuntimeId": "42.2167898",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": 245,
+        "width": 1034,
+        "height": 694,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.106",
+      "parentRuntimeId": "42.1511966",
+      "name": "",
+      "type": "ControlType.Custom",
+      "automationId": "",
+      "rect": {
+        "y": 245,
+        "width": 1034,
+        "height": 694,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.10",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "",
+      "type": "ControlType.MenuBar",
+      "automationId": "",
+      "rect": {
+        "y": 245,
+        "width": 252,
+        "height": 60,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.3",
+      "parentRuntimeId": "42.1511966.4.10",
+      "name": "文件",
+      "type": "ControlType.MenuItem",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 72,
+        "height": 48,
+        "x": 317
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.6",
+      "parentRuntimeId": "42.1511966.4.10",
+      "name": "编辑",
+      "type": "ControlType.MenuItem",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 72,
+        "height": 48,
+        "x": 401
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.9",
+      "parentRuntimeId": "42.1511966.4.10",
+      "name": "查看",
+      "type": "ControlType.MenuItem",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 72,
+        "height": 48,
+        "x": 485
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.12",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "保存",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 48,
+        "height": 48,
+        "x": 577
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.14",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "共享",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 48,
+        "height": 48,
+        "x": 645
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.16",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "撤消",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 48,
+        "height": 48,
+        "x": 713
+      },
+      "enabled": false,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.18",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "重做",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 48,
+        "height": 48,
+        "x": 773
+      },
+      "enabled": false,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.20",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "最近更新",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 251,
+        "width": 48,
+        "height": 48,
+        "x": 1237
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.22",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "打开设置",
+      "type": "ControlType.Button",
+      "automationId": "SettingsButton",
+      "rect": {
+        "y": 251,
+        "width": 48,
+        "height": 48,
+        "x": 1291
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.67",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 307,
+        "width": 1034,
+        "height": 155,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.64",
+      "parentRuntimeId": "42.1511966.4.67",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "ScrollViewer",
+      "rect": {
+        "y": 307,
+        "width": 994,
+        "height": 153,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.28",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "选择",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 307,
+        "width": 98,
+        "height": 149,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.26",
+      "parentRuntimeId": "42.1511966.4.28",
+      "name": "选择",
+      "type": "ControlType.RadioButton",
+      "automationId": "",
+      "rect": {
+        "y": 325,
+        "width": 60,
+        "height": 83,
+        "x": 329
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.23",
+      "parentRuntimeId": "42.1511966.4.24",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 336,
+        "width": 36,
+        "height": 36,
+        "x": 341
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.33",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "图像",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 307,
+        "width": 90,
+        "height": 149,
+        "x": 409
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.31",
+      "parentRuntimeId": "42.1511966.4.33",
+      "name": "图像",
+      "type": "ControlType.Button",
+      "automationId": "CollapsedButton",
+      "rect": {
+        "y": 331,
+        "width": 52,
+        "height": 70,
+        "x": 427
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.29",
+      "parentRuntimeId": "42.1511966.4.31",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 341,
+        "width": 35,
+        "height": 36,
+        "x": 435
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.38",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "工具",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 308,
+        "width": 90,
+        "height": 150,
+        "x": 499
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.36",
+      "parentRuntimeId": "42.1511966.4.38",
+      "name": "工具",
+      "type": "ControlType.Button",
+      "automationId": "CollapsedButton",
+      "rect": {
+        "y": 333,
+        "width": 51,
+        "height": 70,
+        "x": 517
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.34",
+      "parentRuntimeId": "42.1511966.4.36",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 341,
+        "width": 36,
+        "height": 36,
+        "x": 525
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.44",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "画笔",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 309,
+        "width": 98,
+        "height": 149,
+        "x": 589
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.42",
+      "parentRuntimeId": "42.1511966.4.44",
+      "name": "画笔",
+      "type": "ControlType.RadioButton",
+      "automationId": "BrushesSplitButton",
+      "rect": {
+        "y": 328,
+        "width": 60,
+        "height": 82,
+        "x": 607
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.39",
+      "parentRuntimeId": "42.1511966.4.40",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 339,
+        "width": 36,
+        "height": 36,
+        "x": 619
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.49",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "形状",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 309,
+        "width": 90,
+        "height": 149,
+        "x": 687
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.47",
+      "parentRuntimeId": "42.1511966.4.49",
+      "name": "形状",
+      "type": "ControlType.Button",
+      "automationId": "CollapsedButton",
+      "rect": {
+        "y": 334,
+        "width": 51,
+        "height": 70,
+        "x": 705
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.45",
+      "parentRuntimeId": "42.1511966.4.47",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 342,
+        "width": 36,
+        "height": 36,
+        "x": 713
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.54",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "颜色",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 335,
+        "width": 52,
+        "height": 118,
+        "x": 795
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.52",
+      "parentRuntimeId": "42.1511966.4.54",
+      "name": "颜色",
+      "type": "ControlType.Button",
+      "automationId": "CollapsedButton",
+      "rect": {
+        "y": 335,
+        "width": 52,
+        "height": 70,
+        "x": 795
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.50",
+      "parentRuntimeId": "42.1511966.4.52",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 343,
+        "width": 36,
+        "height": 36,
+        "x": 803
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.59",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "Copilot",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 310,
+        "width": 96,
+        "height": 149,
+        "x": 865
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.57",
+      "parentRuntimeId": "42.1511966.4.59",
+      "name": "Copilot",
+      "type": "ControlType.Button",
+      "automationId": "CopilotDropDownButton",
+      "rect": {
+        "y": 336,
+        "width": 52,
+        "height": 70,
+        "x": 888
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.63",
+      "parentRuntimeId": "42.1511966.4.64",
+      "name": "层",
+      "type": "ControlType.Group",
+      "automationId": "",
+      "rect": {
+        "y": 311,
+        "width": 98,
+        "height": 149,
+        "x": 961
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.61",
+      "parentRuntimeId": "42.1511966.4.63",
+      "name": "",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 341,
+        "width": 60,
+        "height": 59,
+        "x": 981
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.60",
+      "parentRuntimeId": "42.1511966.4.61",
+      "name": "",
+      "type": "ControlType.Image",
+      "automationId": "",
+      "rect": {
+        "y": 353,
+        "width": 36,
+        "height": 35,
+        "x": 993
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.66",
+      "parentRuntimeId": "42.1511966.4.67",
+      "name": "工具栏选项",
+      "type": "ControlType.Button",
+      "automationId": "OptionsButton",
+      "rect": {
+        "y": 427,
+        "width": 34,
+        "height": 33,
+        "x": 1305
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.85",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "scrollViewer",
+      "rect": {
+        "y": 471,
+        "width": 1034,
+        "height": 410,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.68",
+      "parentRuntimeId": "42.1511966.4.85",
+      "name": "在画布上使用 画笔 工具",
+      "type": "ControlType.Group",
+      "automationId": "image",
+      "rect": {
+        "y": 503,
+        "width": 1001,
+        "height": 377,
+        "x": 343
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.76",
+      "parentRuntimeId": "42.1511966.4.85",
+      "name": "垂直",
+      "type": "ControlType.ScrollBar",
+      "automationId": "VerticalScrollBar",
+      "rect": {
+        "y": 471,
+        "width": 18,
+        "height": 392,
+        "x": 1327
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.70",
+      "parentRuntimeId": "42.1511966.4.76",
+      "name": "垂直小幅下降",
+      "type": "ControlType.Button",
+      "automationId": "VerticalSmallDecrease",
+      "rect": {
+        "y": 471,
+        "width": 18,
+        "height": 18,
+        "x": 1327
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.71",
+      "parentRuntimeId": "42.1511966.4.76",
+      "name": "垂直大幅下降",
+      "type": "ControlType.Button",
+      "automationId": "VerticalLargeDecrease",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.73",
+      "parentRuntimeId": "42.1511966.4.76",
+      "name": "垂直大幅增长",
+      "type": "ControlType.Button",
+      "automationId": "VerticalLargeIncrease",
+      "rect": {
+        "y": 631,
+        "width": 18,
+        "height": 214,
+        "x": 1327
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.75",
+      "parentRuntimeId": "42.1511966.4.76",
+      "name": "垂直小幅增长",
+      "type": "ControlType.Button",
+      "automationId": "VerticalSmallIncrease",
+      "rect": {
+        "y": 845,
+        "width": 18,
+        "height": 18,
+        "x": 1327
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.84",
+      "parentRuntimeId": "42.1511966.4.85",
+      "name": "水平",
+      "type": "ControlType.ScrollBar",
+      "automationId": "HorizontalScrollBar",
+      "rect": {
+        "y": 863,
+        "width": 1016,
+        "height": 18,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.78",
+      "parentRuntimeId": "42.1511966.4.84",
+      "name": "水平小幅下降",
+      "type": "ControlType.Button",
+      "automationId": "HorizontalSmallDecrease",
+      "rect": {
+        "y": 863,
+        "width": 18,
+        "height": 18,
+        "x": 311
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.79",
+      "parentRuntimeId": "42.1511966.4.84",
+      "name": "水平大幅下降",
+      "type": "ControlType.Button",
+      "automationId": "HorizontalLargeDecrease",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.81",
+      "parentRuntimeId": "42.1511966.4.84",
+      "name": "水平大幅增长",
+      "type": "ControlType.Button",
+      "automationId": "HorizontalLargeIncrease",
+      "rect": {
+        "y": 863,
+        "width": 347,
+        "height": 18,
+        "x": 962
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.83",
+      "parentRuntimeId": "42.1511966.4.84",
+      "name": "水平小幅增长",
+      "type": "ControlType.Button",
+      "automationId": "HorizontalSmallIncrease",
+      "rect": {
+        "y": 863,
+        "width": 18,
+        "height": 18,
+        "x": 1309
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.88",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "大小",
+      "type": "ControlType.Slider",
+      "automationId": "",
+      "rect": {
+        "y": 564,
+        "width": 48,
+        "height": 266,
+        "x": 334
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.91",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "不透明度",
+      "type": "ControlType.Slider",
+      "automationId": "",
+      "rect": {
+        "y": 561,
+        "width": 47,
+        "height": 269,
+        "x": 406
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.93",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "1536 × 960像素",
+      "type": "ControlType.Text",
+      "automationId": "CanvasSizeTextBlock",
+      "rect": {
+        "y": 899,
+        "width": 138,
+        "height": 24,
+        "x": 659
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.1511966.4.95",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "适应窗口大小",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 891,
+        "width": 58,
+        "height": 40,
+        "x": 817
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.99",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "缩放",
+      "type": "ControlType.ComboBox",
+      "automationId": "ZoomValuesComboBox",
+      "rect": {
+        "y": 883,
+        "width": 150,
+        "height": 56,
+        "x": 881
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.98",
+      "parentRuntimeId": "42.1511966.4.99",
+      "name": "缩放",
+      "type": "ControlType.Edit",
+      "automationId": "EditableText",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.101",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "缩小",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 895,
+        "width": 49,
+        "height": 31,
+        "x": 1037
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.103",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "缩放",
+      "type": "ControlType.Slider",
+      "automationId": "ZoomSliderControl",
+      "rect": {
+        "y": 887,
+        "width": 194,
+        "height": 48,
+        "x": 1092
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1511966.4.105",
+      "parentRuntimeId": "42.1511966.4.106",
+      "name": "放大",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": 895,
+        "width": 49,
+        "height": 31,
+        "x": 1293
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    }
+  ]
+}

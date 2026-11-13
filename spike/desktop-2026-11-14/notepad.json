@@ -1,0 +1,628 @@
+﻿{
+  "app": "notepad",
+  "title": "respanapi.txt - Notepad",
+  "capturedAt": "2026-11-14T02:17:11.8955614+08:00",
+  "note": "interactive is an enabled-and-focusable heuristic, not a guarantee",
+  "elements": [
+    {
+      "runtimeId": "42.2689240",
+      "parentRuntimeId": null,
+      "name": "respanapi.txt - Notepad",
+      "type": "ControlType.Window",
+      "automationId": "",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.594600",
+      "parentRuntimeId": "42.2689240",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -31888,
+        "width": 1902,
+        "height": 946,
+        "x": -31991
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.4529716",
+      "parentRuntimeId": "42.594600",
+      "name": "文本编辑器",
+      "type": "ControlType.Document",
+      "automationId": "",
+      "rect": {
+        "y": -31888,
+        "width": 1902,
+        "height": 946,
+        "x": -31991
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.7543734",
+      "parentRuntimeId": "42.2689240",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -31986,
+        "width": 791,
+        "height": 48,
+        "x": -31931
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938",
+      "parentRuntimeId": "42.7543734",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -31986,
+        "width": 791,
+        "height": 48,
+        "x": -31931
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938.4.10",
+      "parentRuntimeId": "42.2295938",
+      "name": "",
+      "type": "ControlType.Tab",
+      "automationId": "Tabs",
+      "rect": {
+        "y": -31986,
+        "width": 791,
+        "height": 48,
+        "x": -31931
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938.4.7",
+      "parentRuntimeId": "42.2295938.4.10",
+      "name": "",
+      "type": "ControlType.List",
+      "automationId": "TabListView",
+      "rect": {
+        "y": -31986,
+        "width": 731,
+        "height": 48,
+        "x": -31928
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938.4.4",
+      "parentRuntimeId": "42.2295938.4.7",
+      "name": "respanapi.txt. 未修改。",
+      "type": "ControlType.TabItem",
+      "automationId": "",
+      "rect": {
+        "y": -31986,
+        "width": 370,
+        "height": 48,
+        "x": -31925
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.2295938.4.1",
+      "parentRuntimeId": "42.2295938.4.4",
+      "name": "respanapi.txt",
+      "type": "ControlType.Text",
+      "automationId": "",
+      "rect": {
+        "y": -31974,
+        "width": 105,
+        "height": 23,
+        "x": -31906
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938.4.3",
+      "parentRuntimeId": "42.2295938.4.4",
+      "name": "关闭标签页",
+      "type": "ControlType.Button",
+      "automationId": "CloseButton",
+      "rect": {
+        "y": -31980,
+        "width": 48,
+        "height": 36,
+        "x": -31617
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938.4.6",
+      "parentRuntimeId": "42.2295938.4.7",
+      "name": "LOCAL-KEYS.txt. 未修改。",
+      "type": "ControlType.TabItem",
+      "automationId": "",
+      "rect": {
+        "y": -31986,
+        "width": 358,
+        "height": 48,
+        "x": -31561
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.2295938.4.5",
+      "parentRuntimeId": "42.2295938.4.6",
+      "name": "LOCAL-KEYS.txt",
+      "type": "ControlType.Text",
+      "automationId": "",
+      "rect": {
+        "y": -31974,
+        "width": 123,
+        "height": 23,
+        "x": -31548
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2295938.4.9",
+      "parentRuntimeId": "42.2295938.4.10",
+      "name": "添加新标签页",
+      "type": "ControlType.Button",
+      "automationId": "AddButton",
+      "rect": {
+        "y": -31977,
+        "width": 48,
+        "height": 36,
+        "x": -31192
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.1774506",
+      "parentRuntimeId": "42.2689240",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 1902,
+        "height": 50,
+        "x": -31991
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.3741268",
+      "parentRuntimeId": "42.1774506",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 1902,
+        "height": 50,
+        "x": -31991
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.3741268.4.20",
+      "parentRuntimeId": "42.3741268",
+      "name": "",
+      "type": "ControlType.MenuBar",
+      "automationId": "MenuBar",
+      "rect": {
+        "y": -31938,
+        "width": 252,
+        "height": 48,
+        "x": -31991
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.3741268.4.13",
+      "parentRuntimeId": "42.3741268.4.20",
+      "name": "文件",
+      "type": "ControlType.MenuItem",
+      "automationId": "File",
+      "rect": {
+        "y": -31938,
+        "width": 72,
+        "height": 48,
+        "x": -31985
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.16",
+      "parentRuntimeId": "42.3741268.4.20",
+      "name": "编辑",
+      "type": "ControlType.MenuItem",
+      "automationId": "Edit",
+      "rect": {
+        "y": -31938,
+        "width": 72,
+        "height": 48,
+        "x": -31901
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.19",
+      "parentRuntimeId": "42.3741268.4.20",
+      "name": "查看",
+      "type": "ControlType.MenuItem",
+      "automationId": "View",
+      "rect": {
+        "y": -31938,
+        "width": 72,
+        "height": 48,
+        "x": -31817
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.22",
+      "parentRuntimeId": "42.3741268",
+      "name": "标题",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 84,
+        "height": 48,
+        "x": -31286
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.24",
+      "parentRuntimeId": "42.3741268",
+      "name": "列表",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 84,
+        "height": 48,
+        "x": -31202
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.26",
+      "parentRuntimeId": "42.3741268",
+      "name": "加粗(Ctrl+B)",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 48,
+        "height": 48,
+        "x": -31118
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.28",
+      "parentRuntimeId": "42.3741268",
+      "name": "斜体(Ctrl+I)",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 48,
+        "height": 48,
+        "x": -31070
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.30",
+      "parentRuntimeId": "42.3741268",
+      "name": "删除线(Ctrl+Shift+X)",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 48,
+        "height": 48,
+        "x": -31022
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.32",
+      "parentRuntimeId": "42.3741268",
+      "name": "链接(Ctrl+K)",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 48,
+        "height": 48,
+        "x": -30974
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.34",
+      "parentRuntimeId": "42.3741268",
+      "name": "表",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 84,
+        "height": 48,
+        "x": -30926
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.36",
+      "parentRuntimeId": "42.3741268",
+      "name": "清除格式设置(Ctrl+空格)",
+      "type": "ControlType.Button",
+      "automationId": "",
+      "rect": {
+        "y": -31938,
+        "width": 48,
+        "height": 48,
+        "x": -30842
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.38",
+      "parentRuntimeId": "42.3741268",
+      "name": "最近更新",
+      "type": "ControlType.Button",
+      "automationId": "FREButton",
+      "rect": {
+        "y": -31936,
+        "width": 45,
+        "height": 45,
+        "x": -30197
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.39",
+      "parentRuntimeId": "42.3741268",
+      "name": "设置",
+      "type": "ControlType.Button",
+      "automationId": "SettingsButton",
+      "rect": {
+        "y": -31938,
+        "width": 45,
+        "height": 48,
+        "x": -30146
+      },
+      "enabled": true,
+      "keyboardFocusable": true,
+      "interactive": true
+    },
+    {
+      "runtimeId": "42.3741268.4.40",
+      "parentRuntimeId": "42.3741268",
+      "name": "",
+      "type": "ControlType.Window",
+      "automationId": "PrivacyTeachingTip",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.3741268.4.41",
+      "parentRuntimeId": "42.3741268",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "PsDownloadDetailTeachingTip",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.3741268.4.42",
+      "parentRuntimeId": "42.3741268",
+      "name": "本地 AI 模型必须完成下载才可在注销后使用此功能。",
+      "type": "ControlType.Pane",
+      "automationId": "PsDownloadLightTeachingTip",
+      "rect": null,
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.19535034",
+      "parentRuntimeId": "42.2689240",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -30942,
+        "width": 1902,
+        "height": 48,
+        "x": -31991
+      },
+      "enabled": false,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384",
+      "parentRuntimeId": "42.19535034",
+      "name": "",
+      "type": "ControlType.Pane",
+      "automationId": "",
+      "rect": {
+        "y": -30942,
+        "width": 1902,
+        "height": 48,
+        "x": -31991
+      },
+      "enabled": false,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384.4.43",
+      "parentRuntimeId": "42.2756384",
+      "name": "行 1，\n列 42",
+      "type": "ControlType.Text",
+      "automationId": "ContentTextBlock",
+      "rect": {
+        "y": -30930,
+        "width": 105,
+        "height": 24,
+        "x": -31967
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384.4.44",
+      "parentRuntimeId": "42.2756384",
+      "name": "41 个字符",
+      "type": "ControlType.Text",
+      "automationId": "ContentTextBlock",
+      "rect": {
+        "y": -30930,
+        "width": 79,
+        "height": 24,
+        "x": -31833
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384.4.45",
+      "parentRuntimeId": "42.2756384",
+      "name": "纯文本",
+      "type": "ControlType.Text",
+      "automationId": "ContentTextBlock",
+      "rect": {
+        "y": -30942,
+        "width": 72,
+        "height": 48,
+        "x": -31530
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384.4.46",
+      "parentRuntimeId": "42.2756384",
+      "name": "缩放",
+      "type": "ControlType.Text",
+      "automationId": "ContentTextBlock",
+      "rect": {
+        "y": -30930,
+        "width": 49,
+        "height": 24,
+        "x": -30645
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384.4.47",
+      "parentRuntimeId": "42.2756384",
+      "name": " Windows (CRLF)",
+      "type": "ControlType.Text",
+      "automationId": "ContentTextBlock",
+      "rect": {
+        "y": -30930,
+        "width": 134,
+        "height": 24,
+        "x": -30543
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    },
+    {
+      "runtimeId": "42.2756384.4.48",
+      "parentRuntimeId": "42.2756384",
+      "name": " UTF-8",
+      "type": "ControlType.Text",
+      "automationId": "ContentTextBlock",
+      "rect": {
+        "y": -30930,
+        "width": 53,
+        "height": 24,
+        "x": -30291
+      },
+      "enabled": true,
+      "keyboardFocusable": false,
+      "interactive": false
+    }
+  ]
+}

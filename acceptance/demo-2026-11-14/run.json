@@ -4,10 +4,7 @@
     {
       "name": "teach_start",
       "args": {
-        "steps": [
-          "选择评论",
-          "选择矩形"
-        ]
+        "steps": ["选择评论", "选择矩形"]
       },
       "status": 200,
       "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"presentationId\\\": \\\"mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze\\\"\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"

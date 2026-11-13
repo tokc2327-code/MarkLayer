@@ -1,0 +1,614 @@
+{
+  "recoveredWrites": {
+    "n": 10,
+    "p50": 127.35,
+    "p95": 128.61,
+    "max": 128.61
+  },
+  "recoveredWritesSent": 10,
+  "recoveredIds": [
+    "recovered-e72dae23-0497-40e0-b530-1b09632abf94",
+    "recovered-63ae1961-7d99-470d-9826-5f76cdd314b7",
+    "recovered-a8bf0d6e-0ad9-4a26-a690-c44347cdb80f",
+    "recovered-7ac142a6-04af-4a3c-a4da-f0e11fdac3fb",
+    "recovered-470f388d-3384-4fc7-b4fb-e07ad7807f6e",
+    "recovered-94a0d36b-0e6d-47a8-aa20-67b01c933417",
+    "recovered-7ba3f1dc-eaf3-4593-94b2-e999ede6bf2e",
+    "recovered-537986f7-384f-4b59-9c5b-4d5a4e1e5164",
+    "recovered-e447cdb6-a793-49f6-a2d4-1a4aff23152b",
+    "recovered-e7b6929a-0b41-45d8-a37b-2eaf63553b2f"
+  ],
+  "error": null,
+  "offlineMs": 30271,
+  "sent": 33,
+  "receipts": [
+    {
+      "client": 0,
+      "id": "1zoi-pEZX7RePI_Ypx5Sg",
+      "type": "update_op",
+      "sentTimestamp": 64960.152616,
+      "receivedTimestamp": 64960.211698,
+      "latencyMs": 59.08,
+      "receipt": {
+        "type": "ack",
+        "opId": "1zoi-pEZX7RePI_Ypx5Sg",
+        "status": "applied",
+        "seq": 1,
+        "rev": 2
+      }
+    },
+    {
+      "client": 1,
+      "id": "lZj4NL1ZTUnSclZpZO4QF",
+      "type": "update_op",
+      "sentTimestamp": 64960.153616,
+      "receivedTimestamp": 64960.217759,
+      "latencyMs": 64.14,
+      "receipt": {
+        "type": "ack",
+        "opId": "lZj4NL1ZTUnSclZpZO4QF",
+        "status": "applied",
+        "seq": 1,
+        "rev": 3
+      }
+    },
+    {
+      "client": 0,
+      "id": "vLsfUl9JkQruAg61S_I1A",
+      "type": "update_op",
+      "sentTimestamp": 64963.186245,
+      "receivedTimestamp": 64963.194361,
+      "latencyMs": 8.12,
+      "receipt": {
+        "type": "nack",
+        "opId": "vLsfUl9JkQruAg61S_I1A",
+        "status": "refused",
+        "seq": 2,
+        "code": "layer_unavailable",
+        "reason": "目标图层不存在或不可用"
+      }
+    },
+    {
+      "client": 2,
+      "id": "UFDI-7Fflinpt3GpenFwl",
+      "type": "op",
+      "sentTimestamp": 64987.764923,
+      "receivedTimestamp": 64987.964782,
+      "latencyMs": 199.86,
+      "receipt": {
+        "type": "ack",
+        "opId": "UFDI-7Fflinpt3GpenFwl",
+        "status": "applied",
+        "seq": 1,
+        "rev": 4
+      }
+    },
+    {
+      "client": 2,
+      "id": "FC8txbu-CGwWTsbz0s3as",
+      "type": "op",
+      "sentTimestamp": 64987.765075,
+      "receivedTimestamp": 64988.150184,
+      "latencyMs": 385.11,
+      "receipt": {
+        "type": "ack",
+        "opId": "FC8txbu-CGwWTsbz0s3as",
+        "status": "applied",
+        "seq": 2,
+        "rev": 5
+      }
+    },
+    {
+      "client": 2,
+      "id": "fs9LRgzXIkgwv1uzkdToQ",
+      "type": "op",
+      "sentTimestamp": 64987.765154,
+      "receivedTimestamp": 64988.150363,
+      "latencyMs": 385.21,
+      "receipt": {
+        "type": "ack",
+        "opId": "fs9LRgzXIkgwv1uzkdToQ",
+        "status": "applied",
+        "seq": 3,
+        "rev": 6
+      }
+    },
+    {
+      "client": 2,
+      "id": "jhoYi-t09hD7gaLZH53hq",
+      "type": "op",
+      "sentTimestamp": 64987.765213,
+      "receivedTimestamp": 64988.150449,
+      "latencyMs": 385.24,
+      "receipt": {
+        "type": "ack",
+        "opId": "jhoYi-t09hD7gaLZH53hq",
+        "status": "applied",
+        "seq": 4,
+        "rev": 7
+      }
+    },
+    {
+      "client": 2,
+      "id": "CmgJcLSQyvgof-61I_Niy",
+      "type": "op",
+      "sentTimestamp": 64987.76531,
+      "receivedTimestamp": 64988.170795,
+      "latencyMs": 405.48,
+      "receipt": {
+        "type": "ack",
+        "opId": "CmgJcLSQyvgof-61I_Niy",
+        "status": "applied",
+        "seq": 5,
+        "rev": 8
+      }
+    },
+    {
+      "client": 2,
+      "id": "X3sCiGq1jCPN46RU95_Qo",
+      "type": "op",
+      "sentTimestamp": 64987.765398,
+      "receivedTimestamp": 64988.214758,
+      "latencyMs": 449.36,
+      "receipt": {
+        "type": "ack",
+        "opId": "X3sCiGq1jCPN46RU95_Qo",
+        "status": "applied",
+        "seq": 6,
+        "rev": 9
+      }
+    },
+    {
+      "client": 2,
+      "id": "NsMWbuj4Sm0Fk74EL61c_",
+      "type": "op",
+      "sentTimestamp": 64987.76548,
+      "receivedTimestamp": 64988.288712,
+      "latencyMs": 523.23,
+      "receipt": {
+        "type": "ack",
+        "opId": "NsMWbuj4Sm0Fk74EL61c_",
+        "status": "applied",
+        "seq": 7,
+        "rev": 10
+      }
+    },
+    {
+      "client": 2,
+      "id": "9uPVGCfeaNhIyhMOnsHfh",
+      "type": "op",
+      "sentTimestamp": 64987.765558,
+      "receivedTimestamp": 64988.2972,
+      "latencyMs": 531.64,
+      "receipt": {
+        "type": "ack",
+        "opId": "9uPVGCfeaNhIyhMOnsHfh",
+        "status": "applied",
+        "seq": 8,
+        "rev": 11
+      }
+    },
+    {
+      "client": 2,
+      "id": "VJbVCBksfsJnGJ2IVNLyC",
+      "type": "op",
+      "sentTimestamp": 64987.765623,
+      "receivedTimestamp": 64988.341924,
+      "latencyMs": 576.3,
+      "receipt": {
+        "type": "ack",
+        "opId": "VJbVCBksfsJnGJ2IVNLyC",
+        "status": "applied",
+        "seq": 9,
+        "rev": 12
+      }
+    },
+    {
+      "client": 2,
+      "id": "nLl90l3QdzkNsGPXUsPRL",
+      "type": "op",
+      "sentTimestamp": 64987.7657,
+      "receivedTimestamp": 64988.343947,
+      "latencyMs": 578.25,
+      "receipt": {
+        "type": "ack",
+        "opId": "nLl90l3QdzkNsGPXUsPRL",
+        "status": "applied",
+        "seq": 10,
+        "rev": 13
+      }
+    },
+    {
+      "client": 2,
+      "id": "cV824D2EW4ygZbntiU9VU",
+      "type": "op",
+      "sentTimestamp": 64987.766151,
+      "receivedTimestamp": 64988.344913,
+      "latencyMs": 578.76,
+      "receipt": {
+        "type": "ack",
+        "opId": "cV824D2EW4ygZbntiU9VU",
+        "status": "applied",
+        "seq": 11,
+        "rev": 14
+      }
+    },
+    {
+      "client": 2,
+      "id": "-YAF6Lbmbk22GW__OYCh9",
+      "type": "op",
+      "sentTimestamp": 64987.766216,
+      "receivedTimestamp": 64988.374422,
+      "latencyMs": 608.21,
+      "receipt": {
+        "type": "ack",
+        "opId": "-YAF6Lbmbk22GW__OYCh9",
+        "status": "applied",
+        "seq": 12,
+        "rev": 15
+      }
+    },
+    {
+      "client": 2,
+      "id": "G2EN0aa0w5nyQ2yV43_70",
+      "type": "op",
+      "sentTimestamp": 64987.766286,
+      "receivedTimestamp": 64988.418192,
+      "latencyMs": 651.91,
+      "receipt": {
+        "type": "ack",
+        "opId": "G2EN0aa0w5nyQ2yV43_70",
+        "status": "applied",
+        "seq": 13,
+        "rev": 16
+      }
+    },
+    {
+      "client": 2,
+      "id": "c9uKdw92wU7ItdP5vbULb",
+      "type": "op",
+      "sentTimestamp": 64987.766324,
+      "receivedTimestamp": 64988.418614,
+      "latencyMs": 652.29,
+      "receipt": {
+        "type": "ack",
+        "opId": "c9uKdw92wU7ItdP5vbULb",
+        "status": "applied",
+        "seq": 14,
+        "rev": 17
+      }
+    },
+    {
+      "client": 2,
+      "id": "jYEPObHs0O9F1AVMyxKG5",
+      "type": "op",
+      "sentTimestamp": 64987.76636,
+      "receivedTimestamp": 64988.444897,
+      "latencyMs": 678.54,
+      "receipt": {
+        "type": "ack",
+        "opId": "jYEPObHs0O9F1AVMyxKG5",
+        "status": "applied",
+        "seq": 15,
+        "rev": 18
+      }
+    },
+    {
+      "client": 2,
+      "id": "QJnEU1fHecqC69p0mf-mk",
+      "type": "op",
+      "sentTimestamp": 64987.766386,
+      "receivedTimestamp": 64988.445613,
+      "latencyMs": 679.23,
+      "receipt": {
+        "type": "ack",
+        "opId": "QJnEU1fHecqC69p0mf-mk",
+        "status": "applied",
+        "seq": 16,
+        "rev": 19
+      }
+    },
+    {
+      "client": 2,
+      "id": "T2HOjuhQpwkOSZwMqAv5X",
+      "type": "op",
+      "sentTimestamp": 64987.766428,
+      "receivedTimestamp": 64988.448676,
+      "latencyMs": 682.25,
+      "receipt": {
+        "type": "ack",
+        "opId": "T2HOjuhQpwkOSZwMqAv5X",
+        "status": "applied",
+        "seq": 17,
+        "rev": 20
+      }
+    },
+    {
+      "client": 2,
+      "id": "ip9jLV40wOVK1tk8Ll7MS",
+      "type": "op",
+      "sentTimestamp": 64987.766467,
+      "receivedTimestamp": 64988.448899,
+      "latencyMs": 682.43,
+      "receipt": {
+        "type": "ack",
+        "opId": "ip9jLV40wOVK1tk8Ll7MS",
+        "status": "applied",
+        "seq": 18,
+        "rev": 21
+      }
+    },
+    {
+      "client": 2,
+      "id": "7CkQj-bFGodXt1JTa0p1I",
+      "type": "op",
+      "sentTimestamp": 64987.766516,
+      "receivedTimestamp": 64988.500408,
+      "latencyMs": 733.89,
+      "receipt": {
+        "type": "ack",
+        "opId": "7CkQj-bFGodXt1JTa0p1I",
+        "status": "applied",
+        "seq": 19,
+        "rev": 22
+      }
+    },
+    {
+      "client": 2,
+      "id": "iy7PZfxOZ1zHbvmh-wVl-",
+      "type": "op",
+      "sentTimestamp": 64987.766552,
+      "receivedTimestamp": 64988.501634,
+      "latencyMs": 735.08,
+      "receipt": {
+        "type": "ack",
+        "opId": "iy7PZfxOZ1zHbvmh-wVl-",
+        "status": "applied",
+        "seq": 20,
+        "rev": 23
+      }
+    },
+    {
+      "client": 0,
+      "id": "slJ0ii2htyF1bupNR400d",
+      "type": "op",
+      "sentTimestamp": 65016.757996,
+      "receivedTimestamp": 65016.854571,
+      "latencyMs": 96.58,
+      "receipt": {
+        "type": "ack",
+        "opId": "slJ0ii2htyF1bupNR400d",
+        "status": "applied",
+        "seq": 3,
+        "rev": 24
+      }
+    },
+    {
+      "client": 0,
+      "id": "STmyAm2wNgmH-lRditVhN",
+      "type": "op",
+      "sentTimestamp": 65016.75803,
+      "receivedTimestamp": 65016.856051,
+      "latencyMs": 98.02,
+      "receipt": {
+        "type": "ack",
+        "opId": "STmyAm2wNgmH-lRditVhN",
+        "status": "applied",
+        "seq": 4,
+        "rev": 25
+      }
+    },
+    {
+      "client": 0,
+      "id": "48RPoL80LnfO96_wG0VjL",
+      "type": "op",
+      "sentTimestamp": 65016.758046,
+      "receivedTimestamp": 65016.856168,
+      "latencyMs": 98.12,
+      "receipt": {
+        "type": "ack",
+        "opId": "48RPoL80LnfO96_wG0VjL",
+        "status": "applied",
+        "seq": 5,
+        "rev": 26
+      }
+    },
+    {
+      "client": 0,
+      "id": "wr9nihTXGvgOrBTzz0Jq4",
+      "type": "op",
+      "sentTimestamp": 65016.758055,
+      "receivedTimestamp": 65016.856231,
+      "latencyMs": 98.18,
+      "receipt": {
+        "type": "ack",
+        "opId": "wr9nihTXGvgOrBTzz0Jq4",
+        "status": "applied",
+        "seq": 6,
+        "rev": 27
+      }
+    },
+    {
+      "client": 0,
+      "id": "YwdUOvVLGSFtfSqxtKShL",
+      "type": "op",
+      "sentTimestamp": 65016.758063,
+      "receivedTimestamp": 65016.885416,
+      "latencyMs": 127.35,
+      "receipt": {
+        "type": "ack",
+        "opId": "YwdUOvVLGSFtfSqxtKShL",
+        "status": "applied",
+        "seq": 7,
+        "rev": 28
+      }
+    },
+    {
+      "client": 0,
+      "id": "55zFwgkEbDAuEwTcERH9F",
+      "type": "op",
+      "sentTimestamp": 65016.758072,
+      "receivedTimestamp": 65016.886301,
+      "latencyMs": 128.23,
+      "receipt": {
+        "type": "ack",
+        "opId": "55zFwgkEbDAuEwTcERH9F",
+        "status": "applied",
+        "seq": 8,
+        "rev": 29
+      }
+    },
+    {
+      "client": 0,
+      "id": "ULEPVMGzHz9Zs2XwQMf7A",
+      "type": "op",
+      "sentTimestamp": 65016.758089,
+      "receivedTimestamp": 65016.886439,
+      "latencyMs": 128.35,
+      "receipt": {
+        "type": "ack",
+        "opId": "ULEPVMGzHz9Zs2XwQMf7A",
+        "status": "applied",
+        "seq": 9,
+        "rev": 30
+      }
+    },
+    {
+      "client": 0,
+      "id": "GyWaD4bk8Yx6aJ7Ep2eGt",
+      "type": "op",
+      "sentTimestamp": 65016.758095,
+      "receivedTimestamp": 65016.886547,
+      "latencyMs": 128.45,
+      "receipt": {
+        "type": "ack",
+        "opId": "GyWaD4bk8Yx6aJ7Ep2eGt",
+        "status": "applied",
+        "seq": 10,
+        "rev": 31
+      }
+    },
+    {
+      "client": 0,
+      "id": "_8STwv8AymQu0KWwzbT1U",
+      "type": "op",
+      "sentTimestamp": 65016.758102,
+      "receivedTimestamp": 65016.886631,
+      "latencyMs": 128.53,
+      "receipt": {
+        "type": "ack",
+        "opId": "_8STwv8AymQu0KWwzbT1U",
+        "status": "applied",
+        "seq": 11,
+        "rev": 32
+      }
+    },
+    {
+      "client": 0,
+      "id": "sFBItLxEXMCTWk3SeA8hZ",
+      "type": "op",
+      "sentTimestamp": 65016.758108,
+      "receivedTimestamp": 65016.886717,
+      "latencyMs": 128.61,
+      "receipt": {
+        "type": "ack",
+        "opId": "sFBItLxEXMCTWk3SeA8hZ",
+        "status": "applied",
+        "seq": 12,
+        "rev": 33
+      }
+    }
+  ],
+  "all": {
+    "n": 32,
+    "p50": 385.24,
+    "p95": 733.89,
+    "max": 735.08
+  },
+  "offlineWrites": {
+    "n": 20,
+    "p50": 578.25,
+    "p95": 733.89,
+    "max": 735.08
+  },
+  "offlineWritesSent": 20,
+  "missingReceipts": 0,
+  "offlineIds": [
+    "offline-1cb92166-614d-49fd-9469-a6ca8aa6cede",
+    "offline-0580c2b6-f3ce-489f-ad03-51fbe27ac1f8",
+    "offline-de680a0c-5996-44a7-9c64-0843d39ffeff",
+    "offline-e65933a0-7d0d-405e-8d3b-ccddeaf6fd79",
+    "offline-3348da20-43ef-4d1a-ac4d-5cc20e05b1e9",
+    "offline-fb0642c2-f701-4076-b6d6-527f7a5e0bce",
+    "offline-c9378103-0a1b-4abf-9e1b-1df190ca1957",
+    "offline-ef4901ae-f2cd-4b17-a87c-b801c2aff23b",
+    "offline-b590a104-472a-48c5-9816-3018fc2f7de0",
+    "offline-835a5951-ce7a-4421-a158-9d5484c5e5f4",
+    "offline-007bd9fc-0fed-4d5b-8033-e522f2129ddd",
+    "offline-058dfccb-0720-469c-85ff-6f2bf40d3b80",
+    "offline-9b3231df-ec66-4df5-9346-c4e7a5069864",
+    "offline-b48fe32a-b86d-444a-b9f8-2b63f2e77eff",
+    "offline-098c8861-f98e-4dcd-9fb7-5651bd9b3f08",
+    "offline-6a296bf9-0285-4579-bb69-73c1708f452b",
+    "offline-bad0c122-0635-4436-92b5-987828d2b7df",
+    "offline-529d6907-9f4e-4ef9-bb94-5ea9fd079823",
+    "offline-5301cb5b-c231-43e7-86c7-004b4530be3b",
+    "offline-d8c4d697-8fa7-4524-a310-b0567ede80bd"
+  ],
+  "serverCount": 21,
+  "clients": [
+    {
+      "client": 0,
+      "count": 31,
+      "identical": false,
+      "missing": [],
+      "extra": [
+        "recovered-e72dae23-0497-40e0-b530-1b09632abf94",
+        "recovered-63ae1961-7d99-470d-9826-5f76cdd314b7",
+        "recovered-a8bf0d6e-0ad9-4a26-a690-c44347cdb80f",
+        "recovered-7ac142a6-04af-4a3c-a4da-f0e11fdac3fb",
+        "recovered-470f388d-3384-4fc7-b4fb-e07ad7807f6e",
+        "recovered-94a0d36b-0e6d-47a8-aa20-67b01c933417",
+        "recovered-7ba3f1dc-eaf3-4593-94b2-e999ede6bf2e",
+        "recovered-537986f7-384f-4b59-9c5b-4d5a4e1e5164",
+        "recovered-e447cdb6-a793-49f6-a2d4-1a4aff23152b",
+        "recovered-e7b6929a-0b41-45d8-a37b-2eaf63553b2f"
+      ]
+    },
+    {
+      "client": 1,
+      "count": 21,
+      "identical": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "client": 2,
+      "count": 21,
+      "identical": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "client": 3,
+      "count": 21,
+      "identical": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "client": 4,
+      "count": 21,
+      "identical": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "client": 5,
+      "count": 21,
+      "identical": true,
+      "missing": [],
+      "extra": []
+    }
+  ]
+}

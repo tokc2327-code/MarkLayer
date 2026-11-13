@@ -1,4 +1,11 @@
-import type { PageReading, RoomTransport } from '@marklayer/agent-tools';
+import type {
+  PageReading,
+  RoomTransport,
+  SemanticListing,
+  SemanticQuery,
+  SemanticRegistration,
+  SemanticResult,
+} from '@marklayer/agent-tools';
 import { pageReadingSchema, RoomCore } from '@marklayer/agent-tools';
 import { agentPresence } from '@marklayer/types/agents';
 import type { AgentTaskCommand, ClientMsg, RoomTask, ServerMsg } from '@marklayer/types/wire';
@@ -114,6 +121,30 @@ class SocketTransport implements RoomTransport {
     });
     if (!res.ok) return { ok: false, tasks: [] };
     return (await res.json()) as { ok: boolean; tasks: RoomTask[] };
+  }
+
+  async registerSemantic(value: SemanticRegistration): Promise<SemanticResult> {
+    const res = await fetch(`${this.apiBase}/s/${this.roomId}/member-semantics`, {
+      method: 'POST',
+      headers: { ...this.authHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify(value),
+    });
+    const data = (await res.json().catch(() => null)) as SemanticResult | null;
+    return data && typeof data.ok === 'boolean'
+      ? data
+      : { ok: false, code: 'unavailable', reason: `semantic registration HTTP ${res.status}` };
+  }
+
+  async querySemantics(query: SemanticQuery): Promise<SemanticListing> {
+    const params = new URLSearchParams();
+    if (query.name !== undefined) params.set('name', query.name);
+    if (query.page !== undefined) params.set('page', query.page);
+    const res = await fetch(`${this.apiBase}/s/${this.roomId}/member-semantics?${params}`, {
+      headers: this.authHeaders(),
+    });
+    if (!res.ok) throw new Error(`semantic query HTTP ${res.status}`);
+    const data = (await res.json()) as SemanticListing;
+    return data;
   }
 
   send(msg: ClientMsg): boolean {

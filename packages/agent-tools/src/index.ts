@@ -16,7 +16,9 @@ import {
   NEEDS_LIVE_ROOM,
   NEEDS_ROOM,
   type PreviewRequest,
+  QuerySemanticInput,
   QuestionInput,
+  RegisterSemanticInput,
   ReplyInput,
   ResolveInput,
   SetStepsInput,
@@ -216,6 +218,25 @@ async function workRoom({
   }
 
   switch (name) {
+    case 'marklayer_register_semantic': {
+      const parsed = RegisterSemanticInput.safeParse(args);
+      if (!parsed.success) return fail(parsed.error);
+      if (!room.registerSemantic) return err('semantic registration unavailable');
+      const result = await room.registerSemantic(parsed.data);
+      return result.ok ? ok(result) : err(`${result.code}: ${result.reason}`);
+    }
+    case 'marklayer_query_semantics': {
+      const parsed = QuerySemanticInput.safeParse(args);
+      if (!parsed.success) return fail(parsed.error);
+      if (!room.querySemantics) return err('semantic query unavailable');
+      try {
+        const listing = await room.querySemantics(parsed.data);
+        return ok({ count: listing.semantics.length, ...listing });
+      } catch {
+        return err('semantic query unavailable');
+      }
+    }
+
     case 'marklayer_task': {
       const parsed = agentTaskCommandSchema.safeParse(args);
       if (!parsed.success) return fail(parsed.error);

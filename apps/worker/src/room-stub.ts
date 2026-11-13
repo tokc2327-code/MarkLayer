@@ -1,3 +1,4 @@
+import type { SemanticListing, SemanticQuery, SemanticRegistration, SemanticResult } from '@marklayer/agent-tools';
 import type {
   AgentJoin,
   AgentSnapshot,
@@ -21,6 +22,9 @@ export interface RoomStub {
   join(peer: { id: string; uid: string; name: string; color: string }): Promise<AgentJoin>;
   snapshot(): Promise<AgentSnapshot>;
   queryUiSemantics(): Promise<UiSemantic[]>;
+  registerMemberSemantic(value: SemanticRegistration): Promise<SemanticResult>;
+  queryMemberSemantics(query: SemanticQuery): Promise<SemanticRegistration[]>;
+  semanticListing(query: SemanticQuery): Promise<SemanticListing>;
   agentTaskCommand(peerId: string, command: AgentTaskCommand): Promise<{ ok: boolean; tasks: RoomTask[] }>;
   send(msg: ClientMsg, peerId?: string): Promise<boolean>;
   watch(request: AgentWatchRequest): Promise<AgentWatchResult>;

@@ -18,6 +18,7 @@ export const AGENT_TOOL_GROUPS: { group: string; tools: AgentTool[] }[] = [
         does: "The page's headings, text, links and controls, each with the selector that finds it.",
       },
       { name: 'room_info', does: 'The URL under review, the viewport it was annotated at, and timestamps.' },
+      { name: 'query_semantics', does: 'Find registered elements by name and page and read the room revision.' },
       { name: 'list_annotations', does: 'Everything left on the page, filtered by status.' },
       { name: 'get_annotation', does: 'One annotation in full, with its reply thread and any attached images.' },
       { name: 'read_attachment', does: 'Read an attached image as MCP image content.' },
@@ -49,6 +50,10 @@ export const AGENT_TOOL_GROUPS: { group: string; tools: AgentTool[] }[] = [
   {
     group: 'Review',
     tools: [
+      {
+        name: 'register_semantic',
+        does: 'Register a named page element at a room revision; duplicate keys are refused.',
+      },
       { name: 'create_annotation', does: 'Leave its own comment, pinned to an element, one per finding.' },
       { name: 'suggest_edit', does: 'Propose exact replacement text, shown to the reviewer as a diff to accept.' },
     ],

@@ -1,4 +1,5 @@
 import { DurableObject } from 'cloudflare:workers';
+import type { SemanticQuery, SemanticRegistration, SemanticResult } from '@marklayer/agent-tools';
 import { WATCH_MAX_SECONDS } from '@marklayer/agent-tools';
 import { ORIGIN } from '@marklayer/brand';
 import { isAgentPeer } from '@marklayer/types/agents';
@@ -878,6 +879,40 @@ export class AnnotationRoom extends DurableObject<RoomEnv> {
     await this.getOps();
     await this.revive();
     return (await this.mutate({ type: mode, ops }, { userId })).status !== 'refused';
+  }
+
+  async registerMemberSemantic(value: SemanticRegistration): Promise<SemanticResult> {
+    return this.serializeCollaboration(async () => {
+      await this.getOps();
+      if (this.dead || (await this.pastDeadline()))
+        return { ok: false, code: 'room_expired', reason: '房间已过期或关闭' };
+      if (!(await this.mayEdit({ peerId: undefined }, false)) || this.dead)
+        return { ok: false, code: 'read_only', reason: '当前房间不允许编辑' };
+      const entries = await this.queryMemberSemantics({});
+      if (entries.some((entry) => entry.page === value.page && entry.name === value.name))
+        return { ok: false, code: 'duplicate_semantic', reason: '该页面的语义名称已经注册' };
+      const roomVersion = this.cursor();
+      if (value.version !== roomVersion)
+        return { ok: false, code: 'version_conflict', reason: `房间版本已变更，当前版本为 ${roomVersion}` };
+      await this.ctx.storage.put('memberSemantics', [...entries, value]);
+      return { ok: true, semantic: value, roomVersion };
+    });
+  }
+
+  async queryMemberSemantics(query: SemanticQuery): Promise<SemanticRegistration[]> {
+    const entries = (await this.ctx.storage.get<SemanticRegistration[]>('memberSemantics')) ?? [];
+    return entries.filter(
+      (entry) =>
+        (query.name === undefined || entry.name === query.name) &&
+        (query.page === undefined || entry.page === query.page),
+    );
+  }
+
+  async semanticListing(query: SemanticQuery) {
+    return this.serializeCollaboration(async () => {
+      await this.getOps();
+      return { semantics: await this.queryMemberSemantics(query), roomVersion: this.cursor() };
+    });
   }
 
   /** Trusted server code only. No network route accepts registry writes. */

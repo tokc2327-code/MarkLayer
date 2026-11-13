@@ -535,3 +535,28 @@ test('room info exposes the execution mode under the protocol field name', async
   });
   expect(body(await run('marklayer_room_info', {}, room)).exec_mode).toBe('guide');
 });
+
+test('semantic tools validate and dispatch registration and filtered query', async () => {
+  const value = { name: 'button', page: 'https://example.com', selector: '#button', description: 'Submit', version: 0 };
+  const room = fakeRoom({
+    registerSemantic: async (entry) => ({ ok: true, semantic: entry, roomVersion: 0 }),
+    querySemantics: async (query) => ({ semantics: query.name === value.name ? [value] : [], roomVersion: 0 }),
+  });
+  expect(body(await run('marklayer_register_semantic', value, room))).toMatchObject({ ok: true, semantic: value });
+  expect(body(await run('marklayer_query_semantics', { name: 'button' }, room))).toMatchObject({
+    count: 1,
+    semantics: [value],
+  });
+  expect((await run('marklayer_register_semantic', { ...value, selector: '' }, room))?.isError).toBe(true);
+  expect(
+    (
+      await run(
+        'marklayer_register_semantic',
+        value,
+        fakeRoom({
+          registerSemantic: async () => ({ ok: false, code: 'duplicate_semantic', reason: 'already registered' }),
+        }),
+      )
+    )?.isError,
+  ).toBe(true);
+});

@@ -1132,3 +1132,34 @@ describe('room UI semantics API', () => {
     expect<unknown>(await (await request(restored)).json()).toEqual({ semantics: [semantic] });
   });
 });
+
+describe('member semantic registration', () => {
+  test('serializes competing registrations, retains the winner after eviction, and isolates pages', async () => {
+    const kv = new Map<string, unknown>();
+    const first = liveRoom({ kv });
+    const version = (await first.room.snapshot()).cursor;
+    const base = { name: 'button', page: 'https://example.com/a', selector: '#a', description: 'first', version };
+    const results = await Promise.all(
+      Array.from({ length: 4 }, (_, i) =>
+        first.room.registerMemberSemantic({ ...base, description: `candidate ${i}` }),
+      ),
+    );
+    expect(results.filter((r) => r.ok)).toHaveLength(1);
+    expect(results.filter((r) => !r.ok && r.code === 'duplicate_semantic')).toHaveLength(3);
+    const stored = await first.room.queryMemberSemantics({ page: base.page, name: base.name });
+    expect(stored).toHaveLength(1);
+    expect(await first.room.queryMemberSemantics({ page: 'https://example.com/b' })).toEqual([]);
+    expect(await liveRoom({ kv }).room.queryMemberSemantics({})).toEqual(stored);
+  });
+
+  test('rejects stale versions and read-only links', async () => {
+    const live = liveRoom();
+    const value = { name: 'button', page: 'https://example.com', selector: '#a', description: 'button', version: 999 };
+    expect(await live.room.registerMemberSemantic(value)).toMatchObject({ ok: false, code: 'version_conflict' });
+    live.sqlite.query("UPDATE annotations SET access = 'view' WHERE id = ?").run(ID);
+    expect(await live.room.registerMemberSemantic({ ...value, version: 0 })).toMatchObject({
+      ok: false,
+      code: 'read_only',
+    });
+  });
+});

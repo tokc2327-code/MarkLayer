@@ -1,3 +1,4 @@
+import { QuerySemanticInput, RegisterSemanticInput } from '@marklayer/agent-tools';
 import { agentPresence } from '@marklayer/types/agents';
 import { agentTaskCommandSchema, ROOM_GEN_HEADER } from '@marklayer/types/wire';
 import { setCookie } from 'hono/cookie';
@@ -72,6 +73,28 @@ rooms.get('/s/:id/semantics', async (c) => {
   const entries = await room.stub.queryUiSemantics();
   const id = c.req.query('id');
   return c.json({ semantics: id === undefined ? entries : entries.filter((entry) => entry.id === id) });
+});
+
+rooms.post('/s/:id/member-semantics', async (c) => {
+  if (await overRateLimit({ limiter: c.env.ROOM_LIMITER, req: c.req })) return c.text('Too many requests', 429);
+  const room = await openRoom({ env: c.env, id: c.req.param('id'), headers: c.req.raw.headers, ctx: c.executionCtx });
+  if (!room.ok) return refuse(room, 'json');
+  const parsed = RegisterSemanticInput.safeParse(await c.req.json().catch(() => null));
+  if (!parsed.success) return c.json({ error: 'invalid semantic' }, 400);
+  const result = await room.stub.registerMemberSemantic(parsed.data);
+  return c.json(
+    result,
+    result.ok ? 201 : result.code === 'read_only' ? 403 : result.code === 'room_expired' ? 410 : 409,
+  );
+});
+
+rooms.get('/s/:id/member-semantics', async (c) => {
+  if (await overRateLimit({ limiter: c.env.ROOM_LIMITER, req: c.req })) return c.text('Too many requests', 429);
+  const room = await openRoom({ env: c.env, id: c.req.param('id'), headers: c.req.raw.headers, ctx: c.executionCtx });
+  if (!room.ok) return refuse(room, 'json');
+  const parsed = QuerySemanticInput.safeParse({ name: c.req.query('name'), page: c.req.query('page') });
+  if (!parsed.success) return c.json({ error: 'invalid query' }, 400);
+  return c.json(await room.stub.semanticListing(parsed.data));
 });
 
 /**

@@ -1,0 +1,199 @@
+{
+  "before": {
+    "A": "1\n1\nAnonymous\n4m ago\n\nReal acceptance comment\n\n诊断\nStatus\nIn progress\nAssignee\nAssign\nReply\nDetails\nPage\nexample.com\nCreated\n4分钟前\nExpires\n2027年2月11日\nResets each time it is opened\nAccess\nCan edit\nPeople\n10 here now\nContains\n1 comment\nID\ne2erealtest20261113\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nThreads\n1",
+    "B": "1\n1\nAnonymous\n4m ago\n\nReal acceptance comment\n\n诊断\nStatus\nIn progress\nAssignee\nAssign\nReply\nDetails\nPage\nexample.com\nCreated\n4分钟前\nExpires\n2027年2月11日\nResets each time it is opened\nAccess\nCan edit\nPeople\n10 here now\nContains\n1 comment\nID\ne2erealtest20261113\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nThreads\n1"
+  },
+  "after": {
+    "A": "1\n1\nAnonymous\n4m ago\n\nReal acceptance comment\n\n诊断\nStatus\nResolved\nAssignee\nAssign\nReply\nDetails\nPage\nexample.com\nCreated\n4分钟前\nExpires\n2027年2月11日\nResets each time it is opened\nAccess\nCan edit\nPeople\n10 here now\nContains\n1 comment\nID\ne2erealtest20261113\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nThreads\n1\nOpen\nIn progress\nResolved\nApproved\nDismissed",
+    "B": "1\n1\nAnonymous\n4m ago\n\nReal acceptance comment\n\n诊断\nStatus\nResolved\nAssignee\nAssign\nReply\nDetails\nPage\nexample.com\nCreated\n4分钟前\nExpires\n2027年2月11日\nResets each time it is opened\nAccess\nCan edit\nPeople\n10 here now\nContains\n1 comment\nID\ne2erealtest20261113\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nThreads\n1",
+    "api": {
+      "ops": [
+        {
+          "id": "real-comment",
+          "color": "#ff0000",
+          "lineWidth": 2,
+          "status": "resolved",
+          "tool": "comment",
+          "num": 1,
+          "text": "Real acceptance comment",
+          "x": 300,
+          "y": 220,
+          "ts": 1794584167208,
+          "resolved": true
+        }
+      ],
+      "url": "https://example.com",
+      "width": 1280,
+      "exec_mode": "pair"
+    }
+  },
+  "eventsA": [
+    {
+      "at": 1794584406558,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"connected\"}"
+    },
+    {
+      "at": 1794584408401,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"init\",\"ops\":[{\"id\":\"real-comment\",\"color\":\"#ff0000\",\"lineWidth\":2,\"status\":\"in_progress\",\"tool\":\"comment\",\"num\":1,\"text\":\"Real acceptance comment\",\"x\":300,\"y\":220,\"ts\":1794584167208,\"resolved\":false}],\"peers\":[{\"id\":\"WC7kBYkwzz0pyBU28PrLr\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584408333},{\"id\":\"TU5fRRWqdqRW1Cu---2M7\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584407341},{\"id\":\"AgctS22hwioRFfhW-FmiF\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584380152},{\"id\":\"rLpSt0nf_3uoa__zSPh26\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584342331},{\"id\":\"smpJ1nBADsVAziWh2VJzV\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584315923},{\"id\":\"LV7fQWaWsLFOLyETN1df_\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584277321},{\"id\":\"OLC36CNbRdvmZV5XNyDa5\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584249046},{\"id\":\"e1098ST50v83efv9yNmix\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584235482},{\"id\":\"CnkIBClhPzAKOQQVoBZBE\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584221686},{\"id\":\"KSBYcYkEGGZGL5Zz4hdKw\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584194606}],\"createdAt\":1794584134,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1280,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794584134}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+    },
+    {
+      "at": 1794584415090,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"update_op\",\"opId\":\"real-comment\",\"patch\":{\"status\":\"resolved\",\"resolved\":true},\"clientOpId\":\"sewqhq9u38fOzD0YMNEuj\",\"seq\":1}"
+    },
+    {
+      "at": 1794584415121,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"update_op\",\"opId\":\"real-comment\",\"patch\":{\"status\":\"dismissed\",\"resolved\":false}}"
+    },
+    {
+      "at": 1794584415131,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"update_op\",\"opId\":\"real-comment\",\"patch\":{\"status\":\"resolved\",\"resolved\":true}}"
+    },
+    {
+      "at": 1794584415132,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"ack\",\"opId\":\"sewqhq9u38fOzD0YMNEuj\",\"status\":\"applied\",\"seq\":1,\"rev\":4}"
+    },
+    {
+      "at": 1794584423369,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584423370,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    },
+    {
+      "at": 1794584436554,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584438368,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584438369,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    },
+    {
+      "at": 1794584453366,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584453367,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    },
+    {
+      "at": 1794584466554,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584468366,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584468367,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    }
+  ],
+  "eventsB": [
+    {
+      "at": 1794584406644,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"connected\"}"
+    },
+    {
+      "at": 1794584407392,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"init\",\"ops\":[{\"id\":\"real-comment\",\"color\":\"#ff0000\",\"lineWidth\":2,\"status\":\"in_progress\",\"tool\":\"comment\",\"num\":1,\"text\":\"Real acceptance comment\",\"x\":300,\"y\":220,\"ts\":1794584167208,\"resolved\":false}],\"peers\":[{\"id\":\"TU5fRRWqdqRW1Cu---2M7\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584407341},{\"id\":\"AgctS22hwioRFfhW-FmiF\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584380152},{\"id\":\"rLpSt0nf_3uoa__zSPh26\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584342331},{\"id\":\"smpJ1nBADsVAziWh2VJzV\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584315923},{\"id\":\"LV7fQWaWsLFOLyETN1df_\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584277321},{\"id\":\"OLC36CNbRdvmZV5XNyDa5\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584249046},{\"id\":\"e1098ST50v83efv9yNmix\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584235482},{\"id\":\"CnkIBClhPzAKOQQVoBZBE\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584221686},{\"id\":\"KSBYcYkEGGZGL5Zz4hdKw\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\",\"joinedAt\":1794584194606}],\"createdAt\":1794584134,\"expiresAt\":null,\"owned\":false,\"url\":\"https://example.com\",\"width\":1280,\"access\":\"edit\",\"execMode\":\"pair\",\"layers\":[{\"id\":\"default\",\"name\":\"默认图层\",\"created_at\":1794584134}],\"claims\":[],\"tasks\":[],\"canEdit\":true,\"iceServers\":[{\"urls\":\"stun:stun.l.google.com:19302\"},{\"urls\":\"stun:stun1.l.google.com:19302\"}]}"
+    },
+    {
+      "at": 1794584408415,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"peer_join\",\"peer\":{\"id\":\"WC7kBYkwzz0pyBU28PrLr\",\"uid\":\"eSsp1x7205O3_rycTR036\",\"name\":\"Cosmic Axolotl\",\"color\":\"#6366f1\"}}"
+    },
+    {
+      "at": 1794584415044,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"update_op\",\"opId\":\"real-comment\",\"patch\":{\"status\":\"dismissed\",\"resolved\":false},\"clientOpId\":\"XGFrQ9I9K-QZXcyilSHtA\",\"seq\":1}"
+    },
+    {
+      "at": 1794584415070,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"update_op\",\"opId\":\"real-comment\",\"patch\":{\"status\":\"dismissed\",\"resolved\":false}}"
+    },
+    {
+      "at": 1794584415075,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"ack\",\"opId\":\"XGFrQ9I9K-QZXcyilSHtA\",\"status\":\"applied\",\"seq\":1,\"rev\":3}"
+    },
+    {
+      "at": 1794584415087,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"update_op\",\"opId\":\"real-comment\",\"patch\":{\"status\":\"resolved\",\"resolved\":true}}"
+    },
+    {
+      "at": 1794584422381,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584422383,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    },
+    {
+      "at": 1794584436642,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584437369,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584437370,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    },
+    {
+      "at": 1794584452381,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584452384,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    },
+    {
+      "at": 1794584466648,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584467370,
+      "method": "Network.webSocketFrameSent",
+      "payload": "{\"type\":\"ping\"}"
+    },
+    {
+      "at": 1794584467371,
+      "method": "Network.webSocketFrameReceived",
+      "payload": "{\"type\":\"pong\"}"
+    }
+  ]
+}

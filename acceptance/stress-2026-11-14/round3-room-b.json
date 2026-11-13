@@ -1,0 +1,125 @@
+[
+  {
+    "layerId": "default",
+    "id": "other-87fbcca8-ee4a-448a-b9e3-915dea090160",
+    "color": "#f43f5e",
+    "lineWidth": 2,
+    "author": "Speedy Capybara",
+    "authorId": "ftwrsaP8L5VYp2Tur303H",
+    "device": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 916
+    },
+    "status": "open",
+    "attachments": [],
+    "tool": "comment",
+    "num": 1,
+    "text": "room-B-only",
+    "x": 788.3905013192611,
+    "y": 474.93403693931396,
+    "ts": 1794588205985,
+    "meta": {
+      "url": "https://example.com",
+      "viewport": {
+        "width": 758,
+        "height": 482
+      },
+      "browser": "Chrome",
+      "os": "Windows"
+    },
+    "visualContext": {
+      "region": {
+        "x": 388.39050131926115,
+        "y": 224.93403693931396,
+        "width": 800,
+        "height": 500
+      },
+      "layerId": "default",
+      "annotations": [],
+      "truncated": false
+    }
+  },
+  {
+    "layerId": "default",
+    "id": "r3-3-50989810-95a8-4be6-94a1-6941b811ec02",
+    "color": "#f43f5e",
+    "lineWidth": 2,
+    "author": "Speedy Capybara",
+    "authorId": "ftwrsaP8L5VYp2Tur303H",
+    "device": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 916
+    },
+    "status": "open",
+    "attachments": [],
+    "tool": "comment",
+    "num": 1,
+    "text": "room-B-write-3",
+    "x": 788.3905013192611,
+    "y": 474.93403693931396,
+    "ts": 1794588205985,
+    "meta": {
+      "url": "https://example.com",
+      "viewport": {
+        "width": 758,
+        "height": 482
+      },
+      "browser": "Chrome",
+      "os": "Windows"
+    },
+    "visualContext": {
+      "region": {
+        "x": 388.39050131926115,
+        "y": 224.93403693931396,
+        "width": 800,
+        "height": 500
+      },
+      "layerId": "default",
+      "annotations": [],
+      "truncated": false
+    }
+  },
+  {
+    "layerId": "default",
+    "id": "r3-2-86526d96-b5bf-4257-8c50-d78e09b84f28",
+    "color": "#f43f5e",
+    "lineWidth": 2,
+    "author": "Speedy Capybara",
+    "authorId": "ftwrsaP8L5VYp2Tur303H",
+    "device": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 916
+    },
+    "status": "open",
+    "attachments": [],
+    "tool": "comment",
+    "num": 1,
+    "text": "room-B-write-2",
+    "x": 788.3905013192611,
+    "y": 474.93403693931396,
+    "ts": 1794588205985,
+    "meta": {
+      "url": "https://example.com",
+      "viewport": {
+        "width": 758,
+        "height": 482
+      },
+      "browser": "Chrome",
+      "os": "Windows"
+    },
+    "visualContext": {
+      "region": {
+        "x": 388.39050131926115,
+        "y": 224.93403693931396,
+        "width": 800,
+        "height": 500
+      },
+      "layerId": "default",
+      "annotations": [],
+      "truncated": false
+    }
+  }
+]

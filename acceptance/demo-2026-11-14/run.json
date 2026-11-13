@@ -1,0 +1,109 @@
+{
+  "room": "acceptdemo1794592439059",
+  "events": [
+    {
+      "name": "teach_start",
+      "args": {
+        "steps": ["选择评论", "选择矩形"]
+      },
+      "status": 200,
+      "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"presentationId\\\": \\\"mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze\\\"\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    },
+    {
+      "name": "teach_step",
+      "args": {
+        "presentationId": "mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze",
+        "index": 0,
+        "caption": "第一步：选择评论工具",
+        "toolbarTarget": "comment"
+      },
+      "status": 200,
+      "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"sent\\\": true\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    },
+    {
+      "stage": "guide-step-one",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第一步：选择评论工具 1/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair\naccept-demo joined"
+    },
+    {
+      "stage": "wrong-click-pen",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第一步：选择评论工具 1/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair\nPen\nP"
+    },
+    {
+      "name": "teach_step",
+      "args": {
+        "presentationId": "mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze",
+        "index": 0,
+        "caption": "第一步：选择评论工具",
+        "toolbarTarget": "comment",
+        "state": "paused"
+      },
+      "status": 200,
+      "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"sent\\\": true\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    },
+    {
+      "stage": "pause",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第一步：选择评论工具 1/2\n\n上一步\n继续\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair"
+    },
+    {
+      "name": "teach_step",
+      "args": {
+        "presentationId": "mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze",
+        "index": 0,
+        "caption": "第一步：选择评论工具",
+        "toolbarTarget": "comment",
+        "state": "active"
+      },
+      "status": 200,
+      "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"sent\\\": true\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    },
+    {
+      "stage": "resume",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第一步：选择评论工具 1/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair"
+    },
+    {
+      "name": "teach_step",
+      "args": {
+        "presentationId": "mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze",
+        "index": 1,
+        "caption": "第二步：选择矩形工具",
+        "toolbarTarget": "rectangle"
+      },
+      "status": 200,
+      "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"sent\\\": true\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    },
+    {
+      "stage": "guide-step-two",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第二步：选择矩形工具 2/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair"
+    },
+    {
+      "stage": "offline",
+      "socket": 1
+    },
+    {
+      "stage": "offline",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\noffline\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\nOffline\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第二步：选择矩形工具 2/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair\nReconnecting…"
+    },
+    {
+      "stage": "restored",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第二步：选择矩形工具 2/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair"
+    },
+    {
+      "name": "teach_step",
+      "args": {
+        "presentationId": "mcp-accept-demo-http-_gRnL15t8ZXUtfnAkWIze",
+        "index": 1,
+        "caption": "第二步：连接恢复后继续",
+        "toolbarTarget": "rectangle",
+        "state": "active"
+      },
+      "status": 200,
+      "raw": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\n  \\\"sent\\\": true\\n}\"}]},\"jsonrpc\":\"2.0\",\"id\":1}\n\n"
+    },
+    {
+      "stage": "recovered-step",
+      "text": "visual collaboration\nAuto\nJA\nJazzy Alpaca\n2 online\nDetails\nPage\nexample.com\nCreated\n现在\nExpires\n2027年2月12日\nResets each time it is opened\nAccess\nCan edit\nPeople\n2 here now\nID\nacceptdemo1794592439059\nConnect an AI agent\nIntegrations\nCompare with another version\nHow visual collaboration works\nSupport MarkLayer\nComments\n0\nAsk a question\nNo comments yet\nUse the comment tool (C) to add one\n\n第二步：连接恢复后继续 2/2\n\n上一步\n暂停\n下一步\n关闭\n图层\n演示\n自主 Solo\n引导 Guide\n协作 Pair"
+    }
+  ],
+  "completed": true,
+  "frames": 20
+}

@@ -83,6 +83,7 @@ export function projectAnnotation(op: AnnotationOp, apiBase: string) {
     // you check this" is addressed to a person, not to it.
     mentions: op.mentions?.map((m) => m.name) ?? [],
     ts: op.ts,
+    ...(op.captureViewport ? { captureViewport: op.captureViewport } : {}),
   };
   if (op.tool === 'comment') {
     return {

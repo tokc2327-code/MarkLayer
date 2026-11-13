@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pair 真实协作演示</title>
+    <style>
+      body { font: 18px system-ui, sans-serif; background: #eef2ff; color: #172033; margin: 0; }
+      main { max-width: 920px; margin: 6vh auto; padding: 30px; }
+      .card { background: white; border-radius: 18px; padding: 28px; margin: 20px 0; box-shadow: 0 4px 24px #17203318; }
+      button { background: #3159d9; color: white; border: 0; border-radius: 10px; padding: 14px 22px; font-size: 18px; }
+      #reply { position: fixed; right: 20px; top: 20px; width: 320px; max-height: 42vh; overflow: auto; background: #fff; padding: 18px; border: 2px solid #3159d9; border-radius: 12px; z-index: 10000; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 id="heading">一起改善这个页面</h1>
+      <section class="card" id="intro"><h2>欢迎加入</h2><p>这个卡片用于讨论页面内容和布局。</p></section>
+      <section class="card" id="offer"><h2>开始体验</h2><p>请指出你希望调整的地方。</p><button type="button" id="start">立即开始</button></section>
+    </main>
+    <aside id="reply" aria-live="polite">模型回复会显示在这里。</aside>
+    <script src="http://127.0.0.1:5181/widget.js" data-room="__ROOM__"></script>
+    <script>
+      const room = '__ROOM__';
+      let last = '';
+      setInterval(async () => {
+        try {
+          const data = await fetch(`http://127.0.0.1:5181/api/${room}`).then((r) => r.json());
+          const replies = data.ops.filter((op) => op.tool === 'comment' && op.parentId && op.author === 'pair-demo');
+          const newest = replies.at(-1);
+          if (newest && newest.id !== last) {
+            last = newest.id;
+            document.querySelector('#reply').textContent = `模型回复：${newest.text}`;
+            fetch('/visible', { method: 'POST', body: JSON.stringify({ id: newest.id, at: Date.now() }) });
+          }
+        } catch {}
+      }, 500);
+    </script>
+  </body>
+</html>

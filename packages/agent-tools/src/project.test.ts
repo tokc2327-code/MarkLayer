@@ -61,6 +61,12 @@ describe('projectAnnotation — comment', () => {
     expect(projectAnnotation(comment, API_BASE)).not.toHaveProperty('visualContext');
   });
 
+  test('exposes the viewport captured with the annotation', () => {
+    const parsed = commentOpSchema.parse({ ...comment, captureViewport: { width: 1024, height: 768 } });
+    expect(projectAnnotation(parsed, API_BASE)).toMatchObject({ captureViewport: { width: 1024, height: 768 } });
+    expect(projectAnnotation(comment, API_BASE)).not.toHaveProperty('captureViewport');
+  });
+
   test('hands an area its screenshot as a fetchable URL', () => {
     const area = areaOpSchema.parse({
       id: 'op-a',

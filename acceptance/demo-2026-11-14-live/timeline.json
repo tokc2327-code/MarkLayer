@@ -1,0 +1,34 @@
+{
+  "room": "pair-791ce7c5-3f82-4eff-8a3b-06659ed802d9",
+  "events": [
+    {
+      "id": "FR4OJQVRZrdxJOvg_qtPs",
+      "humanActionAt": 1794597071195,
+      "eventArrivedAt": 1794597074304,
+      "modelFirstTokenAt": null,
+      "modelFinishedAt": 1794597092260,
+      "replySubmittedAt": 1794597092351,
+      "replyVisibleAt": 1794597095609
+    },
+    {
+      "id": "e9LYjzryt-nzQqSOcWHCh",
+      "humanActionAt": 1794597108609,
+      "eventArrivedAt": 1794597112271,
+      "modelFirstTokenAt": null,
+      "modelFinishedAt": 1794597132306,
+      "replySubmittedAt": 1794597132470,
+      "replyVisibleAt": 1794597135640
+    }
+  ],
+  "errors": [],
+  "startedAt": 1794597034261,
+  "extension": {
+    "id": "jcigjmfjfjakcankmhkchlahihfaemmd"
+  },
+  "recordingStartedAt": 1794597041481,
+  "readyAt": 1794597043555,
+  "recordingResult": {
+    "code": 0
+  },
+  "finishedAt": 1794597192458
+}

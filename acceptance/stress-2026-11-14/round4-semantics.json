@@ -1,0 +1,3229 @@
+{
+  "room": "stress-8e61e2d6-9488-48b0-abc1-5afd939c4933",
+  "records": [
+    {
+      "client": 0,
+      "method": "initialize",
+      "params": {
+        "protocolVersion": "2025-03-26",
+        "capabilities": {},
+        "clientInfo": {
+          "name": "stress-0",
+          "version": "1"
+        }
+      },
+      "ms": 97.35549999999998,
+      "status": 200,
+      "body": {
+        "result": {
+          "protocolVersion": "2025-03-26",
+          "capabilities": {
+            "tools": {
+              "listChanged": true
+            }
+          },
+          "serverInfo": {
+            "name": "marklayer",
+            "version": "0.6.1"
+          },
+          "instructions": "Bridge between MarkLayer annotations on a webpage and an AI coding agent. Each annotation carries a `kind` (comment | area | selection | inspect) and, where available, a `target` block with the element selector + markdown — that is your handle for code changes; do not ask the user to repeat what was clicked. A selection annotation may also carry a `suggestion`: the exact text the reviewer wants in place of its `text`. Apply it verbatim rather than paraphrasing it. A comment (or a reply, from marklayer_get_annotation) may carry `attachments`: fetchable image URLs the reviewer attached — call marklayer_read_attachment and inspect its image content before claiming to see it. If the tool fails or your client cannot see images, tell the user; do not infer what an image shows. They often show the bug or the intended layout better than the text does. When a report describes a page behavior bug, call marklayer_diagnose for its annotation and then read the saved package with marklayer_read_diagnosis; a package marked partial lacks live browser capture. For assigned work, use marklayer_task list/take to select the next task. Follow task_update events, stop on cancel_requested and confirm_cancel, and report completion before taking another task. Waiting for a person keeps the current task active. The Selection tool marks webpage text; the arrow cursor is the separate Move tool. Toolbar order can be customized; use teach_step toolbarTarget to show the named tool in each viewer. Typical loop: marklayer_list_annotations to backfill anything pending, then marklayer_watch_annotations in a loop. For assigned work, take the next task before acting; acknowledge, make the requested changes, and report task completion. In Guide mode reply and explain without resolving. Use dismiss when an annotation cannot be acted on, with a reason the human can read. You can also work the other direction: if asked to review, audit, or give feedback on the page (bugs, UX or accessibility issues, ideas), inspect it with your own tools and call marklayer_create_annotation once per finding — do not bundle several into one comment. For an exact copy or grammar fix, use marklayer_suggest_edit instead of a comment, so the human gets a diff to accept rather than prose describing one."
+        },
+        "jsonrpc": "2.0",
+        "id": "aa180a21-bf67-445b-b1ac-e530007f531a"
+      }
+    },
+    {
+      "client": 1,
+      "method": "initialize",
+      "params": {
+        "protocolVersion": "2025-03-26",
+        "capabilities": {},
+        "clientInfo": {
+          "name": "stress-1",
+          "version": "1"
+        }
+      },
+      "ms": 97.88040000000004,
+      "status": 200,
+      "body": {
+        "result": {
+          "protocolVersion": "2025-03-26",
+          "capabilities": {
+            "tools": {
+              "listChanged": true
+            }
+          },
+          "serverInfo": {
+            "name": "marklayer",
+            "version": "0.6.1"
+          },
+          "instructions": "Bridge between MarkLayer annotations on a webpage and an AI coding agent. Each annotation carries a `kind` (comment | area | selection | inspect) and, where available, a `target` block with the element selector + markdown — that is your handle for code changes; do not ask the user to repeat what was clicked. A selection annotation may also carry a `suggestion`: the exact text the reviewer wants in place of its `text`. Apply it verbatim rather than paraphrasing it. A comment (or a reply, from marklayer_get_annotation) may carry `attachments`: fetchable image URLs the reviewer attached — call marklayer_read_attachment and inspect its image content before claiming to see it. If the tool fails or your client cannot see images, tell the user; do not infer what an image shows. They often show the bug or the intended layout better than the text does. When a report describes a page behavior bug, call marklayer_diagnose for its annotation and then read the saved package with marklayer_read_diagnosis; a package marked partial lacks live browser capture. For assigned work, use marklayer_task list/take to select the next task. Follow task_update events, stop on cancel_requested and confirm_cancel, and report completion before taking another task. Waiting for a person keeps the current task active. The Selection tool marks webpage text; the arrow cursor is the separate Move tool. Toolbar order can be customized; use teach_step toolbarTarget to show the named tool in each viewer. Typical loop: marklayer_list_annotations to backfill anything pending, then marklayer_watch_annotations in a loop. For assigned work, take the next task before acting; acknowledge, make the requested changes, and report task completion. In Guide mode reply and explain without resolving. Use dismiss when an annotation cannot be acted on, with a reason the human can read. You can also work the other direction: if asked to review, audit, or give feedback on the page (bugs, UX or accessibility issues, ideas), inspect it with your own tools and call marklayer_create_annotation once per finding — do not bundle several into one comment. For an exact copy or grammar fix, use marklayer_suggest_edit instead of a comment, so the human gets a diff to accept rather than prose describing one."
+        },
+        "jsonrpc": "2.0",
+        "id": "6304daf1-b88d-4a6e-a6bb-46481055a73f"
+      }
+    },
+    {
+      "client": 2,
+      "method": "initialize",
+      "params": {
+        "protocolVersion": "2025-03-26",
+        "capabilities": {},
+        "clientInfo": {
+          "name": "stress-2",
+          "version": "1"
+        }
+      },
+      "ms": 124.7156,
+      "status": 200,
+      "body": {
+        "result": {
+          "protocolVersion": "2025-03-26",
+          "capabilities": {
+            "tools": {
+              "listChanged": true
+            }
+          },
+          "serverInfo": {
+            "name": "marklayer",
+            "version": "0.6.1"
+          },
+          "instructions": "Bridge between MarkLayer annotations on a webpage and an AI coding agent. Each annotation carries a `kind` (comment | area | selection | inspect) and, where available, a `target` block with the element selector + markdown — that is your handle for code changes; do not ask the user to repeat what was clicked. A selection annotation may also carry a `suggestion`: the exact text the reviewer wants in place of its `text`. Apply it verbatim rather than paraphrasing it. A comment (or a reply, from marklayer_get_annotation) may carry `attachments`: fetchable image URLs the reviewer attached — call marklayer_read_attachment and inspect its image content before claiming to see it. If the tool fails or your client cannot see images, tell the user; do not infer what an image shows. They often show the bug or the intended layout better than the text does. When a report describes a page behavior bug, call marklayer_diagnose for its annotation and then read the saved package with marklayer_read_diagnosis; a package marked partial lacks live browser capture. For assigned work, use marklayer_task list/take to select the next task. Follow task_update events, stop on cancel_requested and confirm_cancel, and report completion before taking another task. Waiting for a person keeps the current task active. The Selection tool marks webpage text; the arrow cursor is the separate Move tool. Toolbar order can be customized; use teach_step toolbarTarget to show the named tool in each viewer. Typical loop: marklayer_list_annotations to backfill anything pending, then marklayer_watch_annotations in a loop. For assigned work, take the next task before acting; acknowledge, make the requested changes, and report task completion. In Guide mode reply and explain without resolving. Use dismiss when an annotation cannot be acted on, with a reason the human can read. You can also work the other direction: if asked to review, audit, or give feedback on the page (bugs, UX or accessibility issues, ideas), inspect it with your own tools and call marklayer_create_annotation once per finding — do not bundle several into one comment. For an exact copy or grammar fix, use marklayer_suggest_edit instead of a comment, so the human gets a diff to accept rather than prose describing one."
+        },
+        "jsonrpc": "2.0",
+        "id": "f06020ba-ed86-4535-b56f-e599d05049b6"
+      }
+    },
+    {
+      "client": 3,
+      "method": "initialize",
+      "params": {
+        "protocolVersion": "2025-03-26",
+        "capabilities": {},
+        "clientInfo": {
+          "name": "stress-3",
+          "version": "1"
+        }
+      },
+      "ms": 125.76750000000001,
+      "status": 200,
+      "body": {
+        "result": {
+          "protocolVersion": "2025-03-26",
+          "capabilities": {
+            "tools": {
+              "listChanged": true
+            }
+          },
+          "serverInfo": {
+            "name": "marklayer",
+            "version": "0.6.1"
+          },
+          "instructions": "Bridge between MarkLayer annotations on a webpage and an AI coding agent. Each annotation carries a `kind` (comment | area | selection | inspect) and, where available, a `target` block with the element selector + markdown — that is your handle for code changes; do not ask the user to repeat what was clicked. A selection annotation may also carry a `suggestion`: the exact text the reviewer wants in place of its `text`. Apply it verbatim rather than paraphrasing it. A comment (or a reply, from marklayer_get_annotation) may carry `attachments`: fetchable image URLs the reviewer attached — call marklayer_read_attachment and inspect its image content before claiming to see it. If the tool fails or your client cannot see images, tell the user; do not infer what an image shows. They often show the bug or the intended layout better than the text does. When a report describes a page behavior bug, call marklayer_diagnose for its annotation and then read the saved package with marklayer_read_diagnosis; a package marked partial lacks live browser capture. For assigned work, use marklayer_task list/take to select the next task. Follow task_update events, stop on cancel_requested and confirm_cancel, and report completion before taking another task. Waiting for a person keeps the current task active. The Selection tool marks webpage text; the arrow cursor is the separate Move tool. Toolbar order can be customized; use teach_step toolbarTarget to show the named tool in each viewer. Typical loop: marklayer_list_annotations to backfill anything pending, then marklayer_watch_annotations in a loop. For assigned work, take the next task before acting; acknowledge, make the requested changes, and report task completion. In Guide mode reply and explain without resolving. Use dismiss when an annotation cannot be acted on, with a reason the human can read. You can also work the other direction: if asked to review, audit, or give feedback on the page (bugs, UX or accessibility issues, ideas), inspect it with your own tools and call marklayer_create_annotation once per finding — do not bundle several into one comment. For an exact copy or grammar fix, use marklayer_suggest_edit instead of a comment, so the human gets a diff to accept rather than prose describing one."
+        },
+        "jsonrpc": "2.0",
+        "id": "4067939d-7d3b-48c4-addf-f3f33e83155c"
+      }
+    },
+    {
+      "client": 0,
+      "method": "tools/list",
+      "params": {},
+      "ms": 89.50569999999999,
+      "status": 200,
+      "body": {
+        "result": {
+          "tools": [
+            {
+              "name": "marklayer_register_semantic",
+              "description": "Register a named page element. The first registration for a page and name wins; version is the room revision observed by the caller.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2048
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "version": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": ["name", "page", "selector", "description", "version"]
+              }
+            },
+            {
+              "name": "marklayer_query_semantics",
+              "description": "Query registered page semantics and return the current roomVersion for registration.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_task",
+              "description": "Coordinate assigned work: list, take the next task, wait for a person, resume, complete, or confirm_cancel. Only take another after completing or confirming cancellation of the current task. The queue prioritizes the agent owner.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": ["list", "take", "wait", "resume", "complete", "confirm_cancel"]
+                  },
+                  "taskId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "waitingFor": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": ["action"]
+              }
+            },
+            {
+              "name": "teach_start",
+              "description": "Start a live teaching presentation and return its presentationId. Optional steps describe the planned sequence.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "teach_step",
+              "description": "Show a teaching caption and highlight an annotation, page selector, rectangle, or toolbarTarget. The selection target selects webpage text; the arrow cursor is the separate Move tool, not Selection. Tool order can be changed, so do not infer its position from a default layout. While presenting call marklayer_watch_annotations for teach_control events; on next or previous send the selected step, on pause send state paused, and on resume send state active. Never claim to respond to controls without doing so.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "caption": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "annotationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "toolbarTarget": {
+                    "type": "string",
+                    "enum": ["comment", "selection", "pen", "rectangle", "area", "eraser", "inspect", "text", "guide"]
+                  },
+                  "state": {
+                    "type": "string",
+                    "enum": ["active", "paused"]
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "rect": {
+                    "type": "object",
+                    "properties": {
+                      "x": {
+                        "type": "number"
+                      },
+                      "y": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "type": "number"
+                      }
+                    },
+                    "required": ["x", "y", "width", "height"]
+                  }
+                },
+                "required": ["presentationId", "index", "caption"]
+              }
+            },
+            {
+              "name": "teach_end",
+              "description": "End a live teaching presentation for the room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["presentationId"]
+              }
+            },
+            {
+              "name": "marklayer_read_page",
+              "description": "Read the page this room annotates — its headings, paragraphs, links, buttons and labels, each with the CSS selector and tag that locate it. Call this FIRST when asked to review, audit or improve a page and no annotations exist yet: without it you can only answer feedback someone else left, never find anything yourself. Every entry is already in the shape marklayer_suggest_edit and marklayer_create_annotation take, so pass `selector`, `tag` and `markdown` straight through to anchor a mark to the element you are talking about. If the answer says the page renders client-side, the copy is not in the HTML and you should say so rather than review an empty shell.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_room_info",
+              "description": "Get metadata about the connected room: page URL, viewport width, timestamps.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_list_annotations",
+              "description": "List every annotation in the connected room across all tools (comment, area, selection, inspect). Each entry carries a `kind` discriminator and, where the user marked an element, a `target` block with selector + markdown so you can address the change without reopening the page. Filter by status: open, in_progress, resolved, approved, dismissed, or all (default). `approved` means the person who asked for the change confirmed the fix, so those need nothing from you.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": ["open", "in_progress", "resolved", "approved", "dismissed", "all"]
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_get_annotation",
+              "description": "Get full detail for a single annotation of any kind (comment, area, selection, inspect), including its element `target` context and — for comments — the reply thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_diagnose",
+              "description": "Generate and save a diagnosis package for one annotation. Call this when a report says an element is unclickable, misplaced, or otherwise behaves incorrectly. It preserves a live package already captured by the extension; when no live capture exists, it saves an explicitly partial package from the annotation snapshot. Then call marklayer_read_diagnosis to inspect it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_diagnosis",
+              "description": "Read the saved runtime diagnosis for one annotation, including element context, hit-test/overlay chain when captured live, page errors, failed network requests, viewport values, and reproduction-step draft. Call after marklayer_diagnose or when the annotation already carries a diagnosis.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_attachment",
+              "description": "Read an image attached to a room annotation as MCP image content. Use the attachment id from its URL; report failure or lack of image support honestly.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "attachmentId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "attachmentId"]
+              }
+            },
+            {
+              "name": "marklayer_watch_annotations",
+              "description": "Block until there is work, then return a batch of whatever arrives within a short window. CALL THIS AGAIN IMMEDIATELY EVERY TIME IT RETURNS, including when it returns nothing — an empty result means the window expired, not that the reviewer is done. Nothing pushes work to you: between your calls, a comment someone leaves reaches no one. Keep looping until the person tells you to stop or ends the session. Each event has a `kind`: \"new\" is an annotation someone just left; \"handoff\" is one given to you — assigned to you, a reply that @mentions you, or a reply on a thread you already own. A handoff also carries `request`, the reply that asked: read it, it is the instruction, and act on it rather than only acknowledging. Every event carries the full annotation with its `target` element context.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "timeoutSeconds": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 600,
+                    "description": "How long to block before returning empty. Defaults to 50, which fits inside the 60s request timeout most clients use. Raise it only if you know yours allows a longer tool call."
+                  },
+                  "batchMs": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 10000,
+                    "description": "After the first new annotation arrives, wait this long for more before returning. Default 750."
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_acknowledge",
+              "description": "Mark an annotation as in_progress and tag it with this agent so the human sees you are working on it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_resolve",
+              "description": "Mark an annotation as resolved. Pass a summary describing what was changed — it will be posted as a reply to the thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "summary": {
+                    "type": "string",
+                    "description": "Short description of what changed, posted as a reply."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_dismiss",
+              "description": "Mark an annotation as dismissed when it cannot be acted on. The reason will be visible to the human.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Why you cannot act on this annotation."
+                  }
+                },
+                "required": ["id", "reason"]
+              }
+            },
+            {
+              "name": "marklayer_reply",
+              "description": "Post a reply to an annotation thread without changing its status. Use to ask clarifying questions.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "text"]
+              }
+            },
+            {
+              "name": "marklayer_create_annotation",
+              "description": "Leave a new comment annotation yourself — proactive feedback (a bug, a UX issue, an accessibility gap, an idea) rather than only responding to a human’s. For an exact text replacement (a copy or grammar fix), use marklayer_suggest_edit instead — it renders as a diff the human can accept, rather than prose describing one. Use this after you have looked at the page with your own tools (a screenshot, a DOM read) and decided something is worth flagging; call it once per finding so each becomes its own pin the human can triage. x/y are document pixels (not viewport pixels — scroll offset already added in). Pass selector + tag + markdown (straight from marklayer_read_page) to pin to that element: the pin sits on the element and follows it when the page reflows, and x/y become optional (a fallback only). Omit all three for a fixed-point pin at x/y.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The feedback itself."
+                  },
+                  "x": {
+                    "type": "number",
+                    "description": "Document-space X in CSS pixels."
+                  },
+                  "y": {
+                    "type": "number",
+                    "description": "Document-space Y in CSS pixels."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element this is about."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"button\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text"]
+              }
+            },
+            {
+              "name": "marklayer_suggest_edit",
+              "description": "Propose an exact replacement for a piece of text on the page — a copy or grammar fix — as a diff the human can accept, rather than a comment describing the change in prose. `rects` are the on-page bounding boxes of `text`, in document pixels: one per line it spans, so a wrapped sentence highlights as several boxes rather than one box swallowing the whole paragraph between its first and last line. Pass selector + tag + markdown together to anchor it to the containing element so it re-resolves if the page reflows.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact text on the page being replaced."
+                  },
+                  "suggestion": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact replacement text."
+                  },
+                  "rects": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "height": {
+                          "type": "number"
+                        }
+                      },
+                      "required": ["x", "y", "width", "height"]
+                    },
+                    "description": "Document-pixel bounding box(es) of `text` on the page — one per line it spans."
+                  },
+                  "comment": {
+                    "type": "string",
+                    "description": "Optional note explaining the fix, if it is not self-evident."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element containing this text."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"p\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text", "suggestion", "rects"]
+              }
+            },
+            {
+              "name": "marklayer_share_preview",
+              "description": "Open a new review room on a page you built — a preview deploy, a staging URL — and get back the link to hand to a human. Call this when you have something for someone to look at, rather than asking them to open a URL and describe what they see. The page is framed live and reviewers annotate it directly; their feedback then reaches you through the other tools. Pass `repo` + `branch` (and `sha`) when the page comes from a branch: a later preview of the same repo and branch becomes the next version of this one, and reviewers can step between versions. Over stdio this also connects you to the new room. Over HTTP the endpoint stays bound to the room in its URL, so reconnect to the returned `mcpUrl` to work the new room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "description": "Absolute http(s) URL of the page to review."
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "What this is, in a few words — shown to reviewers."
+                  },
+                  "repo": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Repository, e.g. \"acme/web\". With `branch`, chains versions."
+                  },
+                  "branch": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Branch the preview was built from."
+                  },
+                  "sha": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Commit the preview was built from; shown beside the version."
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "description": "What changed and what to look at, for the reviewers."
+                  },
+                  "questions": {
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "prompt": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300
+                        },
+                        "options": {
+                          "minItems": 2,
+                          "maxItems": 6,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 300
+                          }
+                        }
+                      },
+                      "required": ["prompt", "options"]
+                    },
+                    "description": "Polls to open the room with — a decision you want the reviewers to make."
+                  },
+                  "previous": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "The room this is a new version of, as a link or id. Defaults to the room you are connected to. Linked only when that room has the same repo and branch."
+                  }
+                },
+                "required": ["url", "title"]
+              }
+            },
+            {
+              "name": "marklayer_set_next_steps",
+              "description": "Publish your plan as a short ordered checklist the reviewers see live in the room, distilled from their feedback — one step per change you will make, each naming the annotation ids it answers. Replaces any list you set before. Tick steps off with marklayer_complete_next_step as you finish them, so the humans can watch the work land instead of asking where it is.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "minItems": 1,
+                    "maxItems": 20,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300,
+                          "description": "The step, as an imperative: \"Rename the CTA to Start trial\"."
+                        },
+                        "annotationIds": {
+                          "maxItems": 20,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "description": "Ids of the annotations this step addresses."
+                        }
+                      },
+                      "required": ["text"]
+                    }
+                  }
+                },
+                "required": ["steps"]
+              }
+            },
+            {
+              "name": "marklayer_complete_next_step",
+              "description": "Tick a step of the checklist off (or back on with done: false). Reviewers see it change live.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Step id, from marklayer_set_next_steps or marklayer_get_feedback."
+                  },
+                  "done": {
+                    "type": "boolean",
+                    "description": "Defaults to true."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_ask",
+              "description": "Put a multiple-choice question to the room — \"Which hero variant?\", \"Ship with the banner?\" — when you need a decision rather than open-ended feedback. Each reviewer gets one vote and may change it. Read the tally with marklayer_get_feedback.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "prompt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  },
+                  "options": {
+                    "minItems": 2,
+                    "maxItems": 6,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 300
+                    }
+                  }
+                },
+                "required": ["prompt", "options"]
+              }
+            },
+            {
+              "name": "marklayer_get_feedback",
+              "description": "Everything the room has told you, in one read: annotation counts by status with the open ones in full, the next-steps checklist and how far along it is, and every poll with its current tally. Use it to decide what to do next. In Guide mode, acknowledge and answer questions without resolving or dismissing them; use teach_step with an annotationId to explain a target. Keep marklayer_watch_annotations running for replies and teaching controls.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "84e1a7eb-add3-419d-94ed-9fb4754c7fc6"
+      }
+    },
+    {
+      "client": 1,
+      "method": "tools/list",
+      "params": {},
+      "ms": 90.02299999999997,
+      "status": 200,
+      "body": {
+        "result": {
+          "tools": [
+            {
+              "name": "marklayer_register_semantic",
+              "description": "Register a named page element. The first registration for a page and name wins; version is the room revision observed by the caller.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2048
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "version": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": ["name", "page", "selector", "description", "version"]
+              }
+            },
+            {
+              "name": "marklayer_query_semantics",
+              "description": "Query registered page semantics and return the current roomVersion for registration.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_task",
+              "description": "Coordinate assigned work: list, take the next task, wait for a person, resume, complete, or confirm_cancel. Only take another after completing or confirming cancellation of the current task. The queue prioritizes the agent owner.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": ["list", "take", "wait", "resume", "complete", "confirm_cancel"]
+                  },
+                  "taskId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "waitingFor": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": ["action"]
+              }
+            },
+            {
+              "name": "teach_start",
+              "description": "Start a live teaching presentation and return its presentationId. Optional steps describe the planned sequence.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "teach_step",
+              "description": "Show a teaching caption and highlight an annotation, page selector, rectangle, or toolbarTarget. The selection target selects webpage text; the arrow cursor is the separate Move tool, not Selection. Tool order can be changed, so do not infer its position from a default layout. While presenting call marklayer_watch_annotations for teach_control events; on next or previous send the selected step, on pause send state paused, and on resume send state active. Never claim to respond to controls without doing so.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "caption": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "annotationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "toolbarTarget": {
+                    "type": "string",
+                    "enum": ["comment", "selection", "pen", "rectangle", "area", "eraser", "inspect", "text", "guide"]
+                  },
+                  "state": {
+                    "type": "string",
+                    "enum": ["active", "paused"]
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "rect": {
+                    "type": "object",
+                    "properties": {
+                      "x": {
+                        "type": "number"
+                      },
+                      "y": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "type": "number"
+                      }
+                    },
+                    "required": ["x", "y", "width", "height"]
+                  }
+                },
+                "required": ["presentationId", "index", "caption"]
+              }
+            },
+            {
+              "name": "teach_end",
+              "description": "End a live teaching presentation for the room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["presentationId"]
+              }
+            },
+            {
+              "name": "marklayer_read_page",
+              "description": "Read the page this room annotates — its headings, paragraphs, links, buttons and labels, each with the CSS selector and tag that locate it. Call this FIRST when asked to review, audit or improve a page and no annotations exist yet: without it you can only answer feedback someone else left, never find anything yourself. Every entry is already in the shape marklayer_suggest_edit and marklayer_create_annotation take, so pass `selector`, `tag` and `markdown` straight through to anchor a mark to the element you are talking about. If the answer says the page renders client-side, the copy is not in the HTML and you should say so rather than review an empty shell.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_room_info",
+              "description": "Get metadata about the connected room: page URL, viewport width, timestamps.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_list_annotations",
+              "description": "List every annotation in the connected room across all tools (comment, area, selection, inspect). Each entry carries a `kind` discriminator and, where the user marked an element, a `target` block with selector + markdown so you can address the change without reopening the page. Filter by status: open, in_progress, resolved, approved, dismissed, or all (default). `approved` means the person who asked for the change confirmed the fix, so those need nothing from you.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": ["open", "in_progress", "resolved", "approved", "dismissed", "all"]
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_get_annotation",
+              "description": "Get full detail for a single annotation of any kind (comment, area, selection, inspect), including its element `target` context and — for comments — the reply thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_diagnose",
+              "description": "Generate and save a diagnosis package for one annotation. Call this when a report says an element is unclickable, misplaced, or otherwise behaves incorrectly. It preserves a live package already captured by the extension; when no live capture exists, it saves an explicitly partial package from the annotation snapshot. Then call marklayer_read_diagnosis to inspect it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_diagnosis",
+              "description": "Read the saved runtime diagnosis for one annotation, including element context, hit-test/overlay chain when captured live, page errors, failed network requests, viewport values, and reproduction-step draft. Call after marklayer_diagnose or when the annotation already carries a diagnosis.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_attachment",
+              "description": "Read an image attached to a room annotation as MCP image content. Use the attachment id from its URL; report failure or lack of image support honestly.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "attachmentId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "attachmentId"]
+              }
+            },
+            {
+              "name": "marklayer_watch_annotations",
+              "description": "Block until there is work, then return a batch of whatever arrives within a short window. CALL THIS AGAIN IMMEDIATELY EVERY TIME IT RETURNS, including when it returns nothing — an empty result means the window expired, not that the reviewer is done. Nothing pushes work to you: between your calls, a comment someone leaves reaches no one. Keep looping until the person tells you to stop or ends the session. Each event has a `kind`: \"new\" is an annotation someone just left; \"handoff\" is one given to you — assigned to you, a reply that @mentions you, or a reply on a thread you already own. A handoff also carries `request`, the reply that asked: read it, it is the instruction, and act on it rather than only acknowledging. Every event carries the full annotation with its `target` element context.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "timeoutSeconds": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 600,
+                    "description": "How long to block before returning empty. Defaults to 50, which fits inside the 60s request timeout most clients use. Raise it only if you know yours allows a longer tool call."
+                  },
+                  "batchMs": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 10000,
+                    "description": "After the first new annotation arrives, wait this long for more before returning. Default 750."
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_acknowledge",
+              "description": "Mark an annotation as in_progress and tag it with this agent so the human sees you are working on it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_resolve",
+              "description": "Mark an annotation as resolved. Pass a summary describing what was changed — it will be posted as a reply to the thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "summary": {
+                    "type": "string",
+                    "description": "Short description of what changed, posted as a reply."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_dismiss",
+              "description": "Mark an annotation as dismissed when it cannot be acted on. The reason will be visible to the human.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Why you cannot act on this annotation."
+                  }
+                },
+                "required": ["id", "reason"]
+              }
+            },
+            {
+              "name": "marklayer_reply",
+              "description": "Post a reply to an annotation thread without changing its status. Use to ask clarifying questions.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "text"]
+              }
+            },
+            {
+              "name": "marklayer_create_annotation",
+              "description": "Leave a new comment annotation yourself — proactive feedback (a bug, a UX issue, an accessibility gap, an idea) rather than only responding to a human’s. For an exact text replacement (a copy or grammar fix), use marklayer_suggest_edit instead — it renders as a diff the human can accept, rather than prose describing one. Use this after you have looked at the page with your own tools (a screenshot, a DOM read) and decided something is worth flagging; call it once per finding so each becomes its own pin the human can triage. x/y are document pixels (not viewport pixels — scroll offset already added in). Pass selector + tag + markdown (straight from marklayer_read_page) to pin to that element: the pin sits on the element and follows it when the page reflows, and x/y become optional (a fallback only). Omit all three for a fixed-point pin at x/y.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The feedback itself."
+                  },
+                  "x": {
+                    "type": "number",
+                    "description": "Document-space X in CSS pixels."
+                  },
+                  "y": {
+                    "type": "number",
+                    "description": "Document-space Y in CSS pixels."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element this is about."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"button\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text"]
+              }
+            },
+            {
+              "name": "marklayer_suggest_edit",
+              "description": "Propose an exact replacement for a piece of text on the page — a copy or grammar fix — as a diff the human can accept, rather than a comment describing the change in prose. `rects` are the on-page bounding boxes of `text`, in document pixels: one per line it spans, so a wrapped sentence highlights as several boxes rather than one box swallowing the whole paragraph between its first and last line. Pass selector + tag + markdown together to anchor it to the containing element so it re-resolves if the page reflows.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact text on the page being replaced."
+                  },
+                  "suggestion": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact replacement text."
+                  },
+                  "rects": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "height": {
+                          "type": "number"
+                        }
+                      },
+                      "required": ["x", "y", "width", "height"]
+                    },
+                    "description": "Document-pixel bounding box(es) of `text` on the page — one per line it spans."
+                  },
+                  "comment": {
+                    "type": "string",
+                    "description": "Optional note explaining the fix, if it is not self-evident."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element containing this text."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"p\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text", "suggestion", "rects"]
+              }
+            },
+            {
+              "name": "marklayer_share_preview",
+              "description": "Open a new review room on a page you built — a preview deploy, a staging URL — and get back the link to hand to a human. Call this when you have something for someone to look at, rather than asking them to open a URL and describe what they see. The page is framed live and reviewers annotate it directly; their feedback then reaches you through the other tools. Pass `repo` + `branch` (and `sha`) when the page comes from a branch: a later preview of the same repo and branch becomes the next version of this one, and reviewers can step between versions. Over stdio this also connects you to the new room. Over HTTP the endpoint stays bound to the room in its URL, so reconnect to the returned `mcpUrl` to work the new room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "description": "Absolute http(s) URL of the page to review."
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "What this is, in a few words — shown to reviewers."
+                  },
+                  "repo": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Repository, e.g. \"acme/web\". With `branch`, chains versions."
+                  },
+                  "branch": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Branch the preview was built from."
+                  },
+                  "sha": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Commit the preview was built from; shown beside the version."
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "description": "What changed and what to look at, for the reviewers."
+                  },
+                  "questions": {
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "prompt": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300
+                        },
+                        "options": {
+                          "minItems": 2,
+                          "maxItems": 6,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 300
+                          }
+                        }
+                      },
+                      "required": ["prompt", "options"]
+                    },
+                    "description": "Polls to open the room with — a decision you want the reviewers to make."
+                  },
+                  "previous": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "The room this is a new version of, as a link or id. Defaults to the room you are connected to. Linked only when that room has the same repo and branch."
+                  }
+                },
+                "required": ["url", "title"]
+              }
+            },
+            {
+              "name": "marklayer_set_next_steps",
+              "description": "Publish your plan as a short ordered checklist the reviewers see live in the room, distilled from their feedback — one step per change you will make, each naming the annotation ids it answers. Replaces any list you set before. Tick steps off with marklayer_complete_next_step as you finish them, so the humans can watch the work land instead of asking where it is.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "minItems": 1,
+                    "maxItems": 20,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300,
+                          "description": "The step, as an imperative: \"Rename the CTA to Start trial\"."
+                        },
+                        "annotationIds": {
+                          "maxItems": 20,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "description": "Ids of the annotations this step addresses."
+                        }
+                      },
+                      "required": ["text"]
+                    }
+                  }
+                },
+                "required": ["steps"]
+              }
+            },
+            {
+              "name": "marklayer_complete_next_step",
+              "description": "Tick a step of the checklist off (or back on with done: false). Reviewers see it change live.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Step id, from marklayer_set_next_steps or marklayer_get_feedback."
+                  },
+                  "done": {
+                    "type": "boolean",
+                    "description": "Defaults to true."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_ask",
+              "description": "Put a multiple-choice question to the room — \"Which hero variant?\", \"Ship with the banner?\" — when you need a decision rather than open-ended feedback. Each reviewer gets one vote and may change it. Read the tally with marklayer_get_feedback.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "prompt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  },
+                  "options": {
+                    "minItems": 2,
+                    "maxItems": 6,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 300
+                    }
+                  }
+                },
+                "required": ["prompt", "options"]
+              }
+            },
+            {
+              "name": "marklayer_get_feedback",
+              "description": "Everything the room has told you, in one read: annotation counts by status with the open ones in full, the next-steps checklist and how far along it is, and every poll with its current tally. Use it to decide what to do next. In Guide mode, acknowledge and answer questions without resolving or dismissing them; use teach_step with an annotationId to explain a target. Keep marklayer_watch_annotations running for replies and teaching controls.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "329da873-9d35-4a75-99a4-902b54dd7bc8"
+      }
+    },
+    {
+      "client": 2,
+      "method": "tools/list",
+      "params": {},
+      "ms": 90.91020000000003,
+      "status": 200,
+      "body": {
+        "result": {
+          "tools": [
+            {
+              "name": "marklayer_register_semantic",
+              "description": "Register a named page element. The first registration for a page and name wins; version is the room revision observed by the caller.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2048
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "version": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": ["name", "page", "selector", "description", "version"]
+              }
+            },
+            {
+              "name": "marklayer_query_semantics",
+              "description": "Query registered page semantics and return the current roomVersion for registration.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_task",
+              "description": "Coordinate assigned work: list, take the next task, wait for a person, resume, complete, or confirm_cancel. Only take another after completing or confirming cancellation of the current task. The queue prioritizes the agent owner.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": ["list", "take", "wait", "resume", "complete", "confirm_cancel"]
+                  },
+                  "taskId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "waitingFor": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": ["action"]
+              }
+            },
+            {
+              "name": "teach_start",
+              "description": "Start a live teaching presentation and return its presentationId. Optional steps describe the planned sequence.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "teach_step",
+              "description": "Show a teaching caption and highlight an annotation, page selector, rectangle, or toolbarTarget. The selection target selects webpage text; the arrow cursor is the separate Move tool, not Selection. Tool order can be changed, so do not infer its position from a default layout. While presenting call marklayer_watch_annotations for teach_control events; on next or previous send the selected step, on pause send state paused, and on resume send state active. Never claim to respond to controls without doing so.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "caption": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "annotationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "toolbarTarget": {
+                    "type": "string",
+                    "enum": ["comment", "selection", "pen", "rectangle", "area", "eraser", "inspect", "text", "guide"]
+                  },
+                  "state": {
+                    "type": "string",
+                    "enum": ["active", "paused"]
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "rect": {
+                    "type": "object",
+                    "properties": {
+                      "x": {
+                        "type": "number"
+                      },
+                      "y": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "type": "number"
+                      }
+                    },
+                    "required": ["x", "y", "width", "height"]
+                  }
+                },
+                "required": ["presentationId", "index", "caption"]
+              }
+            },
+            {
+              "name": "teach_end",
+              "description": "End a live teaching presentation for the room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["presentationId"]
+              }
+            },
+            {
+              "name": "marklayer_read_page",
+              "description": "Read the page this room annotates — its headings, paragraphs, links, buttons and labels, each with the CSS selector and tag that locate it. Call this FIRST when asked to review, audit or improve a page and no annotations exist yet: without it you can only answer feedback someone else left, never find anything yourself. Every entry is already in the shape marklayer_suggest_edit and marklayer_create_annotation take, so pass `selector`, `tag` and `markdown` straight through to anchor a mark to the element you are talking about. If the answer says the page renders client-side, the copy is not in the HTML and you should say so rather than review an empty shell.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_room_info",
+              "description": "Get metadata about the connected room: page URL, viewport width, timestamps.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_list_annotations",
+              "description": "List every annotation in the connected room across all tools (comment, area, selection, inspect). Each entry carries a `kind` discriminator and, where the user marked an element, a `target` block with selector + markdown so you can address the change without reopening the page. Filter by status: open, in_progress, resolved, approved, dismissed, or all (default). `approved` means the person who asked for the change confirmed the fix, so those need nothing from you.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": ["open", "in_progress", "resolved", "approved", "dismissed", "all"]
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_get_annotation",
+              "description": "Get full detail for a single annotation of any kind (comment, area, selection, inspect), including its element `target` context and — for comments — the reply thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_diagnose",
+              "description": "Generate and save a diagnosis package for one annotation. Call this when a report says an element is unclickable, misplaced, or otherwise behaves incorrectly. It preserves a live package already captured by the extension; when no live capture exists, it saves an explicitly partial package from the annotation snapshot. Then call marklayer_read_diagnosis to inspect it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_diagnosis",
+              "description": "Read the saved runtime diagnosis for one annotation, including element context, hit-test/overlay chain when captured live, page errors, failed network requests, viewport values, and reproduction-step draft. Call after marklayer_diagnose or when the annotation already carries a diagnosis.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_attachment",
+              "description": "Read an image attached to a room annotation as MCP image content. Use the attachment id from its URL; report failure or lack of image support honestly.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "attachmentId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "attachmentId"]
+              }
+            },
+            {
+              "name": "marklayer_watch_annotations",
+              "description": "Block until there is work, then return a batch of whatever arrives within a short window. CALL THIS AGAIN IMMEDIATELY EVERY TIME IT RETURNS, including when it returns nothing — an empty result means the window expired, not that the reviewer is done. Nothing pushes work to you: between your calls, a comment someone leaves reaches no one. Keep looping until the person tells you to stop or ends the session. Each event has a `kind`: \"new\" is an annotation someone just left; \"handoff\" is one given to you — assigned to you, a reply that @mentions you, or a reply on a thread you already own. A handoff also carries `request`, the reply that asked: read it, it is the instruction, and act on it rather than only acknowledging. Every event carries the full annotation with its `target` element context.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "timeoutSeconds": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 600,
+                    "description": "How long to block before returning empty. Defaults to 50, which fits inside the 60s request timeout most clients use. Raise it only if you know yours allows a longer tool call."
+                  },
+                  "batchMs": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 10000,
+                    "description": "After the first new annotation arrives, wait this long for more before returning. Default 750."
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_acknowledge",
+              "description": "Mark an annotation as in_progress and tag it with this agent so the human sees you are working on it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_resolve",
+              "description": "Mark an annotation as resolved. Pass a summary describing what was changed — it will be posted as a reply to the thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "summary": {
+                    "type": "string",
+                    "description": "Short description of what changed, posted as a reply."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_dismiss",
+              "description": "Mark an annotation as dismissed when it cannot be acted on. The reason will be visible to the human.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Why you cannot act on this annotation."
+                  }
+                },
+                "required": ["id", "reason"]
+              }
+            },
+            {
+              "name": "marklayer_reply",
+              "description": "Post a reply to an annotation thread without changing its status. Use to ask clarifying questions.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "text"]
+              }
+            },
+            {
+              "name": "marklayer_create_annotation",
+              "description": "Leave a new comment annotation yourself — proactive feedback (a bug, a UX issue, an accessibility gap, an idea) rather than only responding to a human’s. For an exact text replacement (a copy or grammar fix), use marklayer_suggest_edit instead — it renders as a diff the human can accept, rather than prose describing one. Use this after you have looked at the page with your own tools (a screenshot, a DOM read) and decided something is worth flagging; call it once per finding so each becomes its own pin the human can triage. x/y are document pixels (not viewport pixels — scroll offset already added in). Pass selector + tag + markdown (straight from marklayer_read_page) to pin to that element: the pin sits on the element and follows it when the page reflows, and x/y become optional (a fallback only). Omit all three for a fixed-point pin at x/y.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The feedback itself."
+                  },
+                  "x": {
+                    "type": "number",
+                    "description": "Document-space X in CSS pixels."
+                  },
+                  "y": {
+                    "type": "number",
+                    "description": "Document-space Y in CSS pixels."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element this is about."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"button\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text"]
+              }
+            },
+            {
+              "name": "marklayer_suggest_edit",
+              "description": "Propose an exact replacement for a piece of text on the page — a copy or grammar fix — as a diff the human can accept, rather than a comment describing the change in prose. `rects` are the on-page bounding boxes of `text`, in document pixels: one per line it spans, so a wrapped sentence highlights as several boxes rather than one box swallowing the whole paragraph between its first and last line. Pass selector + tag + markdown together to anchor it to the containing element so it re-resolves if the page reflows.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact text on the page being replaced."
+                  },
+                  "suggestion": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact replacement text."
+                  },
+                  "rects": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "height": {
+                          "type": "number"
+                        }
+                      },
+                      "required": ["x", "y", "width", "height"]
+                    },
+                    "description": "Document-pixel bounding box(es) of `text` on the page — one per line it spans."
+                  },
+                  "comment": {
+                    "type": "string",
+                    "description": "Optional note explaining the fix, if it is not self-evident."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element containing this text."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"p\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text", "suggestion", "rects"]
+              }
+            },
+            {
+              "name": "marklayer_share_preview",
+              "description": "Open a new review room on a page you built — a preview deploy, a staging URL — and get back the link to hand to a human. Call this when you have something for someone to look at, rather than asking them to open a URL and describe what they see. The page is framed live and reviewers annotate it directly; their feedback then reaches you through the other tools. Pass `repo` + `branch` (and `sha`) when the page comes from a branch: a later preview of the same repo and branch becomes the next version of this one, and reviewers can step between versions. Over stdio this also connects you to the new room. Over HTTP the endpoint stays bound to the room in its URL, so reconnect to the returned `mcpUrl` to work the new room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "description": "Absolute http(s) URL of the page to review."
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "What this is, in a few words — shown to reviewers."
+                  },
+                  "repo": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Repository, e.g. \"acme/web\". With `branch`, chains versions."
+                  },
+                  "branch": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Branch the preview was built from."
+                  },
+                  "sha": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Commit the preview was built from; shown beside the version."
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "description": "What changed and what to look at, for the reviewers."
+                  },
+                  "questions": {
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "prompt": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300
+                        },
+                        "options": {
+                          "minItems": 2,
+                          "maxItems": 6,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 300
+                          }
+                        }
+                      },
+                      "required": ["prompt", "options"]
+                    },
+                    "description": "Polls to open the room with — a decision you want the reviewers to make."
+                  },
+                  "previous": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "The room this is a new version of, as a link or id. Defaults to the room you are connected to. Linked only when that room has the same repo and branch."
+                  }
+                },
+                "required": ["url", "title"]
+              }
+            },
+            {
+              "name": "marklayer_set_next_steps",
+              "description": "Publish your plan as a short ordered checklist the reviewers see live in the room, distilled from their feedback — one step per change you will make, each naming the annotation ids it answers. Replaces any list you set before. Tick steps off with marklayer_complete_next_step as you finish them, so the humans can watch the work land instead of asking where it is.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "minItems": 1,
+                    "maxItems": 20,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300,
+                          "description": "The step, as an imperative: \"Rename the CTA to Start trial\"."
+                        },
+                        "annotationIds": {
+                          "maxItems": 20,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "description": "Ids of the annotations this step addresses."
+                        }
+                      },
+                      "required": ["text"]
+                    }
+                  }
+                },
+                "required": ["steps"]
+              }
+            },
+            {
+              "name": "marklayer_complete_next_step",
+              "description": "Tick a step of the checklist off (or back on with done: false). Reviewers see it change live.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Step id, from marklayer_set_next_steps or marklayer_get_feedback."
+                  },
+                  "done": {
+                    "type": "boolean",
+                    "description": "Defaults to true."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_ask",
+              "description": "Put a multiple-choice question to the room — \"Which hero variant?\", \"Ship with the banner?\" — when you need a decision rather than open-ended feedback. Each reviewer gets one vote and may change it. Read the tally with marklayer_get_feedback.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "prompt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  },
+                  "options": {
+                    "minItems": 2,
+                    "maxItems": 6,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 300
+                    }
+                  }
+                },
+                "required": ["prompt", "options"]
+              }
+            },
+            {
+              "name": "marklayer_get_feedback",
+              "description": "Everything the room has told you, in one read: annotation counts by status with the open ones in full, the next-steps checklist and how far along it is, and every poll with its current tally. Use it to decide what to do next. In Guide mode, acknowledge and answer questions without resolving or dismissing them; use teach_step with an annotationId to explain a target. Keep marklayer_watch_annotations running for replies and teaching controls.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "d610f5f5-8bee-4446-abbc-2faf5b821ce9"
+      }
+    },
+    {
+      "client": 3,
+      "method": "tools/list",
+      "params": {},
+      "ms": 92.678,
+      "status": 200,
+      "body": {
+        "result": {
+          "tools": [
+            {
+              "name": "marklayer_register_semantic",
+              "description": "Register a named page element. The first registration for a page and name wins; version is the room revision observed by the caller.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2048
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1024
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "version": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": ["name", "page", "selector", "description", "version"]
+              }
+            },
+            {
+              "name": "marklayer_query_semantics",
+              "description": "Query registered page semantics and return the current roomVersion for registration.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "page": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_task",
+              "description": "Coordinate assigned work: list, take the next task, wait for a person, resume, complete, or confirm_cancel. Only take another after completing or confirming cancellation of the current task. The queue prioritizes the agent owner.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": ["list", "take", "wait", "resume", "complete", "confirm_cancel"]
+                  },
+                  "taskId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  },
+                  "waitingFor": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                },
+                "required": ["action"]
+              }
+            },
+            {
+              "name": "teach_start",
+              "description": "Start a live teaching presentation and return its presentationId. Optional steps describe the planned sequence.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "teach_step",
+              "description": "Show a teaching caption and highlight an annotation, page selector, rectangle, or toolbarTarget. The selection target selects webpage text; the arrow cursor is the separate Move tool, not Selection. Tool order can be changed, so do not infer its position from a default layout. While presenting call marklayer_watch_annotations for teach_control events; on next or previous send the selected step, on pause send state paused, and on resume send state active. Never claim to respond to controls without doing so.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "caption": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "annotationId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "toolbarTarget": {
+                    "type": "string",
+                    "enum": ["comment", "selection", "pen", "rectangle", "area", "eraser", "inspect", "text", "guide"]
+                  },
+                  "state": {
+                    "type": "string",
+                    "enum": ["active", "paused"]
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "rect": {
+                    "type": "object",
+                    "properties": {
+                      "x": {
+                        "type": "number"
+                      },
+                      "y": {
+                        "type": "number"
+                      },
+                      "width": {
+                        "type": "number"
+                      },
+                      "height": {
+                        "type": "number"
+                      }
+                    },
+                    "required": ["x", "y", "width", "height"]
+                  }
+                },
+                "required": ["presentationId", "index", "caption"]
+              }
+            },
+            {
+              "name": "teach_end",
+              "description": "End a live teaching presentation for the room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "presentationId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["presentationId"]
+              }
+            },
+            {
+              "name": "marklayer_read_page",
+              "description": "Read the page this room annotates — its headings, paragraphs, links, buttons and labels, each with the CSS selector and tag that locate it. Call this FIRST when asked to review, audit or improve a page and no annotations exist yet: without it you can only answer feedback someone else left, never find anything yourself. Every entry is already in the shape marklayer_suggest_edit and marklayer_create_annotation take, so pass `selector`, `tag` and `markdown` straight through to anchor a mark to the element you are talking about. If the answer says the page renders client-side, the copy is not in the HTML and you should say so rather than review an empty shell.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_room_info",
+              "description": "Get metadata about the connected room: page URL, viewport width, timestamps.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            },
+            {
+              "name": "marklayer_list_annotations",
+              "description": "List every annotation in the connected room across all tools (comment, area, selection, inspect). Each entry carries a `kind` discriminator and, where the user marked an element, a `target` block with selector + markdown so you can address the change without reopening the page. Filter by status: open, in_progress, resolved, approved, dismissed, or all (default). `approved` means the person who asked for the change confirmed the fix, so those need nothing from you.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": ["open", "in_progress", "resolved", "approved", "dismissed", "all"]
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_get_annotation",
+              "description": "Get full detail for a single annotation of any kind (comment, area, selection, inspect), including its element `target` context and — for comments — the reply thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_diagnose",
+              "description": "Generate and save a diagnosis package for one annotation. Call this when a report says an element is unclickable, misplaced, or otherwise behaves incorrectly. It preserves a live package already captured by the extension; when no live capture exists, it saves an explicitly partial package from the annotation snapshot. Then call marklayer_read_diagnosis to inspect it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_diagnosis",
+              "description": "Read the saved runtime diagnosis for one annotation, including element context, hit-test/overlay chain when captured live, page errors, failed network requests, viewport values, and reproduction-step draft. Call after marklayer_diagnose or when the annotation already carries a diagnosis.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_read_attachment",
+              "description": "Read an image attached to a room annotation as MCP image content. Use the attachment id from its URL; report failure or lack of image support honestly.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "attachmentId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "attachmentId"]
+              }
+            },
+            {
+              "name": "marklayer_watch_annotations",
+              "description": "Block until there is work, then return a batch of whatever arrives within a short window. CALL THIS AGAIN IMMEDIATELY EVERY TIME IT RETURNS, including when it returns nothing — an empty result means the window expired, not that the reviewer is done. Nothing pushes work to you: between your calls, a comment someone leaves reaches no one. Keep looping until the person tells you to stop or ends the session. Each event has a `kind`: \"new\" is an annotation someone just left; \"handoff\" is one given to you — assigned to you, a reply that @mentions you, or a reply on a thread you already own. A handoff also carries `request`, the reply that asked: read it, it is the instruction, and act on it rather than only acknowledging. Every event carries the full annotation with its `target` element context.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "timeoutSeconds": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 600,
+                    "description": "How long to block before returning empty. Defaults to 50, which fits inside the 60s request timeout most clients use. Raise it only if you know yours allows a longer tool call."
+                  },
+                  "batchMs": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 10000,
+                    "description": "After the first new annotation arrives, wait this long for more before returning. Default 750."
+                  }
+                }
+              }
+            },
+            {
+              "name": "marklayer_acknowledge",
+              "description": "Mark an annotation as in_progress and tag it with this agent so the human sees you are working on it.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_resolve",
+              "description": "Mark an annotation as resolved. Pass a summary describing what was changed — it will be posted as a reply to the thread.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "summary": {
+                    "type": "string",
+                    "description": "Short description of what changed, posted as a reply."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_dismiss",
+              "description": "Mark an annotation as dismissed when it cannot be acted on. The reason will be visible to the human.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Why you cannot act on this annotation."
+                  }
+                },
+                "required": ["id", "reason"]
+              }
+            },
+            {
+              "name": "marklayer_reply",
+              "description": "Post a reply to an annotation thread without changing its status. Use to ask clarifying questions.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": ["id", "text"]
+              }
+            },
+            {
+              "name": "marklayer_create_annotation",
+              "description": "Leave a new comment annotation yourself — proactive feedback (a bug, a UX issue, an accessibility gap, an idea) rather than only responding to a human’s. For an exact text replacement (a copy or grammar fix), use marklayer_suggest_edit instead — it renders as a diff the human can accept, rather than prose describing one. Use this after you have looked at the page with your own tools (a screenshot, a DOM read) and decided something is worth flagging; call it once per finding so each becomes its own pin the human can triage. x/y are document pixels (not viewport pixels — scroll offset already added in). Pass selector + tag + markdown (straight from marklayer_read_page) to pin to that element: the pin sits on the element and follows it when the page reflows, and x/y become optional (a fallback only). Omit all three for a fixed-point pin at x/y.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The feedback itself."
+                  },
+                  "x": {
+                    "type": "number",
+                    "description": "Document-space X in CSS pixels."
+                  },
+                  "y": {
+                    "type": "number",
+                    "description": "Document-space Y in CSS pixels."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element this is about."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"button\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text"]
+              }
+            },
+            {
+              "name": "marklayer_suggest_edit",
+              "description": "Propose an exact replacement for a piece of text on the page — a copy or grammar fix — as a diff the human can accept, rather than a comment describing the change in prose. `rects` are the on-page bounding boxes of `text`, in document pixels: one per line it spans, so a wrapped sentence highlights as several boxes rather than one box swallowing the whole paragraph between its first and last line. Pass selector + tag + markdown together to anchor it to the containing element so it re-resolves if the page reflows.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact text on the page being replaced."
+                  },
+                  "suggestion": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "The exact replacement text."
+                  },
+                  "rects": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        },
+                        "width": {
+                          "type": "number"
+                        },
+                        "height": {
+                          "type": "number"
+                        }
+                      },
+                      "required": ["x", "y", "width", "height"]
+                    },
+                    "description": "Document-pixel bounding box(es) of `text` on the page — one per line it spans."
+                  },
+                  "comment": {
+                    "type": "string",
+                    "description": "Optional note explaining the fix, if it is not self-evident."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high", "urgent"],
+                    "description": "Triage priority, if this warrants one."
+                  },
+                  "selector": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "CSS selector of the element containing this text."
+                  },
+                  "tag": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Tag name of that element, e.g. \"p\"."
+                  },
+                  "markdown": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Short markdown snapshot of the element, for the human to see."
+                  }
+                },
+                "required": ["text", "suggestion", "rects"]
+              }
+            },
+            {
+              "name": "marklayer_share_preview",
+              "description": "Open a new review room on a page you built — a preview deploy, a staging URL — and get back the link to hand to a human. Call this when you have something for someone to look at, rather than asking them to open a URL and describe what they see. The page is framed live and reviewers annotate it directly; their feedback then reaches you through the other tools. Pass `repo` + `branch` (and `sha`) when the page comes from a branch: a later preview of the same repo and branch becomes the next version of this one, and reviewers can step between versions. Over stdio this also connects you to the new room. Over HTTP the endpoint stays bound to the room in its URL, so reconnect to the returned `mcpUrl` to work the new room.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "description": "Absolute http(s) URL of the page to review."
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "What this is, in a few words — shown to reviewers."
+                  },
+                  "repo": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Repository, e.g. \"acme/web\". With `branch`, chains versions."
+                  },
+                  "branch": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Branch the preview was built from."
+                  },
+                  "sha": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "Commit the preview was built from; shown beside the version."
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000,
+                    "description": "What changed and what to look at, for the reviewers."
+                  },
+                  "questions": {
+                    "maxItems": 5,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "prompt": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300
+                        },
+                        "options": {
+                          "minItems": 2,
+                          "maxItems": 6,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 300
+                          }
+                        }
+                      },
+                      "required": ["prompt", "options"]
+                    },
+                    "description": "Polls to open the room with — a decision you want the reviewers to make."
+                  },
+                  "previous": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200,
+                    "description": "The room this is a new version of, as a link or id. Defaults to the room you are connected to. Linked only when that room has the same repo and branch."
+                  }
+                },
+                "required": ["url", "title"]
+              }
+            },
+            {
+              "name": "marklayer_set_next_steps",
+              "description": "Publish your plan as a short ordered checklist the reviewers see live in the room, distilled from their feedback — one step per change you will make, each naming the annotation ids it answers. Replaces any list you set before. Tick steps off with marklayer_complete_next_step as you finish them, so the humans can watch the work land instead of asking where it is.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "steps": {
+                    "minItems": 1,
+                    "maxItems": 20,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 300,
+                          "description": "The step, as an imperative: \"Rename the CTA to Start trial\"."
+                        },
+                        "annotationIds": {
+                          "maxItems": 20,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "description": "Ids of the annotations this step addresses."
+                        }
+                      },
+                      "required": ["text"]
+                    }
+                  }
+                },
+                "required": ["steps"]
+              }
+            },
+            {
+              "name": "marklayer_complete_next_step",
+              "description": "Tick a step of the checklist off (or back on with done: false). Reviewers see it change live.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Step id, from marklayer_set_next_steps or marklayer_get_feedback."
+                  },
+                  "done": {
+                    "type": "boolean",
+                    "description": "Defaults to true."
+                  }
+                },
+                "required": ["id"]
+              }
+            },
+            {
+              "name": "marklayer_ask",
+              "description": "Put a multiple-choice question to the room — \"Which hero variant?\", \"Ship with the banner?\" — when you need a decision rather than open-ended feedback. Each reviewer gets one vote and may change it. Read the tally with marklayer_get_feedback.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "prompt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  },
+                  "options": {
+                    "minItems": 2,
+                    "maxItems": 6,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 300
+                    }
+                  }
+                },
+                "required": ["prompt", "options"]
+              }
+            },
+            {
+              "name": "marklayer_get_feedback",
+              "description": "Everything the room has told you, in one read: annotation counts by status with the open ones in full, the next-steps checklist and how far along it is, and every poll with its current tally. Use it to decide what to do next. In Guide mode, acknowledge and answer questions without resolving or dismissing them; use teach_step with an annotationId to explain a target. Keep marklayer_watch_annotations running for replies and teaching controls.",
+              "inputSchema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
+              }
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "720ff1bf-c683-4407-ac9d-fdd0ab3abae5"
+      }
+    },
+    {
+      "client": 0,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "shared-button",
+          "page": "https://example.com/",
+          "selector": "#shared",
+          "description": "candidate-0",
+          "version": 0
+        }
+      },
+      "ms": 140.69450000000006,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"shared-button\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#shared\",\n    \"description\": \"candidate-0\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "5cd955c2-294a-4a5a-b6fb-36ea31021536"
+      }
+    },
+    {
+      "client": 1,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "shared-button",
+          "page": "https://example.com/",
+          "selector": "#shared",
+          "description": "candidate-1",
+          "version": 0
+        }
+      },
+      "ms": 142.39550000000003,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"error\": \"duplicate_semantic: 该页面的语义名称已经注册\"\n}"
+            }
+          ],
+          "isError": true
+        },
+        "jsonrpc": "2.0",
+        "id": "3f8a3b8e-5178-4545-8275-e4b9c30aea65"
+      }
+    },
+    {
+      "client": 2,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "shared-button",
+          "page": "https://example.com/",
+          "selector": "#shared",
+          "description": "candidate-2",
+          "version": 0
+        }
+      },
+      "ms": 145.5865,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"error\": \"duplicate_semantic: 该页面的语义名称已经注册\"\n}"
+            }
+          ],
+          "isError": true
+        },
+        "jsonrpc": "2.0",
+        "id": "18348ae3-8e64-42ae-bff2-483b1ccf7a16"
+      }
+    },
+    {
+      "client": 3,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "shared-button",
+          "page": "https://example.com/",
+          "selector": "#shared",
+          "description": "candidate-3",
+          "version": 0
+        }
+      },
+      "ms": 147.7389,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"error\": \"duplicate_semantic: 该页面的语义名称已经注册\"\n}"
+            }
+          ],
+          "isError": true
+        },
+        "jsonrpc": "2.0",
+        "id": "dbbccad4-fbc7-4e78-923d-8cd21e4a52fc"
+      }
+    },
+    {
+      "client": 0,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "button-0",
+          "page": "https://example.com/",
+          "selector": "#button-0",
+          "description": "shared element",
+          "version": 0
+        }
+      },
+      "ms": 116.18910000000005,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-0\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-0\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "9b545408-e834-46ca-89a1-8a64d4cf3e4c"
+      }
+    },
+    {
+      "client": 1,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "button-1",
+          "page": "https://example.com/",
+          "selector": "#button-1",
+          "description": "shared element",
+          "version": 0
+        }
+      },
+      "ms": 118.89210000000003,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-1\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-1\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "8038655e-46c2-40e2-98ed-08b217f5e369"
+      }
+    },
+    {
+      "client": 2,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "button-2",
+          "page": "https://example.com/",
+          "selector": "#button-2",
+          "description": "shared element",
+          "version": 0
+        }
+      },
+      "ms": 120.31669999999997,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-2\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-2\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "641e92de-8088-420a-a7b6-c1fa1961e5d9"
+      }
+    },
+    {
+      "client": 3,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_register_semantic",
+        "arguments": {
+          "name": "button-3",
+          "page": "https://example.com/",
+          "selector": "#button-3",
+          "description": "shared element",
+          "version": 0
+        }
+      },
+      "ms": 121.54129999999998,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-3\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-3\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "c670cd4b-aa8b-4afd-bbe5-4b57167f416e"
+      }
+    },
+    {
+      "client": 0,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_query_semantics",
+        "arguments": {
+          "page": "https://example.com/"
+        }
+      },
+      "ms": 162.89909999999998,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "484e14ea-7fcc-4a7d-8feb-e94f912e2ea3"
+      }
+    },
+    {
+      "client": 1,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_query_semantics",
+        "arguments": {
+          "page": "https://example.com/"
+        }
+      },
+      "ms": 164.567,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "cabb7162-ee39-4395-b2d6-17896da3e7b9"
+      }
+    },
+    {
+      "client": 2,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_query_semantics",
+        "arguments": {
+          "page": "https://example.com/"
+        }
+      },
+      "ms": 166.41039999999998,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "4fdc51bc-56f3-469b-9f49-5dbaa40f2e60"
+      }
+    },
+    {
+      "client": 3,
+      "method": "tools/call",
+      "params": {
+        "name": "marklayer_query_semantics",
+        "arguments": {
+          "page": "https://example.com/"
+        }
+      },
+      "ms": 169.6174000000001,
+      "status": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+            }
+          ]
+        },
+        "jsonrpc": "2.0",
+        "id": "09be27b7-dd5e-4115-aec2-322fcb87a163"
+      }
+    }
+  ],
+  "competing": [
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"shared-button\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#shared\",\n    \"description\": \"candidate-0\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "5cd955c2-294a-4a5a-b6fb-36ea31021536"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"error\": \"duplicate_semantic: 该页面的语义名称已经注册\"\n}"
+          }
+        ],
+        "isError": true
+      },
+      "jsonrpc": "2.0",
+      "id": "3f8a3b8e-5178-4545-8275-e4b9c30aea65"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"error\": \"duplicate_semantic: 该页面的语义名称已经注册\"\n}"
+          }
+        ],
+        "isError": true
+      },
+      "jsonrpc": "2.0",
+      "id": "18348ae3-8e64-42ae-bff2-483b1ccf7a16"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"error\": \"duplicate_semantic: 该页面的语义名称已经注册\"\n}"
+          }
+        ],
+        "isError": true
+      },
+      "jsonrpc": "2.0",
+      "id": "dbbccad4-fbc7-4e78-923d-8cd21e4a52fc"
+    }
+  ],
+  "distinct": [
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-0\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-0\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "9b545408-e834-46ca-89a1-8a64d4cf3e4c"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-1\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-1\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "8038655e-46c2-40e2-98ed-08b217f5e369"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-2\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-2\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "641e92de-8088-420a-a7b6-c1fa1961e5d9"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"ok\": true,\n  \"semantic\": {\n    \"name\": \"button-3\",\n    \"page\": \"https://example.com/\",\n    \"selector\": \"#button-3\",\n    \"description\": \"shared element\",\n    \"version\": 0\n  },\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "c670cd4b-aa8b-4afd-bbe5-4b57167f416e"
+    }
+  ],
+  "queries": [
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "484e14ea-7fcc-4a7d-8feb-e94f912e2ea3"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "cabb7162-ee39-4395-b2d6-17896da3e7b9"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "4fdc51bc-56f3-469b-9f49-5dbaa40f2e60"
+    },
+    {
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"count\": 5,\n  \"semantics\": [\n    {\n      \"name\": \"shared-button\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#shared\",\n      \"description\": \"candidate-0\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-0\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-0\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-1\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-1\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-2\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-2\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    },\n    {\n      \"name\": \"button-3\",\n      \"page\": \"https://example.com/\",\n      \"selector\": \"#button-3\",\n      \"description\": \"shared element\",\n      \"version\": 0\n    }\n  ],\n  \"roomVersion\": 0\n}"
+          }
+        ]
+      },
+      "jsonrpc": "2.0",
+      "id": "09be27b7-dd5e-4115-aec2-322fcb87a163"
+    }
+  ],
+  "snapshot": {
+    "status": 200,
+    "text": "{\"semantics\":[{\"name\":\"shared-button\",\"page\":\"https://example.com/\",\"selector\":\"#shared\",\"description\":\"candidate-0\",\"version\":0},{\"name\":\"button-0\",\"page\":\"https://example.com/\",\"selector\":\"#button-0\",\"description\":\"shared element\",\"version\":0},{\"name\":\"button-1\",\"page\":\"https://example.com/\",\"selector\":\"#button-1\",\"description\":\"shared element\",\"version\":0},{\"name\":\"button-2\",\"page\":\"https://example.com/\",\"selector\":\"#button-2\",\"description\":\"shared element\",\"version\":0},{\"name\":\"button-3\",\"page\":\"https://example.com/\",\"selector\":\"#button-3\",\"description\":\"shared element\",\"version\":0}],\"roomVersion\":0}"
+  }
+}

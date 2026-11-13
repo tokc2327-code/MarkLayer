@@ -24,7 +24,13 @@ import {
 import type { AgentTaskCommand, ClientMsg, RoomLayer, RoomTask, ServerMsg } from '@marklayer/types/wire';
 import { ROOM_ERROR_READ_ONLY } from '@marklayer/types/wire';
 import { z } from 'zod/mini';
-import type { QuestionRequest, StepRequest } from './tools';
+import type { QuestionRequest, SemanticQuery, SemanticRegistration, StepRequest } from './tools';
+
+export type SemanticListing = { semantics: SemanticRegistration[]; roomVersion: number };
+export type SemanticResult =
+  | { ok: true; semantic: SemanticRegistration; roomVersion: number }
+  | { ok: false; code: string; reason: string };
+
 import { WATCH_BATCH_MS, WATCH_DEFAULT_SECONDS } from './tools';
 
 export type Awaitable<T> = T | Promise<T>;
@@ -112,6 +118,8 @@ export interface TeachingStep {
  */
 export interface RoomOps {
   readonly roomId: string;
+  registerSemantic?(value: SemanticRegistration): Promise<SemanticResult>;
+  querySemantics?(query: SemanticQuery): Promise<SemanticListing>;
   taskCommand?(command: AgentTaskCommand): Promise<{ ok: boolean; tasks: RoomTask[] }>;
   listLayers?(): RoomLayer[];
   /**
@@ -299,6 +307,8 @@ export function replyOp({
 
 /** How a room is reached. Everything else about working one lives in `RoomCore`. */
 export interface RoomTransport {
+  registerSemantic?(value: SemanticRegistration): Promise<SemanticResult>;
+  querySemantics?(query: SemanticQuery): Promise<SemanticListing>;
   taskCommand?(command: AgentTaskCommand): Promise<{ ok: boolean; tasks: RoomTask[] }>;
   send(msg: ClientMsg): Awaitable<boolean>;
   /**
@@ -447,6 +457,18 @@ export class RoomCore implements RoomOps {
       if (msg.type === 'op' && msg.op.author === this.agentId && isAgentAuthored(msg.op)) this.ops.push(msg.op);
       else this.apply(msg);
     }
+  }
+
+  registerSemantic(value: SemanticRegistration): Promise<SemanticResult> {
+    return (
+      this.transport.registerSemantic?.(value) ??
+      Promise.resolve({ ok: false, code: 'unavailable', reason: 'semantic registration unavailable' })
+    );
+  }
+
+  querySemantics(query: SemanticQuery): Promise<SemanticListing> {
+    if (!this.transport.querySemantics) throw new Error('semantic query unavailable');
+    return this.transport.querySemantics(query);
   }
 
   get viewOnly(): boolean {

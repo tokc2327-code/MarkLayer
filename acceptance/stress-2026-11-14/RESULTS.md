@@ -1,5 +1,20 @@
 # 并发压测记录（2026-11-14）
 
+## 第四轮补测
+
+本机 Wrangler 4.127.1、本地 D1、Chrome 无头会话；HTTP MCP 与 stdio MCP 均连接本机隔离房间，未访问生产。功能实现位于本分支，语义表保存在房间 Durable Object；注册的 `version` 是查询返回的房间操作游标，同一 `(page, name)` 首次写入获胜，后到者 `duplicate_semantic` 拒绝，旧游标返回 `version_conflict`。查询与注册受房间访问门禁约束，写入沿用批注编辑权限。
+
+1. **跨房同时写入：本轮未扩展。** 第三轮仅覆盖跨房同时新增批注，拖动及线程回复同时跨房写入仍未覆盖。
+2. **冲突报错原文：批注过期版本冲突仍未覆盖。** 语义注册同键冲突本轮实际返回 `duplicate_semantic: 该页面的语义名称已经注册`；这不能替代批注冲突 NACK 的证据。
+3. **注册语义接口并发：通过本轮场景。** 四个独立 HTTP MCP 会话同时注册同一页面、同一名称和元素：1 次成功，3 次带原因拒绝，无重复；另四个不同名称同时注册均成功，四次并发查询完整结果一致（5 条），无 JSON-RPC/HTTP 错误，预期工具拒绝 3 次。`round4-semantics.json` 包含请求、响应和该阶段最终表快照。随后独立 stdio MCP 进程实际查询、注册另一条并读回，见 `round4-stdio.json`。该轮没有并发跨房注册，不能据此判断跨房语义串台。
+4. **延迟分位数及 30 秒断线：本轮已测。** 6 个浏览器，一个客户端离线 30.226 秒并显式关闭 socket；离线期间另一个客户端发送 20 条操作，恢复后原客户端发送 10 条。逐帧按 clientOpId 匹配发送到 ACK，以 CDP 单调时间差计时，最近秩法：全轮 ACK n=32，p50 485.78 ms、p95 573.68 ms、max 582.69 ms；离线期间在线端写入 n=20，p50 484.64 ms、p95 498.91 ms、max 499.59 ms；恢复端写入 n=10，p50 543.05 ms、p95/max 582.69 ms。另有 1 条无效图层 NACK，不计入 ACK 分位数；23+10 条发送均有回执。最终六个客户端与服务端各 31 条、逐字段一致，每客户端缺失和额外均为 0。逐条数据和快照见 `round4-offline-raw.json`、`round4-offline-summary.json`。这不是 30 次独立断线的重连耗时分布。
+
+另一次与重新构建过程重叠的运行中，恢复端 10 条写入虽收到 applied ACK，快照读取时其他客户端和服务端尚无这 10 条，见 `round4-reload-raw.json` 和 `round4-reload-summary.json`；无法确定原因，不能把该次称为收敛。上述稳定构建上的复测与它分开报告。
+
+验证：`bun run check` 12/12，`bun run test` 重跑 12/12；首次全仓测试在浏览器压测并行时有 1 项扩展测试超时，停止本轮服务后重跑通过，不能确定超时原因。`bunx biome check --write acceptance/stress-2026-11-14` 执行成功（有警告）。
+
+重跑：构建并在独立端口启动本地 Wrangler 后设置 `STRESS_BASE`，运行 `node acceptance/stress-2026-11-14/round4-semantics.mjs`、`node acceptance/stress-2026-11-14/round4-stdio.mjs`、`node acceptance/stress-2026-11-14/round4-offline.mjs`、`node acceptance/stress-2026-11-14/analyze-round4.mjs`。stdio 脚本使用本机 5397 端口和已构建 CLI；离线脚本需本机 Chrome 及构建好的扩展。脚本覆盖同名证据。
+
 ## 第三轮补测
 
 本轮基线 `2bb43c6`，本地 Wrangler 和四个独立 Chrome 157 无头会话；每个浏览器通过 CDP `Extensions.loadUnpacked` 加载扩展。`round3.mjs` 复用上一轮的浏览器连接、应用本地变更管线及 CDP 采集；`round3-raw.json` 保存事件和客户端完整 ops，`analyze-round3.mjs` 生成比对及逐条回执。仅代表本机这一轮，未访问生产房间。

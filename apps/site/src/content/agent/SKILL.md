@@ -105,3 +105,7 @@ Use `marklayer_read_attachment` to inspect a comment's image; report when image 
 ## Assigned task coordination
 
 Use `marklayer_task` with `list` to inspect tasks, `take` to start the next eligible task, `wait` with taskId and waitingFor when a person must answer, `resume` when ready, `complete` when done, and `confirm_cancel` after stopping a cancellation request. Do not start another task while one is active.
+
+## Page semantics
+
+Call `marklayer_query_semantics` to find entries and obtain the current roomVersion. Pass that version to `marklayer_register_semantic` with name, page, selector and description. The first registration of a page and name wins; on a version conflict, query again before retrying.

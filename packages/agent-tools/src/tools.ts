@@ -291,6 +291,20 @@ export const CompleteStepInput = z.object({
   done: z.optional(z.boolean().check(z.describe('Defaults to true.'))),
 });
 
+export const RegisterSemanticInput = z.object({
+  name: z.string().check(z.trim(), z.minLength(1), z.maxLength(128)),
+  page: z.string().check(z.trim(), z.minLength(1), z.maxLength(2048)),
+  selector: z.string().check(z.trim(), z.minLength(1), z.maxLength(1024)),
+  description: z.string().check(z.trim(), z.minLength(1), z.maxLength(2000)),
+  version: z.number().check(z.int(), z.gte(0)),
+});
+export const QuerySemanticInput = z.object({
+  name: z.optional(z.string().check(z.minLength(1))),
+  page: z.optional(z.string().check(z.minLength(1))),
+});
+export type SemanticRegistration = z.infer<typeof RegisterSemanticInput>;
+export type SemanticQuery = z.infer<typeof QuerySemanticInput>;
+
 const NoInput = z.object({});
 
 export type ToolTransport = 'http' | 'stdio';
@@ -310,6 +324,17 @@ const READS_ROOM = { needsLiveRoom: false, needsRoom: true, transports: EVERY_TR
 const WORKS_ROOM = { needsLiveRoom: true, needsRoom: true, transports: EVERY_TRANSPORT };
 
 const TOOL_DEFS = {
+  marklayer_register_semantic: {
+    ...WORKS_ROOM,
+    description:
+      'Register a named page element. The first registration for a page and name wins; version is the room revision observed by the caller.',
+    input: RegisterSemanticInput,
+  },
+  marklayer_query_semantics: {
+    ...READS_ROOM,
+    description: 'Query registered page semantics and return the current roomVersion for registration.',
+    input: QuerySemanticInput,
+  },
   marklayer_task: {
     ...WORKS_ROOM,
     description:

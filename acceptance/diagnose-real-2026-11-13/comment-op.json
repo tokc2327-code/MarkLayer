@@ -1,0 +1,149 @@
+{
+  "layerId": "default",
+  "id": "dcLV5ch4u7fMRpmZFk3qo",
+  "color": "#f43f5e",
+  "lineWidth": 2,
+  "author": "Sneaky Otter",
+  "authorId": "3Tbusw2_RkiZ4D06KAtez",
+  "captureViewport": {
+    "width": 758,
+    "height": 482
+  },
+  "target": {
+    "visibleText": "About the author",
+    "styles": {
+      "color": "rgb(23, 23, 23)",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "font-size": "44px",
+      "font-family": "Geist, \"Geist Fallback\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+      "display": "block",
+      "position": "static"
+    },
+    "selector": "h1",
+    "tag": "h1",
+    "markdown": "## Element Inspector\n\n**Page:** About the author · visual collaboration — http://127.0.0.1:9417/about.html\n**Selector:** `h1`\n**Size:** 663×47px\n**CSS Stack:** Tailwind\n**Viewport:** 758×482px\n**Text:** \"About the author\"\n**Styles:** `color: rgb(23, 23, 23); background-color: rgba(0, 0, 0, 0); font-size: 44px; font-family: Geist, \"Geist Fallback\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; display: block; position: static`\n\n**Markup:**\n```html\n<h1>About the author</h1>\n```\n",
+    "rect": {
+      "x": 40,
+      "y": 140.015625,
+      "width": 663,
+      "height": 46.625
+    },
+    "offsetX": 110,
+    "offsetY": 24.984375,
+    "text": "About the author"
+  },
+  "diagnosis": {
+    "capturedAt": 1794585179862,
+    "source": "live-page",
+    "target": {
+      "visibleText": "About the author",
+      "styles": {
+        "color": "rgb(23, 23, 23)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "font-size": "44px",
+        "font-family": "Geist, \"Geist Fallback\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+        "display": "block",
+        "position": "static"
+      },
+      "selector": "h1",
+      "tag": "h1",
+      "markdown": "## Element Inspector\n\n**Page:** About the author · visual collaboration — http://127.0.0.1:9417/about.html\n**Selector:** `h1`\n**Size:** 663×47px\n**CSS Stack:** Tailwind\n**Viewport:** 758×482px\n**Text:** \"About the author\"\n**Styles:** `color: rgb(23, 23, 23); background-color: rgba(0, 0, 0, 0); font-size: 44px; font-family: Geist, \"Geist Fallback\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; display: block; position: static`\n\n**Markup:**\n```html\n<h1>About the author</h1>\n```\n",
+      "rect": {
+        "x": 40,
+        "y": 140.015625,
+        "width": 663,
+        "height": 46.625
+      },
+      "text": "About the author"
+    },
+    "hierarchy": {
+      "iframeDepth": 0,
+      "shadowDepth": 0
+    },
+    "hitTest": {
+      "covered": false,
+      "hit": {
+        "selector": "h1",
+        "tag": "h1"
+      },
+      "chain": [
+        {
+          "selector": "h1",
+          "tag": "h1",
+          "pointerEvents": "auto",
+          "position": "static",
+          "zIndex": "auto",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "selector": "body > div",
+          "tag": "div",
+          "pointerEvents": "auto",
+          "position": "static",
+          "zIndex": "auto",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "selector": "body",
+          "tag": "body",
+          "pointerEvents": "auto",
+          "position": "static",
+          "zIndex": "auto",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "selector": "",
+          "tag": "html",
+          "pointerEvents": "auto",
+          "position": "static",
+          "zIndex": "auto",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    "pageErrorCount": 0,
+    "pageErrors": [],
+    "networkFailureCount": 0,
+    "networkFailures": [],
+    "viewport": {
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "scrollX": 0,
+      "scrollY": 0
+    },
+    "reproductionSteps": ["打开页面来源 http://127.0.0.1:9417/about.html", "定位批注目标 h1"],
+    "partial": false
+  },
+  "status": "open",
+  "attachments": ["sFVky0qWjW49zvHXb161S"],
+  "tool": "comment",
+  "num": 1,
+  "text": "诊断验收：检查此标题的页面现场。",
+  "x": 150,
+  "y": 165,
+  "ts": 1794585166807,
+  "meta": {
+    "url": "http://127.0.0.1:9417/about.html",
+    "viewport": {
+      "width": 758,
+      "height": 482
+    },
+    "browser": "Chrome",
+    "os": "Windows"
+  },
+  "visualContext": {
+    "region": {
+      "x": 0,
+      "y": 0,
+      "width": 758,
+      "height": 482
+    },
+    "layerId": "default",
+    "annotations": [],
+    "truncated": false
+  }
+}

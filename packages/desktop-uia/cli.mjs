@@ -268,6 +268,14 @@ if (command === 'annotate') {
         stateFile,
       ];
       if (interactive) psArgs.push('-Interactive', '-OutboxDir', outboxDir);
+      if (hasFlag('--webview-preview')) {
+        const webviewDir = option('--webview2-dir');
+        if (!webviewDir) throw new Error('--webview-preview requires --webview2-dir');
+        psArgs.push('-WebViewPreview', '-WebView2Dir', webviewDir);
+        if (hasFlag('--webview-preview-no-capture')) psArgs.push('-WebViewPreviewNoCapture');
+        const bridgeTestTarget = option('--webview-bridge-test-target');
+        if (bridgeTestTarget) psArgs.push('-WebViewBridgeTestTarget', bridgeTestTarget);
+      }
       if (stateOut) psArgs.push('-StateOut', stateOut);
       if (barX !== undefined) psArgs.push('-BarX', barX);
       if (barY !== undefined) psArgs.push('-BarY', barY);

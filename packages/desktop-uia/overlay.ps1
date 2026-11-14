@@ -4,6 +4,9 @@
   [string]$OutboxDir,
   [string]$StateOut,
   [switch]$WebViewPreview,
+  [switch]$WebViewPreviewNoCapture,
+  [switch]$WebViewInputTest,
+  [string]$WebViewBridgeTestTarget,
   [string]$WebView2Dir,
   [int]$BarX = -1,
   [int]$BarY = -1
@@ -11,7 +14,7 @@
 $ErrorActionPreference = 'Stop'
 
 if ($WebViewPreview) {
-  & (Join-Path $PSScriptRoot 'webview-preview.ps1') -WebView2Dir $WebView2Dir -OutboxDir $OutboxDir
+  & (Join-Path $PSScriptRoot 'webview-preview.ps1') -WebView2Dir $WebView2Dir -Targets $Targets -OutboxDir $OutboxDir -NoCapture:$WebViewPreviewNoCapture -InputTest:$WebViewInputTest -BridgeTestTarget $WebViewBridgeTestTarget
   return
 }
 

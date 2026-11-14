@@ -119,7 +119,11 @@ export const desktopTargetSchema = z.object({
   kind: z.literal('windows-uia'),
   app: z.string(),
   windowTitle: z.string(),
+  appPath: z.optional(z.string()),
+  windowClass: z.optional(z.string()),
   ...desktopAncestryItemSchema.shape,
+  /** Rectangle relative to the UIA element, in physical pixels. */
+  relativeRect: z.optional(z.object({ left: z.number(), top: z.number(), width: z.number(), height: z.number() })),
   ancestry: z.array(desktopAncestryItemSchema),
   captured: z.object({ left: z.number(), top: z.number(), width: z.number(), height: z.number(), dpr: z.number() }),
   screen: z.object({ width: z.number(), height: z.number(), scale: z.number() }),

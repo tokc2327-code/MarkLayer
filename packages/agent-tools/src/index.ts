@@ -96,6 +96,7 @@ export function projectAnnotation(op: AnnotationOp, apiBase: string) {
       // Console output the page had when this was written; often the bug itself.
       pageErrors: op.meta?.errors ?? [],
       target: op.target ?? null,
+      ...(op.desktopTarget ? { desktopTarget: op.desktopTarget } : {}),
       ...(op.visualContext ? { visualContext: op.visualContext } : {}),
       ...(op.diagnosis ? { diagnosis: op.diagnosis } : {}),
       attachments: attachmentUrls(op.attachments, apiBase),

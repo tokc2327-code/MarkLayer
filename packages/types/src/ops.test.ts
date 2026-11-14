@@ -59,6 +59,7 @@ test('desktop targets preserve old comments and require kind and ancestry', () =
   };
   expect(commentOpSchema.safeParse(comment).success).toBe(true);
   expect(commentOpSchema.safeParse({ ...comment, desktopTarget }).success).toBe(true);
+  expect(parseOps([comment, { ...comment, id: 'desktop', desktopTarget }])).toHaveLength(2);
   const { kind: _kind, ...noKind } = desktopTarget;
   const { ancestry: _ancestry, ...noAncestry } = desktopTarget;
   expect(commentOpSchema.safeParse({ ...comment, desktopTarget: noKind }).success).toBe(false);

@@ -1,1 +1,6 @@
-{"test":"cli-protocol-mock","ok":true,"opId":"15f2052c-5ac6-433a-a571-71098f992ae5","note":"mock server only; not room persistence"}
+{
+  "test": "cli-protocol-mock",
+  "ok": true,
+  "opId": "15f2052c-5ac6-433a-a571-71098f992ae5",
+  "note": "mock server only; not room persistence"
+}

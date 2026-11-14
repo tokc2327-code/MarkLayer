@@ -1,1 +1,10 @@
-{"targeted":{"command":"bun test packages/agent-tools/src/project.test.ts packages/types/src/ops.test.ts","pass":67,"fail":0},"check":{"command":"bun run check --concurrency=1","exitCode":0},"test":{"command":"bun run test --concurrency=1","exitCode":0},"scope":"automated tests; not real desktop or room acceptance"}
+{
+  "targeted": {
+    "command": "bun test packages/agent-tools/src/project.test.ts packages/types/src/ops.test.ts",
+    "pass": 67,
+    "fail": 0
+  },
+  "check": { "command": "bun run check --concurrency=1", "exitCode": 0 },
+  "test": { "command": "bun run test --concurrency=1", "exitCode": 0 },
+  "scope": "automated tests; not real desktop or room acceptance"
+}

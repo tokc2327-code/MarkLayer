@@ -51,8 +51,13 @@ describe('projectAnnotation — comment', () => {
 
   test('preserves a desktop target for the agent', () => {
     const desktopTarget = {
-      kind: 'windows-uia' as const, app: 'test', windowTitle: 'Test',
-      controlType: 'ControlType.Button', name: 'OK', automationId: 'ok', ancestry: [],
+      kind: 'windows-uia' as const,
+      app: 'test',
+      windowTitle: 'Test',
+      controlType: 'ControlType.Button',
+      name: 'OK',
+      automationId: 'ok',
+      ancestry: [],
       relativeRect: { left: 1, top: 2, width: 3, height: 4 },
       captured: { left: 10, top: 20, width: 3, height: 4, dpr: 1 },
       screen: { width: 1920, height: 1080, scale: 1 },

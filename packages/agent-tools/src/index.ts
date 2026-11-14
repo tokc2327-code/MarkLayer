@@ -305,7 +305,11 @@ async function workRoom({
     case 'marklayer_list_annotations': {
       const parsed = ListInput.safeParse(args);
       if (!parsed.success) return fail(parsed.error);
-      const ann = room.listAnnotations({ status: parsed.data.status });
+      const ann = room.listAnnotations({ status: parsed.data.status, desktop: parsed.data.desktop }).filter((op) => {
+        if (parsed.data.desktop === undefined) return true;
+        const hasDesktop = op.tool === 'comment' && Boolean(op.desktopTarget);
+        return hasDesktop === parsed.data.desktop;
+      });
       return ok({ count: ann.length, annotations: ann.map((op) => projectAnnotation(op, apiBase)) });
     }
 

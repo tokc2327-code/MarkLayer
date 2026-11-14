@@ -142,6 +142,7 @@ function PriorityRow({ op }: { op: AnnotationOp }) {
  */
 function ContextSection({ op }: { op: DrawOp }) {
   const meta = op.tool === 'comment' ? op.meta : undefined;
+  const desktopTarget = op.tool === 'comment' ? op.desktopTarget : undefined;
   const viewport = meta?.viewport ?? op.captureViewport;
   const env: string[] = [];
   if (meta?.browser) env.push(meta.browser);
@@ -149,7 +150,7 @@ function ContextSection({ op }: { op: DrawOp }) {
   if (op.device) env.push(DEVICE_LABELS[op.device]);
   if (viewport) env.push(`${Math.round(viewport.width)} × ${Math.round(viewport.height)}`);
   const selector = isAnchorableOp(op) ? op.target?.selector : undefined;
-  if (!meta?.url && !env.length && !selector) return null;
+  if (!meta?.url && !env.length && !selector && !desktopTarget) return null;
 
   return (
     <Section label="Context">
@@ -157,6 +158,22 @@ function ContextSection({ op }: { op: DrawOp }) {
         <p class="text-ui text-(--ds-gray-1000) m-0 truncate" title={meta.url}>
           {pagePath(meta.url)}
         </p>
+      )}
+      {desktopTarget && (
+        <div class="flex flex-col gap-0.5">
+          <p class="text-ui text-(--ds-gray-1000) m-0 truncate" title={desktopTarget.windowTitle}>
+            {desktopTarget.app} · {desktopTarget.windowTitle}
+          </p>
+          <p class="text-meta text-(--ds-gray-900) m-0 font-mono truncate">
+            {desktopTarget.controlType}
+            {desktopTarget.name ? ` · ${desktopTarget.name}` : ''}
+            {desktopTarget.automationId ? ` (#${desktopTarget.automationId})` : ''}
+          </p>
+          <p class="text-meta text-(--ds-gray-900) m-0 tabular-nums">
+            {Math.round(desktopTarget.captured.width)} × {Math.round(desktopTarget.captured.height)} px @{' '}
+            {desktopTarget.captured.dpr}x
+          </p>
+        </div>
       )}
       {env.length > 0 && <p class="text-meta text-(--ds-gray-900) m-0 mt-0.5 tabular-nums">{env.join(' · ')}</p>}
       {selector && (

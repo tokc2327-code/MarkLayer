@@ -43,7 +43,12 @@ export const ConnectInput = z.object({
   ),
 });
 export const PresenceInput = z.object({ member: z.optional(z.string().check(z.minLength(1))) });
-export const ListInput = z.object({ status: z.optional(StatusFilter) });
+export const ListInput = z.object({
+  status: z.optional(StatusFilter),
+  desktop: z.optional(
+    z.boolean().check(z.describe('Filter by desktop target presence: true for desktop only, false for non-desktop.')),
+  ),
+});
 export const IdInput = z.object({ ...idPart });
 export const ReadDiagnosisInput = IdInput;
 export const AttachmentInput = z.object({

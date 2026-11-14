@@ -1,0 +1,169 @@
+{
+  "timestamp": "2026-11-14T04:58:46.841Z",
+  "roomId": "deskaccept-mwfxr1rs-eb87fc",
+  "webRoomId": "webaccept-mwfxr1rs-845755",
+  "steps": {
+    "d1_d3": {
+      "ok": true,
+      "target": {
+        "kind": "windows-uia",
+        "app": "powershell",
+        "windowTitle": "MarkLayer Desktop Fixture",
+        "controlType": "ControlType.Button",
+        "name": "Save",
+        "automationId": "btnSave",
+        "relativeRect": {
+          "left": 0,
+          "top": 0,
+          "width": 180,
+          "height": 56
+        },
+        "ancestry": [
+          {
+            "controlType": "ControlType.Window",
+            "name": "MarkLayer Desktop Fixture",
+            "automationId": "FixtureWindow"
+          }
+        ],
+        "captured": {
+          "left": 223,
+          "top": 305,
+          "width": 180,
+          "height": 56,
+          "dpr": 1.5
+        },
+        "screen": {
+          "width": 2560,
+          "height": 1600,
+          "scale": 1.5
+        },
+        "appPath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "windowClass": "WindowsForms10.Window.8.app.0.297839e_r13_ad1"
+      },
+      "ann1": {
+        "opId": "ca447295-1acf-4ea3-9133-e5f6eb876762",
+        "roomId": "deskaccept-mwfxr1rs-eb87fc",
+        "num": 1,
+        "receipt": {
+          "type": "ack",
+          "opId": "ca447295-1acf-4ea3-9133-e5f6eb876762",
+          "status": "applied",
+          "seq": 2,
+          "rev": 1
+        }
+      },
+      "ann2": {
+        "opId": "08eb667f-a883-44c4-8369-6e687e407034",
+        "roomId": "deskaccept-mwfxr1rs-eb87fc",
+        "num": 2,
+        "receipt": {
+          "type": "ack",
+          "opId": "08eb667f-a883-44c4-8369-6e687e407034",
+          "status": "applied",
+          "seq": 3,
+          "rev": 2
+        }
+      },
+      "missingRoomError": "Room has expired or does not exist"
+    },
+    "d4": {
+      "ok": true,
+      "allCount": 2,
+      "desktopCount": 2,
+      "nonDesktopCount": 0,
+      "detailAutomationId": "btnSave"
+    },
+    "d2": {
+      "ok": true,
+      "webBaselineOk": true,
+      "desktopCommentRendered": true,
+      "hasDesktopContext": true,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "d5": {
+      "ok": true,
+      "screenshotModes": [
+        "printWindowComposite",
+        "printWindowComposite"
+      ],
+      "initialBoxVsButtonDiffPx": 0,
+      "badgesDisjoint": true,
+      "badge0": {
+        "left": 223,
+        "top": 281,
+        "width": 32,
+        "height": 22
+      },
+      "badge1": {
+        "left": 259,
+        "top": 281,
+        "width": 32,
+        "height": 22
+      },
+      "trackLatencyMs": 945,
+      "movedBoxRect": {
+        "left": 323,
+        "top": 375,
+        "width": 180,
+        "height": 56
+      },
+      "clickPassthrough": {
+        "inputMode": "win32MessageFallback",
+        "hardwareCursorMoved": false,
+        "saveClicks": 1,
+        "targetOwnerPid": 54112,
+        "afterForegroundPid": 0
+      }
+    },
+    "d6": {
+      "ok": true,
+      "screenshotMode": "printWindowComposite",
+      "dragRes": {
+        "ok": true,
+        "inputMode": "win32MessageFallback",
+        "hardwareCursorMoved": false,
+        "start": {
+          "x": 563,
+          "y": 385,
+          "owner": {
+            "rawChildHwnd": 9771884,
+            "hwnd": 9771884,
+            "pid": 42536,
+            "processName": "powershell",
+            "title": ""
+          }
+        },
+        "end": {
+          "x": 719,
+          "y": 421,
+          "owner": {
+            "rawChildHwnd": 9771884,
+            "hwnd": 9771884,
+            "pid": 42536,
+            "processName": "powershell",
+            "title": ""
+          }
+        }
+      },
+      "typeRes": {
+        "ok": true,
+        "inputMode": "win32MessageFallback",
+        "dialogPid": 42536,
+        "dialogTitle": ""
+      },
+      "overlayCount": 3,
+      "thirdOpText": "Interactive Cancel note",
+      "thirdOpAutomationId": "btnCancel",
+      "thirdOpRelativeRect": {
+        "left": 12,
+        "top": 10,
+        "width": 156,
+        "height": 36
+      },
+      "mcpCountAfterD6": 3,
+      "cancelClicksDuringCurtainDrag": 0
+    }
+  },
+  "ok": true
+}

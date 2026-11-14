@@ -585,3 +585,34 @@ test('semantic tools validate and dispatch registration and filtered query', asy
     )?.isError,
   ).toBe(true);
 });
+
+test('marklayer_list_annotations filters desktop vs non-desktop when requested', async () => {
+  const webComment = comment({ id: 'web-1', text: 'web pin' });
+  const desktopComment = comment({
+    id: 'desk-1',
+    text: 'desktop pin',
+    desktopTarget: {
+      kind: 'windows-uia',
+      app: 'DemoApp',
+      windowTitle: 'Demo Window',
+      controlType: 'ControlType.Button',
+      name: 'Save',
+      automationId: 'btnSave',
+      relativeRect: { left: 0, top: 0, width: 80, height: 30 },
+      ancestry: [{ controlType: 'ControlType.Window', name: 'Demo Window', automationId: '' }],
+      captured: { left: 100, top: 200, width: 80, height: 30, dpr: 1.5 },
+      screen: { width: 2560, height: 1600, scale: 1.5 },
+    },
+  });
+  const room = fakeRoom({
+    listAnnotations: () => [webComment, desktopComment],
+  });
+  expect(body(await run('marklayer_list_annotations', {}, room)).count).toBe(2);
+  const desktopOnly = body(await run('marklayer_list_annotations', { desktop: true }, room));
+  expect(desktopOnly.count).toBe(1);
+  expect(desktopOnly.annotations[0].id).toBe('desk-1');
+  expect(desktopOnly.annotations[0].desktopTarget.kind).toBe('windows-uia');
+  const webOnly = body(await run('marklayer_list_annotations', { desktop: false }, room));
+  expect(webOnly.count).toBe(1);
+  expect(webOnly.annotations[0].id).toBe('web-1');
+});

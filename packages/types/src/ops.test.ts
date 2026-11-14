@@ -1,4 +1,5 @@
 import { describe, expect, test } from 'bun:test';
+import { readFileSync } from 'node:fs';
 import {
   applyOpPatch,
   areaOpSchema,
@@ -64,6 +65,78 @@ test('desktop targets preserve old comments and require kind and ancestry', () =
   const { ancestry: _ancestry, ...noAncestry } = desktopTarget;
   expect(commentOpSchema.safeParse({ ...comment, desktopTarget: noKind }).success).toBe(false);
   expect(commentOpSchema.safeParse({ ...comment, desktopTarget: noAncestry }).success).toBe(false);
+});
+
+test('desktop-target.schema.json aligns with commentOpSchema and round-trips relativeRect, captured, screen', () => {
+  const schemaPath = new URL('../../desktop-uia/desktop-target.schema.json', import.meta.url);
+  const jsonSchema = JSON.parse(readFileSync(schemaPath, 'utf8')) as {
+    $schema?: string;
+    additionalProperties?: boolean;
+    required: string[];
+    properties: Record<string, unknown>;
+  };
+
+  expect(jsonSchema.$schema).toContain('draft-07');
+  expect(jsonSchema.additionalProperties).toBe(false);
+  expect(jsonSchema.required).toEqual([
+    'kind',
+    'app',
+    'windowTitle',
+    'controlType',
+    'name',
+    'automationId',
+    'ancestry',
+    'captured',
+    'screen',
+  ]);
+  expect(Object.keys(jsonSchema.properties).sort()).toEqual([
+    'ancestry',
+    'app',
+    'appPath',
+    'automationId',
+    'captured',
+    'controlType',
+    'kind',
+    'name',
+    'relativeRect',
+    'screen',
+    'windowClass',
+    'windowTitle',
+  ]);
+
+  const richTarget = {
+    kind: 'windows-uia' as const,
+    app: 'FixtureApp',
+    windowTitle: 'Fixture Window',
+    appPath: 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe',
+    windowClass: 'WindowsForms10.Window.8.app.0',
+    controlType: 'ControlType.Button',
+    name: 'Save',
+    automationId: 'btnSave',
+    relativeRect: { left: 4, top: 6, width: 80, height: 28 },
+    ancestry: [{ controlType: 'ControlType.Window', name: 'Fixture Window', automationId: '' }],
+    captured: { left: 100, top: 200, width: 120, height: 40, dpr: 1.5 },
+    screen: { width: 2560, height: 1440, scale: 1.5 },
+  };
+  const op = {
+    id: 'desktop-rich',
+    tool: 'comment' as const,
+    x: 0,
+    y: 0,
+    color: '#ef4444',
+    lineWidth: 2,
+    text: 'Desktop note',
+    author: 'Tester',
+    num: 1,
+    ts: 1_700_000_000_000,
+    status: 'open' as const,
+    desktopTarget: richTarget,
+  };
+  const parsed = parseOps([op]);
+  expect(parsed).toHaveLength(1);
+  const [roundTripped] = parsed;
+  if (roundTripped?.tool !== 'comment') throw new Error('expected comment op');
+  expect(roundTripped.desktopTarget).toEqual(richTarget);
 });
 
 describe('applyOpPatch', () => {

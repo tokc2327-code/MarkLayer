@@ -1,5 +1,60 @@
-# Windows 桌面目标
+# Windows Desktop UIA Annotation (`packages/desktop-uia`)
 
-房间 comment op 的 `desktopTarget` 是独立于网页 `target` 的 Windows UIA 目标；类型与运行时校验定义在 `packages/types/src/ops.ts`。`kind` 固定为 `windows-uia`。`app`、`windowTitle`、`controlType`、`name`、`automationId` 和由窗口到控件父节点的 `ancestry` 用于解析；可选 `appPath`、`windowClass` 缩小匹配范围。`relativeRect` 为相对控件左上角的物理像素矩形；`captured` 是采集时屏幕物理像素矩形及 dpr；`screen` 记录当时屏幕尺寸和 scale。旧数据可以缺少 `relativeRect`，新 CLI 要求提供。标题变化、相同路径的控件或应用重启可能导致找不到或歧义，解析器不会猜测。
+Desktop targets plug Windows UI Automation (UIA) controls into the same MarkLayer room, op stream, Web viewer, and MCP agent tools as browser annotations.
 
-用 `node packages/desktop-uia/cli.mjs annotate -Target target.json --text "意见" --room https://host/s/room` 写入，成功只在房间返回 ACK 后输出 opId。当前不支持密码房间；以目标文件所在来源的权限使用，注意该文件包含窗口名称和坐标。
+## Schema (`desktopTarget`)
+
+- Runtime & TypeScript contract: [`desktopTargetSchema`](../types/src/ops.ts) (`DesktopTarget`, carried on `commentOpSchema.desktopTarget`).
+- JSON Schema (Draft-07): [`desktop-target.schema.json`](./desktop-target.schema.json).
+
+### Fields
+
+| Field | Required | Description |
+| --- | --- | --- |
+| `kind` | Yes | Fixed `"windows-uia"`. |
+| `app` | Yes | Process name without `.exe` (e.g. `"Notepad"`, `"powershell"`). |
+| `windowTitle` | Yes | Exact top-level window title at capture time. |
+| `appPath` | No | Full executable path to disambiguate windows. |
+| `windowClass` | No | Win32 window class name (`GetClassName`). |
+| `controlType` | Yes | UIA `ControlType.ProgrammaticName` (e.g. `"ControlType.Button"`). |
+| `name` | Yes | UIA `Current.Name` of the control. |
+| `automationId` | Yes | UIA `Current.AutomationId` of the control. |
+| `relativeRect` | No* | `{ left, top, width, height }` in physical pixels relative to the UIA control's top-left corner (*optional for backwards compatibility with older ops; required by CLI `annotate` and produced by `capture` / interactive overlay). |
+| `ancestry` | Yes | Ordered array of `{ controlType, name, automationId }` from the top-level window down to the direct parent of the target control. |
+| `captured` | Yes | `{ left, top, width, height, dpr }` — physical screen pixels and monitor scale at capture time. |
+| `screen` | Yes | `{ width, height, scale }` — monitor physical resolution and DPI scale at capture time. |
+
+### Coordinate System & DPI
+
+All UIA, screen, `relativeRect`, and overlay coordinates use **physical desktop pixels** under `PerMonitorV2` (`SetProcessDpiAwarenessContext(-4)` and `SetThreadDpiAwarenessContext(-4)`), set before WinForms loads.
+
+## CLI Commands
+
+```bash
+# List visible top-level windows
+node packages/desktop-uia/cli.mjs list-windows
+
+# Snapshot UIA tree of a window
+node packages/desktop-uia/cli.mjs snapshot -Hwnd <hwnd>
+
+# Capture a schema-compliant target JSON from a window/control or physical point
+node packages/desktop-uia/cli.mjs capture -Hwnd <hwnd> -AutomationId <id>
+node packages/desktop-uia/cli.mjs capture -X <px> -Y <px>
+
+# Resolve a target JSON back to current physical coordinates
+node packages/desktop-uia/cli.mjs resolve -Target target.json
+
+# Write a desktop annotation into a MarkLayer room (waits for room ACK)
+node packages/desktop-uia/cli.mjs annotate -Target target.json --text "意见" --room http://127.0.0.1:5173/s/<roomId>
+# Password-protected rooms accept --password <pwd> or MARKLAYER_PASSWORD
+
+# Run the click-through overlay connected to a live room (with optional interactive creator)
+node packages/desktop-uia/cli.mjs overlay --room http://127.0.0.1:5173/s/<roomId> --interactive
+```
+
+## Notes & Constraints
+
+- **Click-through & Non-activating**: Display boxes and numbered badges use `WS_EX_TRANSPARENT | WS_EX_LAYERED | WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW` and `ShowWithoutActivation = true`, so they never steal focus or eat clicks.
+- **Non-overlapping badges**: Multiple annotations targeting the same or adjacent controls automatically lay out disjoint numbered badges (`#1`, `#2`, ...).
+- **Resolution honesty**: Title changes, identical sibling paths without distinct `AutomationId`/`Name`, or app restarts without stable titles fail cleanly (`not_found` / `ambiguous:<n>`) instead of guessing.
+- **Room permissions**: Read-only rooms return an error; password-protected rooms require `--password` or `MARKLAYER_PASSWORD`.

@@ -135,7 +135,7 @@ export interface RoomOps {
   getMeta(): RoomMeta;
   /** An error to return instead of acting, when the connection cannot carry a write. */
   checkLive(): string | null;
-  listAnnotations(filter?: { status?: CommentStatus | 'all' }): AnnotationOp[];
+  listAnnotations(filter?: { status?: CommentStatus | 'all'; desktop?: boolean }): AnnotationOp[];
   getAnnotation(id: string): { op: AnnotationOp; replies: CommentOp[] } | null;
   setDiagnosis(id: string, diagnosis: Diagnosis): Awaitable<boolean>;
   watch(opts: { timeoutSeconds?: number; batchMs?: number }): Promise<WatchEvent[]>;
@@ -499,11 +499,18 @@ export class RoomCore implements RoomOps {
   }
 
   /** Replies are excluded: they belong to their parent thread, and `getAnnotation` returns them. */
-  listAnnotations(filter?: { status?: CommentStatus | 'all' }): AnnotationOp[] {
+  listAnnotations(filter?: { status?: CommentStatus | 'all'; desktop?: boolean }): AnnotationOp[] {
     const status = filter?.status ?? 'all';
-    return this.ops.filter(
-      (op): op is AnnotationOp => isRootAnnotation(op) && (status === 'all' || resolveOpStatus(op) === status),
-    );
+    const desktop = filter?.desktop;
+    return this.ops.filter((op): op is AnnotationOp => {
+      if (!isRootAnnotation(op)) return false;
+      if (status !== 'all' && resolveOpStatus(op) !== status) return false;
+      if (desktop !== undefined) {
+        const hasDesktop = op.tool === 'comment' && Boolean(op.desktopTarget);
+        if (hasDesktop !== desktop) return false;
+      }
+      return true;
+    });
   }
 
   getAnnotation(id: string): { op: AnnotationOp; replies: CommentOp[] } | null {

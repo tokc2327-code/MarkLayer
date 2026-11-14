@@ -19,6 +19,8 @@ const BASE = `http://127.0.0.1:${PORT}`;
 const TS = Date.now().toString(36);
 const ROOM_ID = `deskaccept-${TS}-${randomUUID().slice(0, 6)}`;
 const WEB_ROOM_ID = `webaccept-${TS}-${randomUUID().slice(0, 6)}`;
+const PWD_ROOM_ID = `deskaccept-pwd-${TS}-${randomUUID().slice(0, 4)}`;
+const PWD_SECRET = 'desktop-secret-4401';
 
 function readJsonClean(path) {
   return JSON.parse(readFileSync(path, 'utf8').replace(/^\uFEFF/, ''));
@@ -76,10 +78,10 @@ function rectsIntersect(a, b) {
   );
 }
 
-async function mcpHttp(roomId, name, args) {
+async function mcpHttp(roomId, name, args, extraHeaders = {}) {
   const res = await fetch(`${BASE}/s/${roomId}/mcp?agent=accept-agent`, {
     method: 'POST',
-    headers: { 'content-type': 'application/json', accept: 'application/json, text/event-stream' },
+    headers: { 'content-type': 'application/json', accept: 'application/json, text/event-stream', ...extraHeaders },
     body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name, arguments: args } }),
   });
   const raw = await res.text();
@@ -157,6 +159,8 @@ const report = {
   timestamp: new Date().toISOString(),
   roomId: ROOM_ID,
   webRoomId: WEB_ROOM_ID,
+  pwdRoomId: PWD_ROOM_ID,
+  environment: runPsDriver(['-Action', 'session-info']),
   steps: {},
 };
 
@@ -709,6 +713,118 @@ try {
     mcpCountAfterD6: mcpAfterD6.annotations.length,
     cancelClicksDuringCurtainDrag: fixtureFinal.cancelClicks,
   };
+
+  // 8. Real Worker Password-Protected Room (4401 + HTTP 401 + Bearer unlock for CLI & MCP)
+  const seedPwdRoom = await fetch(`${BASE}/api/${PWD_ROOM_ID}`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ ops: [], width: 1280 }),
+  });
+  if (!seedPwdRoom.ok) throw new Error(`Password room seed failed (${seedPwdRoom.status})`);
+
+  const hashRes = spawnSync(
+    'bun',
+    [
+      '-e',
+      `import { hashPassword } from './apps/worker/src/lock/password.ts'; console.log(await hashPassword('${PWD_SECRET}'));`,
+    ],
+    { cwd: ROOT, encoding: 'utf8' },
+  );
+  if (hashRes.status !== 0) throw new Error(`hashPassword failed: ${hashRes.stderr || hashRes.stdout}`);
+  const pwdHash = hashRes.stdout.trim();
+
+  const d1LockRes = spawnSync(
+    process.execPath,
+    [
+      join(ROOT, 'node_modules', 'wrangler', 'bin', 'wrangler.js'),
+      'd1',
+      'execute',
+      'marklayer',
+      '--local',
+      '--persist-to',
+      wranglerStateDir,
+      '--command',
+      `UPDATE annotations SET password_hash = '${pwdHash}', password_gen = 1 WHERE id = '${PWD_ROOM_ID}';`,
+    ],
+    { cwd: join(ROOT, 'apps', 'worker'), encoding: 'utf8' },
+  );
+  if (d1LockRes.status !== 0) throw new Error(`D1 lock update failed: ${d1LockRes.stderr || d1LockRes.stdout}`);
+
+  const noPwdCli = runCli(
+    ['annotate', '-Target', targetSavePath, '--text', 'No pwd fail', '--room', `${BASE}/s/${PWD_ROOM_ID}`],
+    {
+      expectFail: true,
+    },
+  );
+  const wrongPwdCli = runCli(
+    [
+      'annotate',
+      '-Target',
+      targetSavePath,
+      '--text',
+      'Wrong pwd fail',
+      '--room',
+      `${BASE}/s/${PWD_ROOM_ID}`,
+      '--password',
+      'wrong-secret',
+    ],
+    { expectFail: true },
+  );
+  const okPwdCli = JSON.parse(
+    runCli([
+      'annotate',
+      '-Target',
+      targetSavePath,
+      '--text',
+      'Locked room annotation',
+      '--room',
+      `${BASE}/s/${PWD_ROOM_ID}`,
+      '--password',
+      PWD_SECRET,
+    ]).stdout.trim(),
+  );
+
+  const unauthMcp = await fetch(`${BASE}/s/${PWD_ROOM_ID}/mcp?agent=accept-agent`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', accept: 'application/json, text/event-stream' },
+    body: JSON.stringify({
+      jsonrpc: '2.0',
+      id: 1,
+      method: 'tools/call',
+      params: { name: 'marklayer_list_annotations', arguments: {} },
+    }),
+  });
+  if (unauthMcp.status !== 401) {
+    throw new Error(`Expected 401 for unauthenticated password-room MCP call, got ${unauthMcp.status}`);
+  }
+  const authMcp = await mcpHttp(
+    PWD_ROOM_ID,
+    'marklayer_list_annotations',
+    { desktop: true },
+    { Authorization: `Bearer ${PWD_SECRET}` },
+  );
+  if (authMcp.annotations?.length !== 1 || authMcp.annotations[0].text !== 'Locked room annotation') {
+    throw new Error(`Expected 1 unlocked MCP annotation, got ${JSON.stringify(authMcp)}`);
+  }
+
+  const pwdEvidence = {
+    roomId: PWD_ROOM_ID,
+    missingPasswordError: noPwdCli.stderr.trim(),
+    wrongPasswordError: wrongPwdCli.stderr.trim(),
+    unlockedCliWrite: okPwdCli,
+    unauthenticatedMcpStatus: unauthMcp.status,
+    authenticatedMcpReadback: authMcp,
+  };
+  writeFileSync(join(ACCEPT_DIR, 'password-room-4401.json'), JSON.stringify(pwdEvidence, null, 2));
+  report.steps.passwordRoom4401 = {
+    ok: true,
+    missingPasswordError: pwdEvidence.missingPasswordError,
+    wrongPasswordError: pwdEvidence.wrongPasswordError,
+    cliOpId: okPwdCli.opId,
+    unauthenticatedMcpStatus: unauthMcp.status,
+    authenticatedMcpCount: authMcp.annotations.length,
+  };
+
   report.ok = true;
 } finally {
   cdp?.close();

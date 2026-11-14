@@ -1,5 +1,5 @@
 param(
-  [Parameter(Mandatory=$true)][ValidateSet('move-window','focus-window','click','drag','type-submit','inspect-point','crop-screenshot')][string]$Action,
+  [Parameter(Mandatory=$true)][ValidateSet('session-info','move-window','focus-window','click','drag','type-submit','inspect-point','crop-screenshot')][string]$Action,
   [int64]$Hwnd = 0,
   [int]$X = 0,
   [int]$Y = 0,
@@ -104,6 +104,32 @@ public static class Win32Driver {
   [DllImport("user32.dll")]
   public static extern bool EnumChildWindows(IntPtr hWndParent, EnumWindowsProc lpEnumFunc, IntPtr lParam);
 
+  [DllImport("user32.dll")]
+  public static extern IntPtr GetProcessWindowStation();
+
+  [DllImport("user32.dll")]
+  public static extern IntPtr GetThreadDesktop(uint threadId);
+
+  [DllImport("kernel32.dll")]
+  public static extern uint GetCurrentThreadId();
+
+  [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+  public static extern bool GetUserObjectInformation(IntPtr hObj, int nIndex, byte[] pvInfo, int nLength, out int lpnLengthNeeded);
+
+  [DllImport("user32.dll", SetLastError = true)]
+  public static extern IntPtr OpenInputDesktop(uint dwFlags, bool fInherit, uint dwDesiredAccess);
+
+  [DllImport("user32.dll")]
+  public static extern bool CloseDesktop(IntPtr hDesktop);
+
+  public static string GetObjectName(IntPtr h) {
+    if (h == IntPtr.Zero) return "";
+    byte[] buf = new byte[256];
+    int need = 0;
+    if (!GetUserObjectInformation(h, 2, buf, buf.Length, out need)) return "";
+    return Encoding.Unicode.GetString(buf, 0, Math.Max(0, need - 2));
+  }
+
   public static System.Collections.Generic.List<IntPtr> ListChildWindows(IntPtr parent) {
     var list = new System.Collections.Generic.List<IntPtr>();
     EnumChildWindows(parent, (hwnd, _) => {
@@ -191,6 +217,44 @@ function Assert-PointAllowed([int]$px, [int]$py, [uint32[]]$allowed) {
 }
 
 switch ($Action) {
+  'session-info' {
+    $wsName = [Win32Driver]::GetObjectName([Win32Driver]::GetProcessWindowStation())
+    $tdName = [Win32Driver]::GetObjectName([Win32Driver]::GetThreadDesktop([Win32Driver]::GetCurrentThreadId()))
+    $inDesk = [Win32Driver]::OpenInputDesktop(0, $false, 1)
+    $inName = [Win32Driver]::GetObjectName($inDesk)
+    if ($inDesk -ne [IntPtr]::Zero) { [void][Win32Driver]::CloseDesktop($inDesk) }
+    $copyOk = $false
+    $copyErr = ''
+    $tb = New-Object System.Drawing.Bitmap(4, 4)
+    $tg = [System.Drawing.Graphics]::FromImage($tb)
+    try {
+      $tg.CopyFromScreen(0, 0, 0, 0, $tb.Size)
+      $copyOk = $true
+    } catch {
+      $copyErr = $_.Exception.Message
+    } finally {
+      $tg.Dispose()
+      $tb.Dispose()
+    }
+    $screens = @([System.Windows.Forms.Screen]::AllScreens | ForEach-Object {
+      [ordered]@{
+        deviceName = $_.DeviceName
+        primary    = $_.Primary
+        bounds     = [ordered]@{ left = $_.Bounds.X; top = $_.Bounds.Y; width = $_.Bounds.Width; height = $_.Bounds.Height }
+      }
+    })
+    [ordered]@{
+      sessionId               = [System.Diagnostics.Process]::GetCurrentProcess().SessionId
+      winsta                  = $wsName
+      threadDesk              = $tdName
+      inputDesk               = $inName
+      copyFromScreenAvailable = $copyOk
+      copyFromScreenError     = $copyErr
+      monitorCount            = $screens.Count
+      screens                 = $screens
+    } | ConvertTo-Json -Compress -Depth 5
+  }
+
   'inspect-point' {
     (Get-PointOwner $X $Y) | ConvertTo-Json -Compress
   }

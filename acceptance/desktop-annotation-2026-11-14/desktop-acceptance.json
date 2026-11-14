@@ -1,7 +1,29 @@
 {
-  "timestamp": "2026-11-14T04:58:46.841Z",
-  "roomId": "deskaccept-mwfxr1rs-eb87fc",
-  "webRoomId": "webaccept-mwfxr1rs-845755",
+  "timestamp": "2026-11-14T05:14:36.584Z",
+  "roomId": "deskaccept-mwfybelj-1af81a",
+  "webRoomId": "webaccept-mwfybelj-c17e46",
+  "pwdRoomId": "deskaccept-pwd-mwfybelj-0a6b",
+  "environment": {
+    "sessionId": 1,
+    "winsta": "WinSta0",
+    "threadDesk": "exebox-MFN5C5SIUAQOFDKGOYRUIACR36",
+    "inputDesk": "Default",
+    "copyFromScreenAvailable": false,
+    "copyFromScreenError": "Exception calling \"CopyFromScreen\" with \"5\" argument(s): \"The handle is invalid\"",
+    "monitorCount": 1,
+    "screens": [
+      {
+        "deviceName": "\\\\.\\DISPLAY5",
+        "primary": true,
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "width": 2560,
+          "height": 1600
+        }
+      }
+    ]
+  },
   "steps": {
     "d1_d3": {
       "ok": true,
@@ -41,24 +63,24 @@
         "windowClass": "WindowsForms10.Window.8.app.0.297839e_r13_ad1"
       },
       "ann1": {
-        "opId": "ca447295-1acf-4ea3-9133-e5f6eb876762",
-        "roomId": "deskaccept-mwfxr1rs-eb87fc",
+        "opId": "18b7d913-4e3d-4e3c-8daa-209633484ced",
+        "roomId": "deskaccept-mwfybelj-1af81a",
         "num": 1,
         "receipt": {
           "type": "ack",
-          "opId": "ca447295-1acf-4ea3-9133-e5f6eb876762",
+          "opId": "18b7d913-4e3d-4e3c-8daa-209633484ced",
           "status": "applied",
           "seq": 2,
           "rev": 1
         }
       },
       "ann2": {
-        "opId": "08eb667f-a883-44c4-8369-6e687e407034",
-        "roomId": "deskaccept-mwfxr1rs-eb87fc",
+        "opId": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
+        "roomId": "deskaccept-mwfybelj-1af81a",
         "num": 2,
         "receipt": {
           "type": "ack",
-          "opId": "08eb667f-a883-44c4-8369-6e687e407034",
+          "opId": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
           "status": "applied",
           "seq": 3,
           "rev": 2
@@ -101,7 +123,7 @@
         "width": 32,
         "height": 22
       },
-      "trackLatencyMs": 945,
+      "trackLatencyMs": 749,
       "movedBoxRect": {
         "left": 323,
         "top": 375,
@@ -112,7 +134,7 @@
         "inputMode": "win32MessageFallback",
         "hardwareCursorMoved": false,
         "saveClicks": 1,
-        "targetOwnerPid": 54112,
+        "targetOwnerPid": 48948,
         "afterForegroundPid": 0
       }
     },
@@ -127,9 +149,9 @@
           "x": 563,
           "y": 385,
           "owner": {
-            "rawChildHwnd": 9771884,
-            "hwnd": 9771884,
-            "pid": 42536,
+            "rawChildHwnd": 5053184,
+            "hwnd": 5053184,
+            "pid": 36956,
             "processName": "powershell",
             "title": ""
           }
@@ -138,9 +160,9 @@
           "x": 719,
           "y": 421,
           "owner": {
-            "rawChildHwnd": 9771884,
-            "hwnd": 9771884,
-            "pid": 42536,
+            "rawChildHwnd": 5053184,
+            "hwnd": 5053184,
+            "pid": 36956,
             "processName": "powershell",
             "title": ""
           }
@@ -149,7 +171,7 @@
       "typeRes": {
         "ok": true,
         "inputMode": "win32MessageFallback",
-        "dialogPid": 42536,
+        "dialogPid": 36956,
         "dialogTitle": ""
       },
       "overlayCount": 3,
@@ -163,6 +185,14 @@
       },
       "mcpCountAfterD6": 3,
       "cancelClicksDuringCurtainDrag": 0
+    },
+    "passwordRoom4401": {
+      "ok": true,
+      "missingPasswordError": "Room is password-protected; pass --password or set MARKLAYER_PASSWORD",
+      "wrongPasswordError": "Room rejected the password",
+      "cliOpId": "bbd84986-337f-4829-820b-7b84fe018f8b",
+      "unauthenticatedMcpStatus": 401,
+      "authenticatedMcpCount": 1
     }
   },
   "ok": true

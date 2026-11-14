@@ -15,7 +15,7 @@ const NOT_YET_DOCUMENTED = [
 ];
 
 /** The skill file teaches the loop, not the whole catalogue. */
-const SKILL_SKIPS = ['marklayer_room_info', 'marklayer_get_annotation'];
+const SKILL_SKIPS = ['marklayer_room_info', 'marklayer_get_annotation', 'marklayer_room_presence'];
 
 const names = TOOLS.map((tool) => tool.name);
 

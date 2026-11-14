@@ -8,6 +8,7 @@ import { listenForNetworkErrors } from '../../lib/net-errors';
 import { restoreDraft } from '../../lib/ops';
 import { mountOverlay, OVERLAY_TAG, overlayHost, pageHasMarkLayer } from '../../lib/overlay-mount';
 import { listenForPageErrors } from '../../lib/page-errors';
+import { startPairPresence } from '../../lib/pair-presence';
 import { presenceFx } from '../../lib/presence-fx';
 import { visible } from '../../lib/ui-state';
 import './style.css';
@@ -24,6 +25,7 @@ export default defineContentScript({
     initHost({
       capabilities: {
         batch: true,
+        pairPresence: startPairPresence,
         capture: shootViewport,
         drafts: createDraftStore,
         fx: presenceFx,

@@ -15,6 +15,7 @@ import {
   ListInput,
   NEEDS_LIVE_ROOM,
   NEEDS_ROOM,
+  PresenceInput,
   type PreviewRequest,
   QuerySemanticInput,
   QuestionInput,
@@ -280,6 +281,16 @@ async function workRoom({
         });
       }
       return ok(page);
+    }
+
+    case 'marklayer_room_presence': {
+      const parsed = PresenceInput.safeParse(args);
+      if (!parsed.success) return fail(parsed.error);
+      if (!room.pairPresence) return err('presence unavailable');
+      const members = await room.pairPresence();
+      return ok({
+        members: parsed.data.member ? members.filter((entry) => entry.member === parsed.data.member) : members,
+      });
     }
 
     case 'marklayer_room_info':

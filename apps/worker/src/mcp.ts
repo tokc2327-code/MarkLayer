@@ -57,6 +57,7 @@ async function loadRoom({
   const { missed, ...snapshot } = await stub.join(peer);
   let cursor = snapshot.cursor;
   const transport: RoomTransport = {
+    pairPresence: () => stub.pairPresence(),
     registerSemantic: (value) => stub.registerMemberSemantic(value),
     querySemantics: (query) => stub.semanticListing(query),
     taskCommand: (command) => stub.agentTaskCommand(peer.id, command),

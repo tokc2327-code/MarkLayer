@@ -42,6 +42,7 @@ export const ConnectInput = z.object({
     z.string().check(z.describe('Only for a password-protected room: the password its owner shared.')),
   ),
 });
+export const PresenceInput = z.object({ member: z.optional(z.string().check(z.minLength(1))) });
 export const ListInput = z.object({ status: z.optional(StatusFilter) });
 export const IdInput = z.object({ ...idPart });
 export const ReadDiagnosisInput = IdInput;
@@ -378,6 +379,12 @@ const TOOL_DEFS = {
     transports: ['stdio'],
     description: 'Connect to a MarkLayer room (annotation session) by URL or bare room id. Disconnects any prior room.',
     input: ConnectInput,
+  },
+  marklayer_room_presence: {
+    ...READS_ROOM,
+    description:
+      'Read member viewport and cursor in CSS pixels (cursor uses document coordinates). Stale data is unreliable and must not be treated as live.',
+    input: PresenceInput,
   },
   marklayer_room_info: {
     ...READS_ROOM,

@@ -350,3 +350,5 @@ Use `marklayer_task` with `list` to inspect tasks, `take` to start the next elig
 ## Page semantics
 
 Call `marklayer_query_semantics` to find entries and obtain the current roomVersion. Pass that version to `marklayer_register_semantic` with name, page, selector and description. The first registration of a page and name wins; on a version conflict, query again before retrying.
+
+- `marklayer_room_presence`: read member viewport and cursor in CSS pixels; stale readings are unreliable.

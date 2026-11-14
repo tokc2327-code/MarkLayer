@@ -48,6 +48,7 @@ type RoomEnv = SlackEnv &
 /** Non-mutating types — always allowed. Everything else goes through `mutate`,
  * so a new mutating type is guarded by default, not by someone remembering. */
 const READ_ONLY_SAFE_TYPES = new Set<ClientMsg['type']>([
+  'pair_presence',
   'ping',
   'cursor',
   'ripple',
@@ -421,7 +422,7 @@ export class AnnotationRoom extends DurableObject<RoomEnv> {
       const info = this.getPeerInfo(ws);
       if (info) {
         // Bookkeeping for this room, not something one peer should read off another.
-        const { canEdit: _canEdit, userId: _userId, ...peer } = info;
+        const { canEdit: _canEdit, userId: _userId, pairPresence: _pairPresence, ...peer } = info;
         list.push(peer);
       }
     }
@@ -775,6 +776,22 @@ export class AnnotationRoom extends DurableObject<RoomEnv> {
       return { ...snapshot, missed: [] };
     }
     return { ...snapshot, ops: parseOps(entry.seen.ops), missed: this.since(entry.seen.cursor) };
+  }
+
+  /** 从 socket 附件读取，休眠后仍可用；过期数据在读取时清除。 */
+  async pairPresence() {
+    const now = Date.now();
+    return this.ctx.getWebSockets().flatMap((ws) => {
+      const info = this.getPeerInfo(ws);
+      const value = info?.pairPresence;
+      if (!info || !value) return [];
+      if (now - value.updatedAt > 60000) {
+        const { pairPresence: _expired, ...rest } = info;
+        this.setPeerInfo(ws, rest);
+        return [];
+      }
+      return [{ member: info.id, ...value, stale: now - value.updatedAt > 10000 }];
+    });
   }
 
   async snapshot(): Promise<AgentSnapshot> {
@@ -1306,6 +1323,24 @@ export class AnnotationRoom extends DurableObject<RoomEnv> {
         this.mutationReply(ws, requestId, outcome, 'collaboration_change_refused', msg.seq);
         return;
       }
+      case 'pair_presence': {
+        const info = this.getPeerInfo(ws);
+        if (!info) return;
+        if (msg.left) {
+          const { pairPresence: _left, ...rest } = info;
+          this.setPeerInfo(ws, rest);
+        } else if (msg.viewport) {
+          this.setPeerInfo(ws, {
+            ...info,
+            pairPresence: {
+              viewport: msg.viewport,
+              cursor: msg.cursor === undefined ? info.pairPresence?.cursor : msg.cursor,
+              updatedAt: Date.now(),
+            },
+          });
+        }
+        return;
+      }
       case 'ping':
         ws.send('{"type":"pong"}');
         return;
@@ -1373,6 +1408,8 @@ export class AnnotationRoom extends DurableObject<RoomEnv> {
     }
     if (!info) return;
 
+    const { pairPresence: _left, ...rest } = info;
+    this.setPeerInfo(ws, rest);
     this.broadcast({ type: 'peer_leave', peerId: info.id });
 
     // Awaited, not fire-and-forget: an agent's socket is usually the last one

@@ -112,6 +112,12 @@ class SocketTransport implements RoomTransport {
     });
   }
 
+  async pairPresence(): Promise<import('@marklayer/types/wire').PairPresenceEntry[]> {
+    const res = await fetch(`${this.apiBase}/s/${this.roomId}/presence`, { headers: this.authHeaders() });
+    if (!res.ok) throw new Error(`presence HTTP ${res.status}`);
+    return ((await res.json()) as { members: import('@marklayer/types/wire').PairPresenceEntry[] }).members;
+  }
+
   async taskCommand(command: AgentTaskCommand): Promise<{ ok: boolean; tasks: RoomTask[] }> {
     const params = new URLSearchParams({ agent: this.agentId, session: this.session });
     const res = await fetch(`${this.apiBase}/s/${this.roomId}/agent-task?${params}`, {

@@ -75,6 +75,13 @@ rooms.get('/s/:id/semantics', async (c) => {
   return c.json({ semantics: id === undefined ? entries : entries.filter((entry) => entry.id === id) });
 });
 
+rooms.get('/s/:id/presence', async (c) => {
+  if (await overRateLimit({ limiter: c.env.ROOM_LIMITER, req: c.req })) return c.text('Too many requests', 429);
+  const room = await openRoom({ env: c.env, id: c.req.param('id'), headers: c.req.raw.headers, ctx: c.executionCtx });
+  if (!room.ok) return refuse(room, 'json');
+  return c.json({ members: await room.stub.pairPresence() });
+});
+
 rooms.post('/s/:id/member-semantics', async (c) => {
   if (await overRateLimit({ limiter: c.env.ROOM_LIMITER, req: c.req })) return c.text('Too many requests', 429);
   const room = await openRoom({ env: c.env, id: c.req.param('id'), headers: c.req.raw.headers, ctx: c.executionCtx });

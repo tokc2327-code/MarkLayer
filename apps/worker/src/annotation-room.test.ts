@@ -1163,3 +1163,40 @@ describe('member semantic registration', () => {
     });
   });
 });
+
+describe('pair presence', () => {
+  test('stale、过期、断线清除且不进入 watch', async () => {
+    const db = fakeDb({ first: editableRow });
+    const peer = new FakeWebSocket({ id: 'human', name: 'A', color: '#8b5cf6' });
+    const { room } = makeRoom({ db, sockets: [peer] });
+    const viewport = {
+      unit: 'css_px' as const,
+      scrollX: 1,
+      scrollY: 2,
+      innerWidth: 3,
+      innerHeight: 4,
+      devicePixelRatio: 2,
+      documentWidth: 5,
+      documentHeight: 6,
+    };
+    setSystemTime(100000);
+    try {
+      const before = await room.snapshot();
+      await room.webSocketMessage(
+        peer,
+        JSON.stringify({ type: 'pair_presence', viewport, cursor: { x: 10, y: 20, unit: 'css_document_px' } }),
+      );
+      expect((await room.pairPresence())[0]).toMatchObject({ member: 'human', viewport, stale: false });
+      setSystemTime(110001);
+      expect((await room.pairPresence())[0]?.stale).toBe(true);
+      expect((await room.snapshot()).cursor).toBe(before.cursor);
+      setSystemTime(160001);
+      expect(await room.pairPresence()).toEqual([]);
+      await room.webSocketMessage(peer, JSON.stringify({ type: 'pair_presence', viewport }));
+      await room.webSocketClose(peer);
+      expect(await room.pairPresence()).toEqual([]);
+    } finally {
+      setSystemTime();
+    }
+  });
+});

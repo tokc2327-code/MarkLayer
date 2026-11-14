@@ -21,6 +21,7 @@ export interface RoomStub {
   fetch(request: Request): Promise<Response>;
   join(peer: { id: string; uid: string; name: string; color: string }): Promise<AgentJoin>;
   snapshot(): Promise<AgentSnapshot>;
+  pairPresence(): Promise<import('@marklayer/types/wire').PairPresenceEntry[]>;
   queryUiSemantics(): Promise<UiSemantic[]>;
   registerMemberSemantic(value: SemanticRegistration): Promise<SemanticResult>;
   queryMemberSemantics(query: SemanticQuery): Promise<SemanticRegistration[]>;

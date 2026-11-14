@@ -121,6 +121,7 @@ export interface RoomOps {
   registerSemantic?(value: SemanticRegistration): Promise<SemanticResult>;
   querySemantics?(query: SemanticQuery): Promise<SemanticListing>;
   taskCommand?(command: AgentTaskCommand): Promise<{ ok: boolean; tasks: RoomTask[] }>;
+  pairPresence?(): Promise<import('@marklayer/types/wire').PairPresenceEntry[]>;
   listLayers?(): RoomLayer[];
   /**
    * The page's own copy, so an agent can review it rather than only react to
@@ -310,6 +311,7 @@ export interface RoomTransport {
   registerSemantic?(value: SemanticRegistration): Promise<SemanticResult>;
   querySemantics?(query: SemanticQuery): Promise<SemanticListing>;
   taskCommand?(command: AgentTaskCommand): Promise<{ ok: boolean; tasks: RoomTask[] }>;
+  pairPresence?(): Promise<import('@marklayer/types/wire').PairPresenceEntry[]>;
   send(msg: ClientMsg): Awaitable<boolean>;
   /**
    * Resolve with what arrived, within `ms`. A transport that feeds `apply` as messages
@@ -361,6 +363,11 @@ export class RoomCore implements RoomOps {
     this.peerId = agentPeerId({ agentId, session });
     this.transport = transport;
     this.newId = newId;
+  }
+
+  pairPresence() {
+    if (!this.transport.pairPresence) throw new Error('presence unavailable');
+    return this.transport.pairPresence();
   }
 
   listLayers(): RoomLayer[] {

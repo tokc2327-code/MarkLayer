@@ -100,6 +100,25 @@ const mutationMeta = { clientOpId: z.optional(z.string()), seq: z.optional(z.num
  * Operational client→server messages, strictly validated at the WS boundary.
  * Excludes RTC signaling (see RTC_MESSAGE_TYPES).
  */
+export const pairViewportSchema = z.object({
+  unit: z.literal('css_px'),
+  scrollX: z.number(),
+  scrollY: z.number(),
+  innerWidth: z.number(),
+  innerHeight: z.number(),
+  devicePixelRatio: z.number(),
+  documentWidth: z.number(),
+  documentHeight: z.number(),
+});
+export const pairCursorSchema = z.object({ x: z.number(), y: z.number(), unit: z.literal('css_document_px') });
+export const pairPresenceSchema = z.object({
+  viewport: pairViewportSchema,
+  cursor: z.optional(z.nullable(pairCursorSchema)),
+  updatedAt: z.number(),
+});
+export type PairPresence = z.infer<typeof pairPresenceSchema>;
+export type PairPresenceEntry = PairPresence & { member: string; stale: boolean };
+
 export const clientMsgSchema = z.discriminatedUnion('type', [
   z.object({
     type: z.literal('agent_claim'),
@@ -153,6 +172,12 @@ export const clientMsgSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('undo'), ...mutationMeta, opId: z.string() }),
   z.object({ type: z.literal('clear'), ...mutationMeta }),
   z.object({ type: z.literal('ping') }),
+  z.object({
+    type: z.literal('pair_presence'),
+    left: z.optional(z.boolean()),
+    viewport: z.optional(pairViewportSchema),
+    cursor: z.optional(z.nullable(pairCursorSchema)),
+  }),
   z.object({
     type: z.literal('cursor'),
     x: z.number(),

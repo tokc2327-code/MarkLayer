@@ -17,6 +17,10 @@ export const AGENT_TOOL_GROUPS: { group: string; tools: AgentTool[] }[] = [
         name: 'read_page',
         does: "The page's headings, text, links and controls, each with the selector that finds it.",
       },
+      {
+        name: 'room_presence',
+        does: 'Read current member viewports and cursors in CSS pixels; stale readings are unreliable.',
+      },
       { name: 'room_info', does: 'The URL under review, the viewport it was annotated at, and timestamps.' },
       { name: 'query_semantics', does: 'Find registered elements by name and page and read the room revision.' },
       { name: 'list_annotations', does: 'Everything left on the page, filtered by status.' },

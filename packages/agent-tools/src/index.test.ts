@@ -190,6 +190,27 @@ describe('callTool', () => {
     ).toBe(true);
   });
 
+  test('filters read-only room presence by member', async () => {
+    const entry = {
+      member: 'human',
+      viewport: {
+        unit: 'css_px' as const,
+        scrollX: 1,
+        scrollY: 2,
+        innerWidth: 3,
+        innerHeight: 4,
+        devicePixelRatio: 1,
+        documentWidth: 5,
+        documentHeight: 6,
+      },
+      updatedAt: 10,
+      stale: false,
+    };
+    const room = fakeRoom({ pairPresence: async () => [entry] });
+    expect(body(await run('marklayer_room_presence', { member: 'human' }, room)).members).toEqual([entry]);
+    expect(body(await run('marklayer_room_presence', { member: 'other' }, room)).members).toEqual([]);
+  });
+
   test('projects a teaching control in the existing watch result', async () => {
     const control = { type: 'teach_control', presentationId: 'demo-1', action: 'next', peerId: 'human' } as const;
     const result = await run(

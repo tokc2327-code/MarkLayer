@@ -36,6 +36,7 @@ export interface HostCapabilities {
   /** Whether this person may delete annotations and change their status. */
   triage: boolean;
   batch: boolean;
+  pairPresence?: (send: (message: unknown) => void) => () => void;
   drafts?: (options: DraftStoreOptions) => DraftStore;
   capture?: (crop: { x: number; y: number; width: number; height: number }) => Promise<ImageBitmap>;
   identity?: IdentityStore;

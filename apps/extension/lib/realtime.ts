@@ -149,6 +149,7 @@ export interface ConnectRoomOptions {
 export function connectRoom({ roomId, origin, hooks = {} }: ConnectRoomOptions): () => void {
   if (!roomId) return () => {};
 
+  let stopPresence: (() => void) | undefined;
   let destroyed = false;
   let initReceived = false;
 
@@ -490,6 +491,9 @@ export function connectRoom({ roomId, origin, hooks = {} }: ConnectRoomOptions):
     ws = socket;
 
     socket.onopen = () => {
+      stopPresence = host.capabilities.pairPresence?.((msg) => {
+        if (socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify(msg));
+      });
       connected.value = true;
       connectionStatus.value = 'connected';
       // Silent reconnects are invisible from the room's own logs — the DO sees
@@ -515,6 +519,8 @@ export function connectRoom({ roomId, origin, hooks = {} }: ConnectRoomOptions):
     };
 
     socket.onclose = (event) => {
+      stopPresence?.();
+      stopPresence = undefined;
       stopSocketTimers();
       invalidateMutations();
       ws = null;
@@ -624,6 +630,8 @@ export function connectRoom({ roomId, origin, hooks = {} }: ConnectRoomOptions):
   function disconnect() {
     if (destroyed) return;
     destroyed = true;
+    stopPresence?.();
+    stopPresence = undefined;
     invalidateMutations(false);
     connectionStatus.value = null;
     onChange.value = null;

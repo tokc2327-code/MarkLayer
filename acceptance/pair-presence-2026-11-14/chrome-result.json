@@ -1,0 +1,80 @@
+{
+  "kind": "Chrome CDP",
+  "steps": [
+    {
+      "chrome": "Chrome/157.0.8103.52",
+      "extension": "adpmekdmibomeicndonodmdkbpegkjfb",
+      "temporaryChanges": "local API origin and localhost host permission"
+    },
+    {
+      "workerProbe": {
+        "result": {
+          "type": "number",
+          "value": 2,
+          "description": "2"
+        }
+      }
+    },
+    {
+      "injected": 487564402
+    },
+    {
+      "moved": {
+        "members": [
+          {
+            "member": "9HhUoL0dLDyht22elZvtV",
+            "viewport": {
+              "unit": "css_px",
+              "scrollX": 0,
+              "scrollY": 700,
+              "innerWidth": 758,
+              "innerHeight": 482,
+              "devicePixelRatio": 1,
+              "documentWidth": 743,
+              "documentHeight": 4016
+            },
+            "cursor": {
+              "x": 120,
+              "y": 880,
+              "unit": "css_document_px"
+            },
+            "updatedAt": 1794614119705,
+            "stale": false
+          }
+        ]
+      }
+    },
+    {
+      "stale": {
+        "members": [
+          {
+            "member": "9HhUoL0dLDyht22elZvtV",
+            "viewport": {
+              "unit": "css_px",
+              "scrollX": 0,
+              "scrollY": 700,
+              "innerWidth": 758,
+              "innerHeight": 482,
+              "devicePixelRatio": 1,
+              "documentWidth": 743,
+              "documentHeight": 4016
+            },
+            "cursor": {
+              "x": 120,
+              "y": 880,
+              "unit": "css_document_px"
+            },
+            "updatedAt": 1794614119705,
+            "stale": true
+          }
+        ]
+      }
+    },
+    {
+      "departed": {
+        "members": []
+      }
+    }
+  ],
+  "ok": true
+}

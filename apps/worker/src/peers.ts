@@ -1,3 +1,4 @@
+import { pairPresenceSchema } from '@marklayer/types/wire';
 import { z } from 'zod/mini';
 
 /**
@@ -27,6 +28,7 @@ export const peerInfoSchema = z.object({
    *
    * All optional: a socket that connected before this shipped parses fine.
    */
+  pairPresence: z.optional(pairPresenceSchema),
   joinedAt: z.optional(z.number()),
   ops: z.optional(z.number()),
   updates: z.optional(z.number()),

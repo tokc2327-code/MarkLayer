@@ -447,7 +447,7 @@ const TOOL_DEFS = {
   marklayer_resolve: {
     ...WORKS_ROOM,
     description:
-      'Mark an annotation as resolved. Pass a summary describing what was changed — it will be posted as a reply to the thread.',
+      'Mark an annotation as resolved. Pass a summary describing the change you made in the code — it will be posted as a reply to the thread. The summary reports your work, not the live page: the page does not change when you resolve.',
     input: ResolveInput,
   },
   marklayer_dismiss: {
@@ -584,7 +584,10 @@ const WORKING_A_ROOM =
   'or accessibility issues, ideas), inspect it with your own tools and call marklayer_create_annotation once ' +
   'per finding — do not bundle several into one comment. For an exact copy or grammar fix, use ' +
   'marklayer_suggest_edit instead of a comment, so the human gets a diff to accept rather than prose ' +
-  'describing one.';
+  'describing one. ' +
+  'Describe only what you actually did. Resolving an annotation, posting a reply, ticking a step or changing a ' +
+  'status does not touch the page: unless you really edited it, do not say it was changed, fixed, applied or is ' +
+  'live — say what you did and what still needs doing.';
 
 /** So both transports teach one loop. Connecting is stdio's step alone: a URL binds the room over HTTP. */
 export const instructionsFor = (transport: ToolTransport): string =>

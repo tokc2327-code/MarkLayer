@@ -38,6 +38,8 @@ describe('what the servers announce', () => {
   test('a server never teaches a tool it does not serve', () => {
     expect(instructionsFor('stdio')).toContain('marklayer_connect_room');
     expect(instructionsFor('http')).not.toContain('marklayer_connect_room');
+    // The page does not change when an agent resolves a thread; saying otherwise misleads the reviewer.
+    expect(instructionsFor('http')).toContain('does not touch the page');
   });
 
   test('a preview answer parses', () => {

@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-11-14T05:14:36.584Z",
-  "roomId": "deskaccept-mwfybelj-1af81a",
-  "webRoomId": "webaccept-mwfybelj-c17e46",
-  "pwdRoomId": "deskaccept-pwd-mwfybelj-0a6b",
+  "timestamp": "2026-11-14T05:32:50.871Z",
+  "roomId": "deskaccept-mwfyyuyd-f3cffa",
+  "webRoomId": "webaccept-mwfyyuyd-47e8b3",
+  "pwdRoomId": "deskaccept-pwd-mwfyyuyd-6493",
   "environment": {
     "sessionId": 1,
     "winsta": "WinSta0",
-    "threadDesk": "exebox-MFN5C5SIUAQOFDKGOYRUIACR36",
+    "threadDesk": "Default",
     "inputDesk": "Default",
-    "copyFromScreenAvailable": false,
-    "copyFromScreenError": "Exception calling \"CopyFromScreen\" with \"5\" argument(s): \"The handle is invalid\"",
+    "copyFromScreenAvailable": true,
+    "copyFromScreenError": "",
     "monitorCount": 1,
     "screens": [
       {
@@ -63,24 +63,24 @@
         "windowClass": "WindowsForms10.Window.8.app.0.297839e_r13_ad1"
       },
       "ann1": {
-        "opId": "18b7d913-4e3d-4e3c-8daa-209633484ced",
-        "roomId": "deskaccept-mwfybelj-1af81a",
+        "opId": "a6e490aa-856a-4789-bcff-cdb82a1282ca",
+        "roomId": "deskaccept-mwfyyuyd-f3cffa",
         "num": 1,
         "receipt": {
           "type": "ack",
-          "opId": "18b7d913-4e3d-4e3c-8daa-209633484ced",
+          "opId": "a6e490aa-856a-4789-bcff-cdb82a1282ca",
           "status": "applied",
           "seq": 2,
           "rev": 1
         }
       },
       "ann2": {
-        "opId": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
-        "roomId": "deskaccept-mwfybelj-1af81a",
+        "opId": "8383d66a-dd68-4124-82ae-237e4fbfbeb7",
+        "roomId": "deskaccept-mwfyyuyd-f3cffa",
         "num": 2,
         "receipt": {
           "type": "ack",
-          "opId": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
+          "opId": "8383d66a-dd68-4124-82ae-237e4fbfbeb7",
           "status": "applied",
           "seq": 3,
           "rev": 2
@@ -106,8 +106,8 @@
     "d5": {
       "ok": true,
       "screenshotModes": [
-        "printWindowComposite",
-        "printWindowComposite"
+        "copyFromScreen",
+        "copyFromScreen"
       ],
       "initialBoxVsButtonDiffPx": 0,
       "badgesDisjoint": true,
@@ -123,7 +123,7 @@
         "width": 32,
         "height": 22
       },
-      "trackLatencyMs": 749,
+      "trackLatencyMs": 852,
       "movedBoxRect": {
         "left": 323,
         "top": 375,
@@ -131,69 +131,14 @@
         "height": 56
       },
       "clickPassthrough": {
-        "inputMode": "win32MessageFallback",
-        "hardwareCursorMoved": false,
+        "inputMode": "hardwareMouse",
+        "hardwareCursorMoved": true,
         "saveClicks": 1,
-        "targetOwnerPid": 48948,
-        "afterForegroundPid": 0
+        "targetOwnerPid": 49432,
+        "afterForegroundPid": 49432
       }
-    },
-    "d6": {
-      "ok": true,
-      "screenshotMode": "printWindowComposite",
-      "dragRes": {
-        "ok": true,
-        "inputMode": "win32MessageFallback",
-        "hardwareCursorMoved": false,
-        "start": {
-          "x": 563,
-          "y": 385,
-          "owner": {
-            "rawChildHwnd": 5053184,
-            "hwnd": 5053184,
-            "pid": 36956,
-            "processName": "powershell",
-            "title": ""
-          }
-        },
-        "end": {
-          "x": 719,
-          "y": 421,
-          "owner": {
-            "rawChildHwnd": 5053184,
-            "hwnd": 5053184,
-            "pid": 36956,
-            "processName": "powershell",
-            "title": ""
-          }
-        }
-      },
-      "typeRes": {
-        "ok": true,
-        "inputMode": "win32MessageFallback",
-        "dialogPid": 36956,
-        "dialogTitle": ""
-      },
-      "overlayCount": 3,
-      "thirdOpText": "Interactive Cancel note",
-      "thirdOpAutomationId": "btnCancel",
-      "thirdOpRelativeRect": {
-        "left": 12,
-        "top": 10,
-        "width": 156,
-        "height": 36
-      },
-      "mcpCountAfterD6": 3,
-      "cancelClicksDuringCurtainDrag": 0
-    },
-    "passwordRoom4401": {
-      "ok": true,
-      "missingPasswordError": "Room is password-protected; pass --password or set MARKLAYER_PASSWORD",
-      "wrongPasswordError": "Room rejected the password",
-      "cliOpId": "bbd84986-337f-4829-820b-7b84fe018f8b",
-      "unauthenticatedMcpStatus": 401,
-      "authenticatedMcpCount": 1
     }
   },
-  "ok": true
+  "ok": false,
+  "error": "win32-driver -Action type-submit -Text Interactive Cancel note -AllowedPids 46932 failed (1): Safety abort: foreground pid=49432 ('MarkLayer Desktop Fixture') not in allowed=[46932]\r\nAt C:\\Users\\xxc\\orca\\workspaces\\visual collaboration\\desktop-annotation-2026-11-14\\acceptance\\desktop-annotation-2026-1\r\n1-14\\win32-driver.ps1:390 char:9\r\n+         throw \"Safety abort: foreground pid=$fgPid ('$([Win32Driver]: ...\r\n+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : OperationStopped: (Safety abort: f...allowed=[46932]:String) [], RuntimeException\r\n    + FullyQualifiedErrorId : Safety abort: foreground pid=49432 ('MarkLayer Desktop Fixture') not in allowed=[46932]\r\n \r\n"
 }

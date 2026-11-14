@@ -826,14 +826,23 @@ try {
   };
 
   report.ok = true;
+} catch (err) {
+  report.ok = false;
+  report.error = err?.message || String(err);
+  console.error('[acceptance] failed:', report.error);
 } finally {
   cdp?.close();
   killTree(overlayProc?.pid);
   killTree(fixtureProc?.pid);
   killTree(chromeProc?.pid);
   killTree(workerProc?.pid);
-  rmSync(workDir, { recursive: true, force: true });
+  try {
+    rmSync(workDir, { recursive: true, force: true });
+  } catch (e) {
+    console.error('[cleanup] rmSync failed (ignored):', e.message);
+  }
 }
 
 writeFileSync(join(ACCEPT_DIR, 'desktop-acceptance.json'), JSON.stringify(report, null, 2));
 console.log(JSON.stringify({ ok: report.ok, roomId: ROOM_ID, steps: Object.keys(report.steps) }, null, 2));
+process.exitCode = report.ok ? 0 : 1;

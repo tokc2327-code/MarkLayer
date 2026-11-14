@@ -3,7 +3,7 @@
     "count": 2,
     "annotations": [
       {
-        "id": "18b7d913-4e3d-4e3c-8daa-209633484ced",
+        "id": "a6e490aa-856a-4789-bcff-cdb82a1282ca",
         "layerId": "default",
         "kind": "comment",
         "status": "open",
@@ -11,7 +11,7 @@
         "assignee": null,
         "assignedAgent": null,
         "mentions": [],
-        "ts": 1794633295247,
+        "ts": 1794634387247,
         "text": "Save button contrast needs check",
         "position": {
           "x": 0,
@@ -60,7 +60,7 @@
         "video": null
       },
       {
-        "id": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
+        "id": "8383d66a-dd68-4124-82ae-237e4fbfbeb7",
         "layerId": "default",
         "kind": "comment",
         "status": "open",
@@ -68,7 +68,7 @@
         "assignee": null,
         "assignedAgent": null,
         "mentions": [],
-        "ts": 1794633295424,
+        "ts": 1794634387468,
         "text": "Verify Save focus ring",
         "position": {
           "x": 0,
@@ -122,7 +122,7 @@
     "count": 2,
     "annotations": [
       {
-        "id": "18b7d913-4e3d-4e3c-8daa-209633484ced",
+        "id": "a6e490aa-856a-4789-bcff-cdb82a1282ca",
         "layerId": "default",
         "kind": "comment",
         "status": "open",
@@ -130,7 +130,7 @@
         "assignee": null,
         "assignedAgent": null,
         "mentions": [],
-        "ts": 1794633295247,
+        "ts": 1794634387247,
         "text": "Save button contrast needs check",
         "position": {
           "x": 0,
@@ -179,7 +179,7 @@
         "video": null
       },
       {
-        "id": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
+        "id": "8383d66a-dd68-4124-82ae-237e4fbfbeb7",
         "layerId": "default",
         "kind": "comment",
         "status": "open",
@@ -187,7 +187,7 @@
         "assignee": null,
         "assignedAgent": null,
         "mentions": [],
-        "ts": 1794633295424,
+        "ts": 1794634387468,
         "text": "Verify Save focus ring",
         "position": {
           "x": 0,
@@ -242,7 +242,7 @@
     "annotations": []
   },
   "mcpDetail": {
-    "id": "18b7d913-4e3d-4e3c-8daa-209633484ced",
+    "id": "a6e490aa-856a-4789-bcff-cdb82a1282ca",
     "layerId": "default",
     "kind": "comment",
     "status": "open",
@@ -250,7 +250,7 @@
     "assignee": null,
     "assignedAgent": null,
     "mentions": [],
-    "ts": 1794633295247,
+    "ts": 1794634387247,
     "text": "Save button contrast needs check",
     "position": {
       "x": 0,
@@ -312,7 +312,7 @@
       },
       "open": [
         {
-          "id": "18b7d913-4e3d-4e3c-8daa-209633484ced",
+          "id": "a6e490aa-856a-4789-bcff-cdb82a1282ca",
           "layerId": "default",
           "kind": "comment",
           "status": "open",
@@ -320,7 +320,7 @@
           "assignee": null,
           "assignedAgent": null,
           "mentions": [],
-          "ts": 1794633295247,
+          "ts": 1794634387247,
           "text": "Save button contrast needs check",
           "position": {
             "x": 0,
@@ -369,7 +369,7 @@
           "video": null
         },
         {
-          "id": "cce80ab4-550e-42d6-85ba-c05fa85de78c",
+          "id": "8383d66a-dd68-4124-82ae-237e4fbfbeb7",
           "layerId": "default",
           "kind": "comment",
           "status": "open",
@@ -377,7 +377,7 @@
           "assignee": null,
           "assignedAgent": null,
           "mentions": [],
-          "ts": 1794633295424,
+          "ts": 1794634387468,
           "text": "Verify Save focus ring",
           "position": {
             "x": 0,
@@ -446,7 +446,7 @@
         "assignee": null,
         "assignedAgent": null,
         "mentions": [],
-        "ts": 1794633292943,
+        "ts": 1794634384843,
         "text": "Web baseline note",
         "position": {
           "x": 240,

@@ -3,10 +3,17 @@
   [switch]$Interactive,
   [string]$OutboxDir,
   [string]$StateOut,
+  [switch]$WebViewPreview,
+  [string]$WebView2Dir,
   [int]$BarX = -1,
   [int]$BarY = -1
 )
 $ErrorActionPreference = 'Stop'
+
+if ($WebViewPreview) {
+  & (Join-Path $PSScriptRoot 'webview-preview.ps1') -WebView2Dir $WebView2Dir -OutboxDir $OutboxDir
+  return
+}
 
 # Must run BEFORE loading System.Windows.Forms so WinForms initializes PerMonitorV2.
 . (Join-Path $PSScriptRoot 'uia-core.ps1')

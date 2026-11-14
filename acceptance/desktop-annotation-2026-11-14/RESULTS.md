@@ -1,5 +1,14 @@
 # 桌面标注集成验收报告（2026-11-14）
 
+## WebView2 改造阶段记录（未完成）
+
+- 入口按 xxc 要求改为 web 原生入口；旧验收文字中的 `+ Annotate` 不再作为目标界面文案。
+- 阶段 1、2 预览：WebView2 Core 初始化成功，通过 `file://` 加载由原 Web `App` 和原样式构建的单页；物理屏幕截图：`webview2-stage1-2.png`。这是预览入口，并非默认覆盖层，尚未做 Web 并排像素对比。
+- 构建（在 `apps/extension`）：`D:\NODE\node.exe ../../node_modules/vite/bin/vite.js build --config desktop/vite.config.ts`。
+- 预览（在仓库根目录）：`powershell.exe -NoProfile -STA -ExecutionPolicy Bypass -File packages/desktop-uia/overlay.ps1 -Targets "$env:TEMP\marklayer-empty.json" -WebViewPreview -WebView2Dir "$env:TEMP\marklayer-webview2-1.0.4314.35\lib\net462"`。该目录需先解压 NuGet `Microsoft.Web.WebView2` 1.0.4314.35，并将 `runtimes/win-x64/native/WebView2Loader.dll` 复制到 `lib/net462`。
+- 新代码的 `bun run check` 和 `bun run test` 成功；两者均为扩展任务实际执行，其余 11 项命中缓存。扩展测试 639 pass、0 fail；这些测试不覆盖新桌面桥。提交桥、截图裁剪、窗口跟随、点击穿透、中文输入和房间回读均未验收；当前全屏预览会拦截桌面输入，不可作为日常覆盖层使用。
+- 中文输入验证受阻：Computer Use 的 `sky.list_windows` 三次报告 `Computer Use native pipe is unavailable ... os error 2`，其中一次发生在重置会话后。没有中文输入截图，不能判定焦点切换有效。
+
 - **分支**：`feat/desktop-annotation`
 - **硬件与系统环境**：Windows PerMonitorV2（单屏 `\\.\DISPLAY5` 逻辑 `1707x1067` / 物理 `2560x1600 @ 1.5x`）、Node `v24.21.0`、Bun `1.4.3`、Chrome CDP headless、本地 Cloudflare Worker（`wrangler dev --local` + `--persist-to` D1 + Durable Object `AnnotationRoom`）、自建 WinForms 测试窗体（`MarkLayer Desktop Fixture`，含 `btnSave` / `btnCancel` 点击计数器与 `WindowFromPoint` PID 白名单防误触）。
 - **可复现命令**：

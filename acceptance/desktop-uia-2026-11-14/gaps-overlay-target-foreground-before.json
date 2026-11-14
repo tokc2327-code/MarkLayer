@@ -1,0 +1,26 @@
+{
+  "appPath": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2609.11.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe",
+  "controlType": "ControlType.Tab",
+  "automationId": "Tabs",
+  "name": "",
+  "ancestry": [
+    {
+      "automationId": "",
+      "name": "uia-ov-d0056994.txt - Notepad",
+      "controlType": "ControlType.Window"
+    },
+    {
+      "automationId": "",
+      "name": "",
+      "controlType": "ControlType.Pane"
+    },
+    {
+      "automationId": "",
+      "name": "",
+      "controlType": "ControlType.Pane"
+    }
+  ],
+  "app": "Notepad",
+  "windowClass": "Notepad",
+  "windowTitle": "uia-ov-d0056994.txt - Notepad"
+}

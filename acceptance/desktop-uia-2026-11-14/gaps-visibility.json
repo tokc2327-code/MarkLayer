@@ -1,0 +1,194 @@
+{
+  "marker": "uia-ov-767be1c1",
+  "initialForeground": {
+    "hwnd": 3866918,
+    "notepadHwnd": 3866918,
+    "confirmed": true,
+    "requested": true
+  },
+  "overlayWindow": {
+    "left": 189,
+    "width": 557,
+    "top": 134,
+    "height": 48,
+    "visible": true
+  },
+  "targetFirst": {
+    "left": 189,
+    "width": 557,
+    "top": 134,
+    "height": 48
+  },
+  "notepadOnCurrentDesktop": 1,
+  "timeline": [
+    {
+      "foreground": 3866918,
+      "overlayHwnd": 3281892,
+      "windowTitle": "uia-ov-767be1c1.txt - Notepad",
+      "windowExists": true,
+      "visible": true,
+      "aboveTarget": true,
+      "time": "2026-11-14T10:08:07.3948988+08:00",
+      "hasExited": false,
+      "targetRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "notepadHwnd": 3866918,
+      "overlayRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "stage": "before-click"
+    },
+    {
+      "foreground": 3866918,
+      "overlayHwnd": 3281892,
+      "windowTitle": "uia-ov-767be1c1.txt - Notepad",
+      "windowExists": true,
+      "visible": true,
+      "aboveTarget": false,
+      "time": "2026-11-14T10:08:07.6974038+08:00",
+      "hasExited": false,
+      "targetRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "notepadHwnd": 3866918,
+      "overlayRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "stage": "immediately-after-click"
+    },
+    {
+      "foreground": 3866918,
+      "overlayHwnd": 3281892,
+      "windowTitle": "uia-ov-767be1c1.txt - Notepad",
+      "windowExists": true,
+      "visible": true,
+      "aboveTarget": false,
+      "time": "2026-11-14T10:08:08.4128407+08:00",
+      "hasExited": false,
+      "targetRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "notepadHwnd": 3866918,
+      "overlayRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "stage": "700ms-after"
+    },
+    {
+      "foreground": 3866918,
+      "overlayHwnd": 3281892,
+      "windowTitle": "uia-ov-767be1c1.txt - Notepad",
+      "windowExists": true,
+      "visible": true,
+      "aboveTarget": true,
+      "time": "2026-11-14T10:08:09.4920488+08:00",
+      "hasExited": false,
+      "targetRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "notepadHwnd": 3866918,
+      "overlayRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "stage": "after-resolve"
+    },
+    {
+      "foreground": 3866918,
+      "overlayHwnd": 3281892,
+      "windowTitle": "uia-ov-767be1c1.txt - Notepad",
+      "windowExists": true,
+      "visible": true,
+      "aboveTarget": true,
+      "time": "2026-11-14T10:08:11.0261063+08:00",
+      "hasExited": false,
+      "targetRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "notepadHwnd": 3866918,
+      "overlayRect": {
+        "left": 189,
+        "width": 557,
+        "top": 134,
+        "height": 48
+      },
+      "stage": "later"
+    }
+  ],
+  "beforeResolve": {
+    "ok": true,
+    "hwnd": 3866918,
+    "minimized": false,
+    "rect": {
+      "left": 189,
+      "width": 557,
+      "top": 134,
+      "height": 48
+    }
+  },
+  "afterResolve": {
+    "ok": true,
+    "hwnd": 3866918,
+    "minimized": false,
+    "rect": {
+      "left": 189,
+      "width": 557,
+      "top": 134,
+      "height": 48
+    }
+  },
+  "clickThrough": {
+    "relocated": false,
+    "overlayAboveNotepadAfter": true,
+    "overlayAboveNotepadBefore": true,
+    "windowFromPoint_pid": 67088,
+    "windowFromPoint_isOverlay": false,
+    "outcome": "clicked",
+    "npHwnd": 3866918,
+    "focusPid": 67088,
+    "clicked": true,
+    "foregroundAfter": 3866918,
+    "foregroundBefore": 3866918,
+    "focusControlType": "ControlType.Document",
+    "overlayBecameForeground": false,
+    "overlayStillVisible": true,
+    "firstHitPid": 67088,
+    "notepadPid": 67088,
+    "focusInNotepad": true,
+    "insideOverlay": true,
+    "foregroundIsNotepad": true,
+    "windowFromPoint_hwnd": 73603444,
+    "clickPoint": {
+      "y": 158,
+      "x": 468
+    },
+    "firstHitHwnd": 73603444
+  }
+}

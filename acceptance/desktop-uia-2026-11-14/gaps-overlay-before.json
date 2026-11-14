@@ -1,0 +1,252 @@
+{
+  "marker": "uia-ov-6a975abd",
+  "overlayWindow": {
+    "left": 166,
+    "width": 671,
+    "top": 129,
+    "height": 32,
+    "visible": true
+  },
+  "targetFirst": {
+    "left": 249,
+    "width": 1007,
+    "top": 194,
+    "height": 48
+  },
+  "clickThrough": {
+    "windowFromPoint_hwnd": 5772610,
+    "notepadPid": 63196,
+    "windowFromPoint_isOverlay": false,
+    "npHwnd": 5772150,
+    "overlayBecameForeground": false,
+    "foregroundIsNotepad": false,
+    "foregroundAfter": 23271678,
+    "focusInNotepad": false,
+    "foregroundBefore": 23271678,
+    "clickPoint": {
+      "y": 218,
+      "x": 752
+    },
+    "focusPid": 55440,
+    "overlayStillVisible": true,
+    "insideOverlay": false
+  },
+  "drag": {
+    "maxSampleMs": 1115,
+    "maxOffset": 0,
+    "avgOffset": 0,
+    "steps": [
+      {
+        "step": 0,
+        "dy": 0,
+        "ms": 948,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 1,
+        "dy": 0,
+        "ms": 961,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 2,
+        "dy": 0,
+        "ms": 987,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 3,
+        "dy": 0,
+        "ms": 953,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 4,
+        "dy": 0,
+        "ms": 897,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 5,
+        "dy": 0,
+        "ms": 902,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 6,
+        "dy": 0,
+        "ms": 895,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 7,
+        "dy": 0,
+        "ms": 1115,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 8,
+        "dy": 0,
+        "ms": 969,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 9,
+        "dy": 0,
+        "ms": 910,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 10,
+        "dy": 0,
+        "ms": 945,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 11,
+        "dy": 0,
+        "ms": 922,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 12,
+        "dy": 0,
+        "ms": 943,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 13,
+        "dy": 0,
+        "ms": 956,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 14,
+        "dy": 0,
+        "ms": 965,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 15,
+        "dy": 0,
+        "ms": 957,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 16,
+        "dy": 0,
+        "ms": 928,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 17,
+        "dy": 0,
+        "ms": 964,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 18,
+        "dy": 0,
+        "ms": 922,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 19,
+        "dy": 0,
+        "ms": 943,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 20,
+        "dy": 0,
+        "ms": 931,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 21,
+        "dy": 0,
+        "ms": 925,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 22,
+        "dy": 0,
+        "ms": 970,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 23,
+        "dy": 0,
+        "ms": 924,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 24,
+        "dy": 0,
+        "ms": 901,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 25,
+        "dy": 0,
+        "ms": 920,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 26,
+        "dy": 0,
+        "ms": 917,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 27,
+        "dy": 0,
+        "ms": 904,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 28,
+        "dy": 0,
+        "ms": 1014,
+        "dx": 0,
+        "visible": true
+      },
+      {
+        "step": 29,
+        "dy": 0,
+        "ms": 960,
+        "dx": 0,
+        "visible": true
+      }
+    ],
+    "hiddenFrames": 0
+  }
+}

@@ -1,0 +1,33 @@
+﻿{
+  "marker": "uia-clk-0b3396b3",
+  "target": {
+    "left": 269,
+    "width": 557,
+    "top": 214,
+    "height": 48
+  },
+  "overlayWindow": {
+    "exStyle": "0x80900A8",
+    "left": 269,
+    "width": 557,
+    "top": 214,
+    "visible": true,
+    "height": 48
+  },
+  "hitTest": {
+    "clickPoint": {
+      "y": 238,
+      "x": 548
+    },
+    "hitPid": 55440,
+    "insideOverlay": true,
+    "hitIsNotepad": false,
+    "hitHwnd": 5772610,
+    "notepadPid": 15164,
+    "hitIsOverlay": false
+  },
+  "click": {
+    "skipped": true,
+    "reason": "hit test did not land on our notepad (hitPid=55440 notepadPid=15164)"
+  }
+}

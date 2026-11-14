@@ -1,0 +1,73 @@
+{
+  "negative": {
+    "ok": true,
+    "hwnd": 6033448,
+    "minimized": false,
+    "rect": {
+      "left": -31,
+      "width": 557,
+      "top": -86,
+      "height": 48
+    }
+  },
+  "virtualScreen": {
+    "left": 0,
+    "right": 2560,
+    "bottom": 1600,
+    "top": 0
+  },
+  "marker": "uia-gap-79c30524",
+  "edge": {
+    "ok": true,
+    "hwnd": 6033448,
+    "minimized": false,
+    "rect": {
+      "left": 2429,
+      "width": 557,
+      "top": 1414,
+      "height": 48
+    }
+  },
+  "restored": {
+    "ok": true,
+    "hwnd": 6033448,
+    "minimized": false,
+    "rect": {
+      "left": 569,
+      "width": 857,
+      "top": 314,
+      "height": 48
+    }
+  },
+  "dpi": 144,
+  "initial": {
+    "ok": true,
+    "hwnd": 6033448,
+    "minimized": false,
+    "rect": {
+      "left": 569,
+      "width": 857,
+      "top": 314,
+      "height": 48
+    }
+  },
+  "restart": {
+    "ok": true,
+    "hwnd": 16585380,
+    "minimized": false,
+    "rect": {
+      "left": 569,
+      "width": 857,
+      "top": 314,
+      "height": 48
+    }
+  },
+  "minimized": {
+    "ok": true,
+    "hwnd": 6033448,
+    "minimized": true,
+    "rect": null
+  },
+  "pid1": 54732,
+  "pid2": 69200
+}

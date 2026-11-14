@@ -1,0 +1,410 @@
+{
+  "marker": "uia-ov-5ba966e7",
+  "initialForeground": {
+    "hwnd": 1774992,
+    "notepadHwnd": 1774992,
+    "confirmed": true,
+    "requested": true
+  },
+  "overlayWindow": {
+    "left": 189,
+    "width": 557,
+    "top": 134,
+    "height": 48,
+    "visible": true
+  },
+  "targetFirst": {
+    "left": 189,
+    "width": 557,
+    "top": 134,
+    "height": 48
+  },
+  "notepadOnCurrentDesktop": 1,
+  "clickThrough": {
+    "relocated": false,
+    "overlayAboveNotepadAfter": true,
+    "overlayAboveNotepadBefore": true,
+    "windowFromPoint_pid": 49992,
+    "windowFromPoint_isOverlay": false,
+    "outcome": "clicked",
+    "npHwnd": 1774992,
+    "focusPid": 49992,
+    "clicked": true,
+    "foregroundAfter": 1774992,
+    "foregroundBefore": 1774992,
+    "focusControlType": "ControlType.Button",
+    "overlayBecameForeground": false,
+    "overlayStillVisible": false,
+    "firstHitPid": 49992,
+    "notepadPid": 49992,
+    "focusInNotepad": true,
+    "insideOverlay": true,
+    "foregroundIsNotepad": true,
+    "windowFromPoint_hwnd": 18550736,
+    "clickPoint": {
+      "y": 158,
+      "x": 468
+    },
+    "firstHitHwnd": 18550736
+  },
+  "drag": {
+    "maxSampleMs": 194,
+    "settled": [
+      {
+        "overlayTop": 134,
+        "dx": 300,
+        "targetTop": 284,
+        "visible": false,
+        "overlayLeft": 189,
+        "waitMs": 500,
+        "dy": 150,
+        "targetLeft": 489
+      },
+      {
+        "overlayTop": 134,
+        "dx": 300,
+        "targetTop": 284,
+        "visible": false,
+        "overlayLeft": 189,
+        "waitMs": 1500,
+        "dy": 150,
+        "targetLeft": 489
+      }
+    ],
+    "avgOffset": 155,
+    "maxOffset": 300,
+    "steps": [
+      {
+        "targetLeft": 199,
+        "step": 0,
+        "overlayTop": 134,
+        "dy": 5,
+        "targetTop": 139,
+        "dx": 10,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 194
+      },
+      {
+        "targetLeft": 209,
+        "step": 1,
+        "overlayTop": 134,
+        "dy": 10,
+        "targetTop": 144,
+        "dx": 20,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 149
+      },
+      {
+        "targetLeft": 219,
+        "step": 2,
+        "overlayTop": 134,
+        "dy": 15,
+        "targetTop": 149,
+        "dx": 30,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 150
+      },
+      {
+        "targetLeft": 229,
+        "step": 3,
+        "overlayTop": 134,
+        "dy": 20,
+        "targetTop": 154,
+        "dx": 40,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 138
+      },
+      {
+        "targetLeft": 239,
+        "step": 4,
+        "overlayTop": 134,
+        "dy": 25,
+        "targetTop": 159,
+        "dx": 50,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 141
+      },
+      {
+        "targetLeft": 249,
+        "step": 5,
+        "overlayTop": 134,
+        "dy": 30,
+        "targetTop": 164,
+        "dx": 60,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 149
+      },
+      {
+        "targetLeft": 259,
+        "step": 6,
+        "overlayTop": 134,
+        "dy": 35,
+        "targetTop": 169,
+        "dx": 70,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 147
+      },
+      {
+        "targetLeft": 269,
+        "step": 7,
+        "overlayTop": 134,
+        "dy": 40,
+        "targetTop": 174,
+        "dx": 80,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 150
+      },
+      {
+        "targetLeft": 279,
+        "step": 8,
+        "overlayTop": 134,
+        "dy": 45,
+        "targetTop": 179,
+        "dx": 90,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 146
+      },
+      {
+        "targetLeft": 289,
+        "step": 9,
+        "overlayTop": 134,
+        "dy": 50,
+        "targetTop": 184,
+        "dx": 100,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 151
+      },
+      {
+        "targetLeft": 299,
+        "step": 10,
+        "overlayTop": 134,
+        "dy": 55,
+        "targetTop": 189,
+        "dx": 110,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 142
+      },
+      {
+        "targetLeft": 309,
+        "step": 11,
+        "overlayTop": 134,
+        "dy": 60,
+        "targetTop": 194,
+        "dx": 120,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 157
+      },
+      {
+        "targetLeft": 319,
+        "step": 12,
+        "overlayTop": 134,
+        "dy": 65,
+        "targetTop": 199,
+        "dx": 130,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 150
+      },
+      {
+        "targetLeft": 329,
+        "step": 13,
+        "overlayTop": 134,
+        "dy": 70,
+        "targetTop": 204,
+        "dx": 140,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 157
+      },
+      {
+        "targetLeft": 339,
+        "step": 14,
+        "overlayTop": 134,
+        "dy": 75,
+        "targetTop": 209,
+        "dx": 150,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 153
+      },
+      {
+        "targetLeft": 349,
+        "step": 15,
+        "overlayTop": 134,
+        "dy": 80,
+        "targetTop": 214,
+        "dx": 160,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 150
+      },
+      {
+        "targetLeft": 359,
+        "step": 16,
+        "overlayTop": 134,
+        "dy": 85,
+        "targetTop": 219,
+        "dx": 170,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 143
+      },
+      {
+        "targetLeft": 369,
+        "step": 17,
+        "overlayTop": 134,
+        "dy": 90,
+        "targetTop": 224,
+        "dx": 180,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 140
+      },
+      {
+        "targetLeft": 379,
+        "step": 18,
+        "overlayTop": 134,
+        "dy": 95,
+        "targetTop": 229,
+        "dx": 190,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 155
+      },
+      {
+        "targetLeft": 389,
+        "step": 19,
+        "overlayTop": 134,
+        "dy": 100,
+        "targetTop": 234,
+        "dx": 200,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 151
+      },
+      {
+        "targetLeft": 399,
+        "step": 20,
+        "overlayTop": 134,
+        "dy": 105,
+        "targetTop": 239,
+        "dx": 210,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 138
+      },
+      {
+        "targetLeft": 409,
+        "step": 21,
+        "overlayTop": 134,
+        "dy": 110,
+        "targetTop": 244,
+        "dx": 220,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 137
+      },
+      {
+        "targetLeft": 419,
+        "step": 22,
+        "overlayTop": 134,
+        "dy": 115,
+        "targetTop": 249,
+        "dx": 230,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 142
+      },
+      {
+        "targetLeft": 429,
+        "step": 23,
+        "overlayTop": 134,
+        "dy": 120,
+        "targetTop": 254,
+        "dx": 240,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 155
+      },
+      {
+        "targetLeft": 439,
+        "step": 24,
+        "overlayTop": 134,
+        "dy": 125,
+        "targetTop": 259,
+        "dx": 250,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 155
+      },
+      {
+        "targetLeft": 449,
+        "step": 25,
+        "overlayTop": 134,
+        "dy": 130,
+        "targetTop": 264,
+        "dx": 260,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 150
+      },
+      {
+        "targetLeft": 459,
+        "step": 26,
+        "overlayTop": 134,
+        "dy": 135,
+        "targetTop": 269,
+        "dx": 270,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 141
+      },
+      {
+        "targetLeft": 469,
+        "step": 27,
+        "overlayTop": 134,
+        "dy": 140,
+        "targetTop": 274,
+        "dx": 280,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 140
+      },
+      {
+        "targetLeft": 479,
+        "step": 28,
+        "overlayTop": 134,
+        "dy": 145,
+        "targetTop": 279,
+        "dx": 290,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 141
+      },
+      {
+        "targetLeft": 489,
+        "step": 29,
+        "overlayTop": 134,
+        "dy": 150,
+        "targetTop": 284,
+        "dx": 300,
+        "overlayLeft": 189,
+        "visible": false,
+        "ms": 151
+      }
+    ],
+    "hiddenFrames": 30
+  }
+}

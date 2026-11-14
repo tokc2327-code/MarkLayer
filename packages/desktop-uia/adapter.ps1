@@ -6,9 +6,12 @@ using System;
 using System.Runtime.InteropServices;
 public static class DesktopDpi {
  [DllImport("user32.dll")] public static extern bool SetProcessDPIAware();
+ [DllImport("user32.dll")] public static extern bool SetProcessDpiAwarenessContext(IntPtr value);
+ [DllImport("user32.dll")] public static extern bool IsIconic(IntPtr hwnd);
+ [DllImport("user32.dll", CharSet=CharSet.Unicode)] public static extern int GetClassName(IntPtr hwnd, System.Text.StringBuilder name, int max);
 }
 "@
-[DesktopDpi]::SetProcessDPIAware() | Out-Null
+try { if (![DesktopDpi]::SetProcessDpiAwarenessContext([IntPtr](-4))) { [DesktopDpi]::SetProcessDPIAware() | Out-Null } } catch { [DesktopDpi]::SetProcessDPIAware() | Out-Null }
 $walker = [System.Windows.Automation.TreeWalker]::RawViewWalker
 function Rect($r) {
  if ($r.IsEmpty) { return $null }
@@ -25,7 +28,10 @@ function Windows {
    $c=$e.Current
    if ($c.NativeWindowHandle -eq 0 -or !$c.Name) { continue }
    $p=Get-Process -Id $c.ProcessId -ErrorAction Stop
-   [pscustomobject]@{element=$e;hwnd=$c.NativeWindowHandle;title=$c.Name;process=$p.ProcessName;rect=(Rect $c.BoundingRectangle)}
+   $class=New-Object System.Text.StringBuilder 256
+   [void][DesktopDpi]::GetClassName([IntPtr]$c.NativeWindowHandle,$class,$class.Capacity)
+   $path=$null; try { $path=$p.Path } catch { }
+   [pscustomobject]@{element=$e;hwnd=$c.NativeWindowHandle;title=$c.Name;process=$p.ProcessName;appPath=$path;windowClass=$class.ToString();minimized=[DesktopDpi]::IsIconic([IntPtr]$c.NativeWindowHandle);rect=(Rect $c.BoundingRectangle)}
   } catch { }
  }
 }
@@ -47,7 +53,7 @@ function SamePath($a,$b) {
  return $true
 }
 if ($Command -eq 'list-windows') {
- $result=@(Windows | ForEach-Object { @{hwnd=$_.hwnd;title=$_.title;process=$_.process;rect=$_.rect} })
+ $result=@(Windows | ForEach-Object { @{hwnd=$_.hwnd;title=$_.title;process=$_.process;appPath=$_.appPath;windowClass=$_.windowClass;minimized=$_.minimized;rect=$_.rect} })
  ConvertTo-Json -InputObject $result -Depth 12
 } elseif ($Command -eq 'snapshot') {
  $root=[System.Windows.Automation.AutomationElement]::FromHandle([IntPtr]$Hwnd)
@@ -62,8 +68,13 @@ if ($Command -eq 'list-windows') {
  ConvertTo-Json -InputObject $items -Depth 30
 } else {
  $t=Get-Content -LiteralPath $Target -Raw -Encoding UTF8 | ConvertFrom-Json
- $windows=@(Windows | Where-Object { $_.process -ieq $t.app -and $_.title -ceq $t.windowTitle })
- if ($windows.Count -eq 0) { @{ok=$false;reason='window_gone'} | ConvertTo-Json; exit }
+ $windows=@(Windows | Where-Object { $_.process -ieq $t.app })
+ if (!$windows.Count) { @{ok=$false;reason='app_not_found'} | ConvertTo-Json; exit }
+ if ($t.appPath) { $windows=@($windows | Where-Object { $_.appPath -and $_.appPath -ieq $t.appPath }); if (!$windows.Count) { @{ok=$false;reason='app_path_not_found'} | ConvertTo-Json; exit } }
+ if ($t.windowClass) { $windows=@($windows | Where-Object { $_.windowClass -ceq $t.windowClass }); if (!$windows.Count) { @{ok=$false;reason='window_class_not_found'} | ConvertTo-Json; exit } }
+ $windows=@($windows | Where-Object { $_.title -ceq $t.windowTitle })
+ if (!$windows.Count) { @{ok=$false;reason='window_title_not_found'} | ConvertTo-Json; exit }
+ if ($windows.Count -eq 1 -and $windows[0].minimized) { @{ok=$true;minimized=$true;hwnd=$windows[0].hwnd;rect=$null} | ConvertTo-Json; exit }
  $matches=@(foreach ($w in $windows) {
   $nodes=@($w.element)+@($w.element.FindAll([System.Windows.Automation.TreeScope]::Descendants,[System.Windows.Automation.Condition]::TrueCondition) | ForEach-Object { $_ })
   foreach ($node in $nodes) {
@@ -77,5 +88,5 @@ if ($Command -eq 'list-windows') {
  })
  if ($matches.Count -eq 0) { @{ok=$false;reason='not_found'} | ConvertTo-Json }
  elseif ($matches.Count -gt 1) { @{ok=$false;reason="ambiguous:$($matches.Count)"} | ConvertTo-Json }
- else { @{ok=$true;hwnd=$matches[0].hwnd;rect=$matches[0].rect} | ConvertTo-Json -Depth 10 }
+ else { @{ok=$true;minimized=$false;hwnd=$matches[0].hwnd;rect=$matches[0].rect} | ConvertTo-Json -Depth 10 }
 }
